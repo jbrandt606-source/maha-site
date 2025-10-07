@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mothers Against Herbal Abuse (MAHA)</title>
+  <meta name="description" content="Mothers Against Herbal Abuse – take action to ban dangerous herbal drug products. Email lawmakers in one click and share your story." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020; /* deep navy */
+      --card:#121832; /* indigo slate */
+      --text:#e8ecf8; /* near-white */
+      --muted:#a9b4d4; /* muted slate */
+      --brand:#e94e4e; /* punchy red */
+      --brand-dark:#c93f3f;
+      --accent:#66c2ff; /* electric blue */
+      --ok:#38b2ac; /* teal */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 600px at 70% -10%, rgba(102,194,255,.15), transparent 60%), var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;line-height:1.55}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo-badge{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),#ff8d70)}
+    .brand{font-weight:800;letter-spacing:.5px}
+    .nav a{margin-left:18px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 30px rgba(0,0,0,.25);border-radius:18px}
+    .hero .cta{padding:28px}
+    h1{font-size:clamp(28px,4.8vw,48px);line-height:1.1;margin:0 0 12px}
+    .sub{color:var(--muted);font-size:clamp(14px,2.3vw,18px)}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:12px;font-weight:600;border:1px solid rgba(255,255,255,.12);cursor:pointer;transition:.2s background,.2s transform}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--brand);color:white}
+    .btn-primary:hover{background:var(--brand-dark)}
+    .btn-ghost{background:rgba(255,255,255,.04);color:var(--text)}
+    .media{min-height:320px;padding:0;overflow:hidden}
+    .hero-graphic{height:100%;display:grid;place-items:center;padding:16px}
+    .hero-graphic .bubble{--size:130px;width:var(--size);height:var(--size);border-radius:28px;background:linear-gradient(135deg, rgba(233,78,78,.4), rgba(102,194,255,.25));filter:blur(0.2px);position:absolute}
+    .hero-graphic .gloss{position:relative;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:26px;max-width:420px}
+    .hero-graphic h3{margin:0 0 8px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(102,194,255,.16);border:1px solid rgba(102,194,255,.35);color:#cfeaff;font-weight:600;font-size:12px;letter-spacing:.3px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .grid .card{padding:20px}
+    .grid h3{margin:0 0 8px;font-size:18px}
+    .muted{color:var(--muted)}
+    .letter{display:grid;grid-template-columns:1fr;gap:14px;margin-top:26px}
+    textarea{width:100%;min-height:180px;background:rgba(255,255,255,.04);color:var(--text);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px;font-family:inherit;font-size:15px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .resources{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+    .resource{padding:16px}
+    footer{margin:36px 0;color:var(--muted);font-size:14px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .resources{grid-template-columns:1fr}
+    }
+    /* Info Center link grid */
+    .info-links{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:0}
+    .info-links a{display:block;padding:10px 12px;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:rgba(255,255,255,.03)}
+    .refs{color:var(--muted);font-size:14px;line-height:1.45}
+    .refs b{color:#dbe5ff}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="#act">Act</a>
+        <a href="#letter">Letter</a>
+        <a href="#learn">Information</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card cta" id="act">
+        <h1>Help ban dangerous herbal drug products.</h1>
+        <p class="sub">Your story and a 2-minute email to your lawmakers can move policy. We made it click-simple below.</p>
+        <div class="cta-row">
+          <!-- removed Copy talking points -->
+          <a class="btn btn-ghost" href="https://www.usa.gov/elected-officials" target="_blank" rel="noopener">Find my elected officials</a>
+          <a class="btn btn-ghost" href="https://openstates.org/find_your_legislator/" target="_blank" rel="noopener">Look up state legislators</a>
+          <a class="btn btn-ghost" href="#letter">Open form letter</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Tip: It’s okay to send multiple emails—staff log and track every message.</p>
+      </div>
+
+      <figure class="card media hero-graphic" aria-label="Action panel">
+        <div class="bubble" style="top:22px;left:28px"></div>
+        <div class="bubble" style="bottom:18px;right:24px;--size:160px"></div>
+        <div class="gloss">
+          <span class="badge">2-minute action</span>
+          <h3>One letter a day</h3>
+          <p class="muted">Pick one target: your House member, your Senator, or your city council. Paste talking points, add your story, hit send.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" onclick="launchMail()">Start an email</button>
+            <button class="btn btn-ghost" onclick="copyLetter()">Copy full letter</button>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <section class="grid" aria-label="Why this matters">
+      <div class="card">
+        <h3>Gas-station loopholes</h3>
+        <p class="muted">Addictive, opioid-like products slip in as “supplements,” dodging real drug safety testing. Communities pay the price.</p>
+      </div>
+      <div class="card">
+        <h3>Parents & clinicians speaking up</h3>
+        <p class="muted">First-hand stories + physician case reports paint a clear picture of harm. Lawmakers need to hear both.</p>
+      </div>
+      <div class="card">
+        <h3>Emails move votes</h3>
+        <p class="muted">Offices tally positions daily. A steady drumbeat from constituents can trigger hearings and bans.</p>
+      </div>
+    </section>
+
+    <!-- NEW: Information Center quick links -->
+    <section id="learn" class="card" style="padding:20px" aria-label="Information center">
+      <h2 style="margin:0 0 8px">Information Center</h2>
+      <p class="muted" style="margin:0 0 10px">Explore topics. Each link jumps to an editable section below.</p>
+      <ul class="info-links">
+        <li><a href="#kratom">Kratom</a></li>
+        <li><a href="#tianeptine">Tianeptine</a></li>
+        <li><a href="#phenibut">Phenibut</a></li>
+        <li><a href="#thc-extracts">THC Extracts</a></li>
+        <li><a href="#hallucinogens">Hallucinogens</a></li>
+        <li><a href="#nitrous">Nitrous Oxide</a></li>
+        <li><a href="#mad-honey">Mad Honey</a></li>
+        <li><a href="#other-common">Other Common</a></li>
+      </ul>
+    </section>
+
+    <section id="letter" class="card letter" aria-label="Form letter">
+      <h2 style="margin:18px 18px 0">Form Letter</h2>
+      <div class="two-col" style="padding:0 18px 18px">
+        <div>
+          <label for="yourName" class="muted">Your name</label>
+          <input id="yourName" placeholder="Jane Q. Pharmacist" style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)">
+        </div>
+        <div>
+          <label for="yourCity" class="muted">City / ZIP</label>
+          <input id="yourCity" placeholder="Columbus, OH 43215" style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)">
+        </div>
+      </div>
+      <div style="padding:0 18px 18px">
+        <label for="story" class="muted">Add your 3–4 sentence story (optional but powerful)</label>
+        <textarea id="story" placeholder="In one paragraph, share why you care and what you’ve seen."></textarea>
+      </div>
+      <div style="padding:0 18px 18px">
+        <label for="letterText" class="muted">Editable email (copy or send)</label>
+        <textarea id="letterText"></textarea>
+        <div class="cta-row">
+          <button class="btn btn-primary" onclick="copyLetter()">Copy to clipboard</button>
+          <button class="btn btn-ghost" onclick="launchMail()">Open in email app</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES (unchanged) -->
+    <section id="resources" class="resources" aria-label="Resources">
+      <div class="card resource">
+        <h3>Find officials</h3>
+        <p class="muted">Federal, state, and local directories.</p>
+        <ul>
+          <li><a href="https://www.usa.gov/elected-officials" target="_blank" rel="noopener">USA.gov – Elected Officials</a></li>
+          <li><a href="https://openstates.org/find_your_legislator/" target="_blank" rel="noopener">OpenStates – State legislators</a></li>
+          <li><a href="https://www.naco.org/resources/featured/county-explorer" target="_blank" rel="noopener">County officials (NACo)</a></li>
+        </ul>
+      </div>
+      <div class="card resource">
+        <h3>Share your story</h3>
+        <p class="muted">Prefer to send privately? Email us.</p>
+        <p><a href="mailto:stories@MothersAgainstHerbalAbuse.org?subject=Story%20for%20lawmakers">stories@MothersAgainstHerbalAbuse.org</a></p>
+        <p class="muted" style="font-size:13px">Optional: replace this with a form service like Formspree or Tally for direct submissions without exposing your email.</p>
+      </div>
+    </section>
+
+    <!-- NEW CONTENT SECTIONS -->
+    <section id="kratom" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">Kratom: What Parents Should Know</h2>
+      <p><b>Acts like an opioid.</b> Mitragynine converts to 7-hydroxymitragynine (7-OH) in the body; human studies confirm measurable 7-OH after kratom use and animal work shows 7-OH can be several times stronger than morphine.</p>
+      <p><b>Real harms.</b> CDC reports hundreds of kratom-positive overdose deaths across many states; poison centers logged 10k+ cases since 2014; doctors document dependence and neonatal withdrawal.</p>
+    </section>
+
+    <section id="tianeptine" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">Tianeptine: What Parents Should Know</h2>
+      <p>“ZaZa/Neptune’s Fix” products contain an opioid-acting drug linked to addiction and overdose. Many ER cases are reversed with naloxone. FDA has issued multiple national warnings; several states ban it.</p>
+    </section>
+
+    <section id="phenibut" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">Phenibut: What Parents Should Know</h2>
+      <p>A synthetic tranquilizer (GABAergic). Causes dependence and withdrawal like benzodiazepines. Poison-center and ICU cases are rising; FDA says it’s not a lawful dietary ingredient.</p>
+    </section>
+
+    <section id="thc-extracts" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">THC Extracts: What Parents Should Know</h2>
+      <p>Delta-8/Delta-10 gummies and vapes exploit hemp loopholes; pediatric exposures and ER visits reported. THC-O is federally illegal and may be even more potent than Delta-9 THC.</p>
+    </section>
+
+    <section id="hallucinogens" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">Hallucinogens: What Parents Should Know</h2>
+      <p>Psilocybin/LSD/DMT marketed as “microdosing” wellness; risks include panic, psychosis, flashbacks (HPPD), and injuries from impaired judgment. Counterfeit tabs can contain NBOMe.</p>
+    </section>
+
+    <section id="nitrous" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">Nitrous Oxide: What Parents Should Know</h2>
+      <p>“Whippets” can cause hypoxia, accidents, and with chronic use, B12 inactivation → neuropathy and spinal-cord injury. Teen clusters appear in poison-center data.</p>
+    </section>
+
+    <section id="mad-honey" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">Mad Honey: What Parents Should Know</h2>
+      <p>Grayanotoxins from rhododendron nectar → dizziness, vomiting, dangerous bradycardia/hypotension within minutes. No health benefits; call Poison Control after ingestion.</p>
+    </section>
+
+    <section id="other-common" class="card" style="padding:20px;margin-top:18px">
+      <h2 style="margin:0 0 8px">Other Common Substances: What Parents Should Know</h2>
+      <p>Gas-station/online “herbal highs” (kava drinks, “focus” shots, kratom blends) often hide psychoactive drugs and use deceptive labels. FDA/CDC/poison centers warn of seizures, dependence, and hospitalizations.</p>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> MothersAgainstHerbalAbuse.org • Non-partisan public-safety advocacy</div>
+    </footer>
+  </div>
+
+<script>
+  const defaultLetter = () => {
+    const name = document.getElementById('yourName').value || 'A concerned constituent';
+    const city = document.getElementById('yourCity').value || '';
+    const story = document.getElementById('story').value ? `\n\nMy story: ${document.getElementById('story').value}` : '';
+    return `Subject: Please support a full ban on kratom and similar gas-station opioids
+
+Dear Lawmaker,
+
+I’m ${name} from ${city}. I’m asking you to sponsor and vote for a full ban on kratom and related products marketed as “herbal” but acting as opioid-like drugs. These items bypass real drug-safety trials and are sold in vape/gas shops where teens and vulnerable adults are exposed.
+
+Evidence from physician-authored case reports shows seizures, cardiac effects, addiction, neonatal withdrawal, and drug interactions. Not a single peer-reviewed medical case report promotes kratom as a safe treatment or recommends it to patients.
+${story}
+
+Please act now: schedule/ban kratom statewide, remove it from retail shelves, and direct health agencies to issue clear public warnings. Partial age restrictions simply shift the harm.
+
+Thank you for your leadership.
+
+Sincerely,
+${name}`;
+  };
+  function hydrateLetter(){
+    document.getElementById('letterText').value = defaultLetter();
+  }
+  function copyLetter(){
+    const el = document.getElementById('letterText');
+    if(!el.value) hydrateLetter();
+    el.select();
+    document.execCommand('copy');
+    alert('Letter copied to clipboard. Paste into your email to a lawmaker.');
+  }
+  function launchMail(){
+    const text = document.getElementById('letterText').value || defaultLetter();
+    const subject = encodeURIComponent('Please support a full ban on kratom and similar gas-station opioids');
+    const body = encodeURIComponent(text.replace(/^Subject: .*\\n\\n/,''));
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+  }
+  document.getElementById('year').textContent = new Date().getFullYear();
+  hydrateLetter();
+</script>
+</body>
+</html>
