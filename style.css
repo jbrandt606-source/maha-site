@@ -9,3 +9,45 @@ header{display:flex;gap:16px;align-items:center;justify-content:space-between}
 .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;list-style:none;padding:0}
 .list a{display:block;padding:10px 12px;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:rgba(255,255,255,.03)}
 footer{margin:36px 0;color:var(--muted);font-size:14px;text-align:center}h1,h2{margin-top:0}.back{display:inline-block;margin-top:8px}
+/* ===== MAHA topic page polish ===== */
+.hero {
+  border-radius: 18px;
+  padding: 28px;
+  margin-top: 20px;
+  background: radial-gradient(800px 400px at 80% -10%, rgba(102,194,255,.18), transparent 60%),
+              linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.k-title { font-size: clamp(28px, 4.5vw, 44px); line-height: 1.12; margin: 0 0 8px; }
+.k-sub { color: var(--muted); font-size: clamp(14px, 2.4vw, 18px); margin: 0; }
+
+.k-facts {
+  display: grid; grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px; margin: 18px 0 0;
+}
+.k-fact {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px; padding: 14px;
+  display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start;
+}
+.k-fact svg { width: 24px; height: 24px; opacity: .9 }
+.k-fact p { margin: 0; color: var(--text) }
+
+.k-card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.10); border-radius: 18px; padding: 18px; margin-top: 18px; }
+
+.refs-title { margin: 0 0 6px; }
+.refs { font-size: 15px; color: var(--muted); line-height: 1.55 }
+.refs ol { margin: 8px 0 0 18px; padding: 0; }
+.refs a { color: var(--accent); }
+
+.k-actions { display:flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:12px 14px;
+  border-radius: 12px; font-weight: 600; border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05); color: var(--text); text-decoration: none; }
+.btn-primary { background: var(--brand); border-color: transparent; color: white; }
+.btn:hover { transform: translateY(-1px); transition: .15s transform; }
+.back-link { display:inline-block; margin-top:10px; color: var(--accent); }
+@media (max-width:800px){ .k-facts { grid-template-columns: 1fr; } }
