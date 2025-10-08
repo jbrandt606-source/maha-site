@@ -9,24 +9,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=16">
 
   <!-- Page-local tweaks (mobile layout + gallery) -->
   <style>
-    /* Make the fact cards flow nicely and avoid word-by-word wrapping */
+    /* Fact cards layout + mobile wrap fix */
     .k-facts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
     .k-fact { display: flex; align-items: flex-start; gap: 10px; padding: 14px;
       background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); border-radius:14px; }
     .k-fact svg { width: 24px; height: 24px; flex: 0 0 24px; opacity: .9; }
     .k-fact p { margin:0; word-break: normal; overflow-wrap: break-word; hyphens: auto; }
-
-    /* One column on phones */
     @media (max-width: 760px){ .k-facts { grid-template-columns: 1fr !important; } }
 
-    /* Image gallery */
+    /* Gallery styling */
     figure { margin: 12px 0; }
-    figure img { width: 100%; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,.2); }
-    figcaption { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    figure img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,.2); background:#121826; }
+    figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
     .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 12px; margin-top: 12px; }
   </style>
 </head>
@@ -87,45 +85,30 @@
       <p><em>“I care about your brain and your future. Nitrous quietly damages nerves — even when you feel fine later. If you’ve tried it, I’m not here to punish you; I want to help you stay safe and get checked if needed.”</em></p>
     </section>
 
-    <!-- IMAGE GALLERY -->
+    <!-- IMAGE GALLERY (Wikimedia Special:FilePath ensures direct image load) -->
     <section class="k-card">
       <h2 style="margin:0 0 8px">Context</h2>
-      <p class="muted" style="margin-bottom:12px;">Real-world examples of nitrous oxide cartridges (“whippets”), paraphernalia, and retail settings. Used under Creative Commons and Unsplash licenses.</p>
+      <p class="muted" style="margin-bottom:12px;">Examples of nitrous oxide paraphernalia and litter. Used under Creative Commons licenses; attribution provided.</p>
 
       <div class="gallery">
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/NOS_Cracker_With_Balloon_And_Charger.jpg" alt="NOS cracker with balloon and charger">
-          <figcaption>Photo by <a href="https://commons.wikimedia.org/wiki/File:NOS_Cracker_With_Balloon_And_Charger.jpg" target="_blank" rel="noopener">MsSaraKelly</a>, licensed <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>.</figcaption>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NOS_Cracker_With_Balloon_And_Charger.jpg" alt="NOS cracker with balloon and charger">
+          <figcaption>Photo by The Drug Users Bible, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>. File: <a href="https://commons.wikimedia.org/wiki/File:NOS_Cracker_With_Balloon_And_Charger.jpg" target="_blank" rel="noopener">Commons</a></figcaption>
         </figure>
 
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Discarded_cream_chargers_01.jpg" alt="Discarded cream chargers">
-          <figcaption>Photo by <a href="https://commons.wikimedia.org/wiki/File:Discarded_cream_chargers_01.jpg" target="_blank" rel="noopener">Philafrenzy</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Whip-it%27s-Brand-Whip-Cream-Chargers.jpg" alt="Whip-It! brand box and steel dispenser">
+          <figcaption>Photo by Wonderfeel, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. File: <a href="https://commons.wikimedia.org/wiki/File:Whip-it%27s-Brand-Whip-Cream-Chargers.jpg" target="_blank" rel="noopener">Commons</a></figcaption>
         </figure>
 
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/N2O_cracker_device_close-up.jpg" alt="N₂O cracker device close-up">
-          <figcaption>Photo by <a href="https://commons.wikimedia.org/wiki/File:N2O_cracker_device_close-up.jpg" target="_blank" rel="noopener">GreenZeb</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.</figcaption>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/N2O_cracker.jpg" alt="N₂O cracker device close-up">
+          <figcaption>Photo by GreenZeb, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. File: <a href="https://commons.wikimedia.org/wiki/File:N2O_cracker.jpg" target="_blank" rel="noopener">Commons</a></figcaption>
         </figure>
 
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Whippet_cartridges.jpg" alt="Assorted whippet cartridges">
-          <figcaption>Source: <a href="https://commons.wikimedia.org/wiki/File:Whippet_cartridges.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA (per file page).</figcaption>
-        </figure>
-
-        <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Whipped_cream_charger.jpg" alt="Whipped-cream charger paraphernalia">
-          <figcaption>Photo by <a href="https://commons.wikimedia.org/wiki/File:Whipped_cream_charger.jpg" target="_blank" rel="noopener">Xofc</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="https://images.unsplash.com/photo-1603453956481-85a1cf172bb9?auto=format&fit=crop&w=1200&q=80" alt="Vape shop interior">
-          <figcaption>Photo via <a href="https://unsplash.com/s/photos/vape-shop" target="_blank" rel="noopener">Unsplash</a>.</figcaption>
-        </figure>
-
-        <figure>
-          <img src="https://images.unsplash.com/photo-1603023423660-0877ad5b9b40?auto=format&fit=crop&w=1200&q=80" alt="Smoke shop shelves">
-          <figcaption>Photo via <a href="https://unsplash.com/s/photos/smoke-shop" target="_blank" rel="noopener">Unsplash</a>.</figcaption>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Discarded_nitrous_oxide_canisters.jpg" alt="Discarded nitrous oxide canisters">
+          <figcaption>Photo by Tim Sheerman-Chase, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>. File: <a href="https://commons.wikimedia.org/wiki/File:Discarded_nitrous_oxide_canisters.jpg" target="_blank" rel="noopener">Commons</a></figcaption>
         </figure>
       </div>
     </section>
@@ -163,11 +146,11 @@
       <a class="back-link" href="index.html#info">← Back to Information Center</a>
     </section>
 
-    <footer style="margin-top:18px; color:var(--muted);">
+    <footer style="margin-top:18px; color: var(--muted);">
       © <span id="year"></span> MothersAgainstHerbalAbuse.org
     </footer>
   </div>
 
-  <script src="main.js?v=15"></script>
+  <script src="main.js?v=16"></script>
 </body>
 </html>
