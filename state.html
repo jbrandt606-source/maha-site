@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>State • MAHA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+  <style>
+    .k-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px}
+    .k-fact p{margin:0}
+    @media (max-width:760px){.k-facts{grid-template-columns:1fr!important}}
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <div class="logo-badge" aria-hidden="true"></div>
+      <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
+    </div>
+    <nav class="nav"><a href="index.html">Home</a></nav>
+  </header>
 
+  <section class="hero">
+    <h1 class="k-title">State – How to Take Action</h1>
+    <p class="k-sub">States can stop sales quickly. Ask lawmakers and agencies to use every tool they have.</p>
+  </section>
+
+  <!-- Legislature & Governor -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">State Senate, House &amp; Governor</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What they can do</b><br>• Pass full bans on kratom, tianeptine, phenibut, “mushroom” edibles.<br>• Fund poison-control and public-health outreach.<br>• Give boards fast-track authority to add new drugs.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• State law stops at the border; online/interstate sales persist.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask them to</b><br>• Enact bans and close loopholes (supplement/food additive).<br>• Resource enforcement and school education.</p></div>
+    </div>
+  </section>
+
+  <!-- Health Department -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">State Health Department</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What they can do</b><br>• Issue HAN-style alerts; publish dashboards on ER visits/poisonings.<br>• Use emergency powers to curb retail sales temporarily.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Warns and restricts; does not prosecute.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask them to</b><br>• Release frequent alerts; partner with schools & local BOHs.<br>• Share real-time data with policymakers and media.</p></div>
+    </div>
+  </section>
+
+  <!-- Board of Pharmacy -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">State Board of Pharmacy</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What they can do</b><br>• Add substances to the state controlled list.<br>• Stop licensed pharmacies from selling risky products.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Limited power over unlicensed retailers (vape/gas shops).</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask them to</b><br>• Schedule these substances now by rule.<br>• Recommend full legislative bans for non-pharmacy sellers.</p></div>
+    </div>
+  </section>
+
+  <!-- Medical Associations -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">State Medical Associations</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What they can do</b><br>• Educate clinicians and the public; publish guidance & statements.<br>• Testify to committees with patient cases and data.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Influence policy but don’t enforce it.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask them to</b><br>• Endorse bans; warn against kratom/tianeptine use.<br>• Share de-identified cases of harm.</p></div>
+    </div>
+  </section>
+
+  <p><a class="back-link" href="index.html#action">← Back to Take Action</a></p>
+
+  <footer style="margin-top:18px;color:var(--muted)">© <span id="year"></span> MothersAgainstHerbalAbuse.org</footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
