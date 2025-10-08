@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local • MAHA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+  <style>
+    .k-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px}
+    .k-fact p{margin:0}
+    @media (max-width:760px){.k-facts{grid-template-columns:1fr!important}}
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <div class="logo-badge" aria-hidden="true"></div>
+      <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
+    </div>
+    <nav class="nav"><a href="index.html">Home</a></nav>
+  </header>
 
+  <section class="hero">
+    <h1 class="k-title">Local – How to Take Action</h1>
+    <p class="k-sub">Cities and counties can protect neighborhoods today with ordinances, licensing, and community education.</p>
+  </section>
+
+  <!-- Councils -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">City &amp; County Councils</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What they can do</b><br>• Ban sales inside city limits; require warning signs where “herbal supplements” are sold.<br>• Revoke or deny business licenses to retailers selling gas-station drugs.<br>• Hold public hearings to build community support.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• State law can preempt local rules; enforcement resources vary.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask them to</b><br>• Pass local bans/resolutions urging state action.<br>• Fund compliance checks and merchant education.</p></div>
+    </div>
+  </section>
+
+  <!-- Police -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">Police &amp; Local Law Enforcement</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What they can do</b><br>• Enforce state/federal drug laws; inspect retailers.<br>• Collect evidence and coordinate with health departments.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Can act only when products are illegal or misbranded under law.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask them to</b><br>• Track outlets selling these products; support community meetings.<br>• Enforce bans once ordinances pass.</p></div>
+    </div>
+  </section>
+
+  <!-- Schools -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">Teachers &amp; Schools</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What they can do</b><br>• Teach students/parents what gas-station drugs really are.<br>• Share state/local health alerts; watch for new products in schools.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Schools can’t control retail — only education and campus policy.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask them to</b><br>• Add this content to health classes.<br>• Send flyers to families; join local prevention coalitions.</p></div>
+    </div>
+  </section>
+
+  <p><a class="back-link" href="index.html#action">← Back to Take Action</a></p>
+
+  <footer style="margin-top:18px;color:var(--muted)">© <span id="year"></span> MothersAgainstHerbalAbuse.org</footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
