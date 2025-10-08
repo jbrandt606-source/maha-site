@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me • MAHA</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; text-align: center; }
+    .profile {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px;
+      padding: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 20px;
+      margin: 16px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h1 { font-size: 2rem; margin-bottom: 12px; }
+    p { font-size: 1.1rem; color: var(--muted, #b5c2de); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
+      </div>
+      <nav class="nav"><a href="index.html#about">Back</a></nav>
+    </header>
+
+    <section class="profile">
+      <h1>Hi. I’m Jen…</h1>
+      <p>A middle aged female pharmacist. Here is a picture of me with a cat and lasers.</p>
+      <img src="IMG_2181.jpeg" alt="Jen with a cat and lasers">
+    </section>
+
+    <footer style="margin-top:24px;color:var(--muted);">
+      © <span id="year"></span> MothersAgainstHerbalAbuse.org
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
