@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Federal • MAHA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+  <style>
+    .k-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px}
+    .k-fact p{margin:0;word-break:normal;overflow-wrap:break-word;hyphens:auto}
+    @media (max-width:760px){.k-facts{grid-template-columns:1fr!important}}
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <div class="logo-badge" aria-hidden="true"></div>
+      <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
+    </div>
+    <nav class="nav"><a href="index.html">Home</a></nav>
+  </header>
 
+  <section class="hero">
+    <h1 class="k-title">Federal – How to Take Action</h1>
+    <p class="k-sub">At the national level, the FDA tests and warns; the DEA schedules drugs; and Congress funds and closes loopholes. Here’s what to push for.</p>
+  </section>
+
+  <!-- FDA -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">FDA — Food &amp; Drug Administration</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What FDA can do</b><br>• Test suspect “supplements” and publish parent-friendly warnings.<br>• Send warning letters, seize misbranded/adulterated products.<br>• Recommend scheduling of dangerous substances to the DEA.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Cannot make a drug illegal alone (DEA handles scheduling).<br>• Cannot police every gas station or website.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask FDA to</b><br>• Keep testing mood/energy “supplements”.<br>• Post clear alerts (Kratom, Tianeptine, Delta-8, Amanita, etc.).<br>• Formally recommend scheduling of kratom, tianeptine, phenibut.</p></div>
+    </div>
+  </section>
+
+  <!-- DEA -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">DEA — Drug Enforcement Administration</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What DEA can do</b><br>• Place substances into Schedule I (ban retail sales/possession).<br>• Investigate interstate shippers and online distributors.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Scheduling requires evidence and process; lobbying can slow it.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask DEA to</b><br>• Use emergency scheduling when harm is clear (e.g., tianeptine).<br>• Coordinate with states on parcel/online enforcement.</p></div>
+    </div>
+  </section>
+
+  <!-- Congress -->
+  <section class="k-card">
+    <h2 style="margin:0 0 8px">U.S. Senators &amp; Representatives</h2>
+    <div class="k-facts">
+      <div class="k-fact"><p><b>What Congress can do</b><br>• Pass national bans and close supplement loopholes.<br>• Hold hearings to speed FDA/DEA action.<br>• Fund poison-control, hospital surveillance, and school education.</p></div>
+      <div class="k-fact"><p><b>Limitations</b><br>• Federal laws take time and votes.</p></div>
+      <div class="k-fact" style="grid-column:1/-1"><p><b>Ask Congress to</b><br>• Support bills banning gas-station drugs (kratom, tianeptine, phenibut, “mushroom” edibles).<br>• Fund data systems and outreach so parents get facts fast.</p></div>
+    </div>
+  </section>
+
+  <p><a class="back-link" href="index.html#action">← Back to Take Action</a></p>
+
+  <footer style="margin-top:18px;color:var(--muted)">© <span id="year"></span> MothersAgainstHerbalAbuse.org</footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
