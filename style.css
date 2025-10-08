@@ -51,3 +51,9 @@ footer{margin:36px 0;color:var(--muted);font-size:14px;text-align:center}h1,h2{m
 .btn:hover { transform: translateY(-1px); transition: .15s transform; }
 .back-link { display:inline-block; margin-top:10px; color: var(--accent); }
 @media (max-width:800px){ .k-facts { grid-template-columns: 1fr; } }
+
+/* Give every main section some breathing room */
+section.k-card,
+section.hero {
+  margin-bottom: 48px;   /* increase or reduce as you like */
+}
