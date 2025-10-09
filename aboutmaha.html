@@ -9,10 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 
   <style>
-    /* Small helpers so this page visually matches the rest */
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text, #e8ecf8); }
     blockquote {
       font-style: italic;
       border-left: 4px solid var(--brand, #e94e4e);
@@ -20,87 +20,101 @@
       color: var(--muted, #a9b4d4);
       margin: 0 0 16px;
     }
-    .lead { color: var(--muted, #a9b4d4); }
+    .lead { color: var(--muted, #b5c2de); }
     ul { margin: 8px 0 0 18px; }
+    .k-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .k-fact {
+      display: block;
+      padding: 16px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 14px;
+    }
+    .k-fact p { margin: 0; word-break: normal; line-height: 1.5; }
   </style>
 </head>
 <body>
   <div class="container">
+
     <!-- Header -->
     <header>
       <div class="logo">
         <div class="logo-badge" aria-hidden="true"></div>
         <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
       </div>
-      <nav class="nav"><a href="index.html#about">Back</a></nav>
+      <nav class="nav"><a href="index.html">Back</a></nav>
     </header>
 
-    <!-- HERO / INTRO -->
-    <section class="hero" style="padding:28px 20px;">
+    <!-- HERO -->
+    <section class="hero" style="padding:40px 20px;text-align:center;">
       <h1 class="k-title" style="margin:0 0 10px;">About MAHA • Mothers Against Herbal Abuse</h1>
-      <p class="lead" style="max-width:800px;margin:0;">
-        We’re here to <b>educate families</b>, <b>equip communities</b>, and <b>empower parents</b> to get dangerous
-        “herbal” drug products out of the places kids shop and play.
+      <p class="lead" style="max-width:800px;margin:0 auto;">
+        We’re a grassroots movement of parents, healthcare professionals, and community members working to <b>educate families</b>,
+        <b>equip communities</b>, and <b>empower parents</b> to get dangerous “herbal” drug products out of local stores and online marketplaces.
       </p>
     </section>
 
-    <!-- ORIGIN / PURPOSE -->
+    <!-- ORIGIN -->
     <section class="k-card">
       <blockquote>
-        “Are we supposed to make America healthy again — or make America high again?”<br/>
-        For us, the answer is clear: we choose health, knowledge, and community.
+        “Are we supposed to make America healthy again — or make America high again?”
+        <br/>For us, the answer is clear: we choose health, knowledge, and community.
       </blockquote>
 
       <p>
-        MAHA began with a simple observation: in too many neighborhoods, stores sell products that look like candy but act like drugs.
-        They sit between the registers and the snack aisle, packaged as “natural” or “wellness” — and families are left to sort the truth from the marketing.
+        MAHA began with a mother’s question — and the disbelief that in so many towns, there are now more gas stations selling
+        “wellness highs” than selling groceries. Behind the neon lights and flashy labels, unregulated products are being sold as
+        supplements, putting families and children at risk. These items aren’t harmless herbs — they’re often potent drugs hidden in plain sight.
       </p>
+
       <p>
-        We decided to change that. MAHA translates medical evidence into plain language, shows what these products look like in real stores,
-        and provides practical tools so parents and neighbors can protect their communities.
+        MAHA was founded to change that. We believe that public health should come before profit and pseudo-science.
+        We speak out where regulation has failed — against gas-station opioids, mislabeled “herbal” drinks, and deceptive supplement marketing
+        that preys on young people. Our mission is to make sure every parent knows what’s on the shelf, what’s in it, and how to take action.
       </p>
     </section>
 
-    <!-- WHAT WE BELIEVE -->
+    <!-- BELIEFS -->
     <section class="k-card">
       <h2 style="margin:0 0 8px;">What We Believe</h2>
       <ul>
-        <li><b>Every parent has power.</b> You don’t need a title to make change — you just need to speak up.</li>
-        <li><b>Education saves lives.</b> When we understand what’s being sold and why it’s dangerous, we can protect children.</li>
-        <li><b>Community is the antidote.</b> Real safety comes when parents, schools, health leaders, and retailers work together.</li>
+        <li><b>Every parent has power.</b> You don’t need a title to make change — just a voice and the will to use it.</li>
+        <li><b>Education saves lives.</b> When families understand what’s being sold and why it’s dangerous, they can protect their children.</li>
+        <li><b>Community is the antidote.</b> Real safety comes when parents, schools, and leaders work together to demand accountability.</li>
       </ul>
     </section>
 
-   <section class="k-card">
-  <h2 style="margin:0 0 8px;">What We Do</h2>
-
-  <div class="k-facts">
-    <div class="k-fact">
-      <p><b>Parent education.</b> Short, referenced guides that show what the products look like, explain the risks, and list what to watch for.</p>
-    </div>
-
-    <div class="k-fact">
-      <p><b>Community tools.</b> Ready-to-use letters, meeting scripts, and one-page handouts for schools, councils, and retailers.</p>
-    </div>
-
-    <div class="k-fact">
-      <p><b>Policy primers.</b> Clear “who does what” sheets so families can ask the right agency — FDA, DEA, FTC, or state boards — to act.</p>
-    </div>
-
-    <div class="k-fact">
-      <p><b>Visual evidence.</b> Real-world packaging examples so caregivers can spot candy-style marketing immediately.</p>
-    </div>
-  </div>
-</section>
+    <!-- WHAT WE DO -->
+    <section class="k-card">
+      <h2 style="margin:0 0 8px;">What We Do</h2>
+      <div class="k-facts">
+        <div class="k-fact">
+          <p><b>Parent education.</b> Short, referenced guides that show what the products look like, explain the risks, and outline what to watch for.</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Community tools.</b> Ready-to-use letters, meeting templates, and handouts for schools, councils, and retailers.</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Policy primers.</b> Clear, simple guides showing which agencies — FDA, DEA, FTC, or state boards — can take action.</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Visual evidence.</b> Real-world packaging examples so caregivers can recognize candy-style marketing instantly.</p>
+        </div>
+      </div>
+    </section>
 
     <!-- HOW TO USE MAHA -->
     <section class="k-card">
       <h2 style="margin:0 0 8px;">How to Use MAHA</h2>
       <ul>
-        <li><b>Learn:</b> Open any topic in the Information Center and share it with your PTA, faith group, or clinic.</li>
-        <li><b>Report:</b> If you see risky products, use the reporting links on our Federal/State pages to notify agencies.</li>
-        <li><b>Act:</b> Send a form letter to your council, state lawmakers, or Congress; bring handouts to local meetings.</li>
-        <li><b>Protect:</b> Ask retailers to remove child-appealing packs; request warning signs or age checks in your town.</li>
+        <li><b>Learn:</b> Explore each topic in the Information Center and share it with your PTA, church, or community group.</li>
+        <li><b>Report:</b> If you see risky products, use our reporting links to notify state or federal health authorities.</li>
+        <li><b>Act:</b> Send a form letter to your city council, state legislature, or Congress; bring awareness materials to meetings.</li>
+        <li><b>Protect:</b> Encourage retailers to remove dangerous or child-appealing products; promote warning signs and age checks.</li>
       </ul>
     </section>
 
@@ -109,21 +123,24 @@
       <h2 style="margin:0 0 8px;">Our Mission</h2>
       <ul>
         <li><b>Educate</b> families with clear, trustworthy information about unregulated “herbal” drugs.</li>
-        <li><b>Equip</b> communities with practical tools to change store practices and policy.</li>
-        <li><b>Empower</b> parents to take back their neighborhoods — one store, one conversation, one vote at a time.</li>
+        <li><b>Equip</b> communities with data and practical tools to influence policy and store practices.</li>
+        <li><b>Empower</b> parents to take back their neighborhoods — one store, one meeting, one law at a time.</li>
       </ul>
+
       <p style="margin-top:12px;">
         When families are informed, communities are strong — and when communities are strong, change is unstoppable.
-        We’re MAHA, and we’re here to make America <b>healthy again — not high again.</b>
+        <br><br><b>We’re MAHA.</b> And we’re here to make America <b>healthy again — not high again.</b>
       </p>
     </section>
 
-    <!-- Footer -->
-    <footer style="margin-top:18px; color: var(--muted);">
+    <!-- FOOTER -->
+    <footer style="margin-top:18px;color:var(--muted);text-align:center;">
       © <span id="year"></span> MothersAgainstHerbalAbuse.org
     </footer>
   </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
