@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parent Conversation Guides • MAHA</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+
+  <style>
+    .k-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .k-fact {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .k-fact p { margin: 0; line-height: 1.55; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
+      </div>
+      <nav class="nav"><a href="index.html">Back</a></nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="padding:40px 20px;text-align:center;">
+      <h1 class="k-title">How to Talk to Your Kids</h1>
+      <p style="max-width:700px;margin:0 auto;color:var(--muted,#b5c2de);">
+        Kids see “herbal highs,” kratom, and gas-station products every day — on shelves that look safe. 
+        This guide helps you turn those moments into calm, honest, and practical conversations that protect your family.
+      </p>
+    </section>
+
+    <!-- GUIDE CONTENT -->
+    <section class="k-card">
+      <h2 style="margin-top:0;">Talking About Gas-Station “Herbal” Products</h2>
+      <p class="muted" style="margin-bottom:12px;">
+        These conversations don’t need to be awkward — they need to be real. 
+        The goal isn’t to scare kids, but to make sure they know what’s out there, why it’s risky, and that they can always come to you with questions.
+      </p>
+
+      <div class="k-facts">
+        <div class="k-fact">
+          <p><b>Notice the moment.</b> If your child points out a product or asks about it, that’s your opening. 
+          Try: “Yeah, I’ve seen those too — what do you think they are?”</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Ask curious questions.</b> Instead of “Did you try that?” ask “What have you heard about it?” or “Why do you think people buy them?”</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Share simple facts.</b> “Some of these products act like drugs, even though the label says ‘herbal.’ 
+          A lot of them aren’t tested or approved for safety.”</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Talk about goals, not fear.</b> “You work hard to stay healthy — I’d hate to see something like this take that away.”</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Expect pushback.</b> If they say “It’s natural” or “It’s legal,” that’s okay. 
+          Explain that “legal” doesn’t mean safe — and that many products are pulled from stores for safety issues.</p>
+        </div>
+        <div class="k-fact">
+          <p><b>Keep it going.</b> These talks work best when they’re short and frequent. 
+          A few calm conversations do more good than one big lecture.</p>
+        </div>
+      </div>
+
+      <h3 style="margin:16px 0 6px;">Conversation Starters</h3>
+      <ul>
+        <li>“Have you ever noticed those colorful packets or drinks near the counter? What do you think they are?”</li>
+        <li>“Why do you think something labeled ‘natural’ might still be risky?”</li>
+        <li>“What would make someone want to try one of those products?”</li>
+        <li>“If you saw a friend buy something like that, what would you think?”</li>
+      </ul>
+
+      <p style="margin-top:14px;">
+        <b>Tip:</b> Be honest, listen first, and let curiosity lead. 
+        These conversations build trust — and that trust keeps kids safe.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="margin-top:18px;color:var(--muted);text-align:center;">
+      © <span id="year"></span> MothersAgainstHerbalAbuse.org
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
