@@ -94,3 +94,22 @@ section.hero {
   gap: 14px;
   margin-top: 16px;
 }
+/* --- Section Spacing Fix --- */
+.k-card,
+.info-box {
+  margin-bottom: 32px; /* adds breathing room between major sections */
+}
+
+/* optional: consistent top padding for cards too */
+.k-card h2,
+.info-box h2 {
+  margin-top: 0;
+}
+
+/* optional: slightly more mobile-friendly spacing */
+@media (max-width: 768px) {
+  .k-card,
+  .info-box {
+    margin-bottom: 40px;
+  }
+}
