@@ -113,3 +113,37 @@ section.hero {
     margin-bottom: 40px;
   }
 }
+/* Clean centered inline links with separators */
+.cta-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;              /* space between each item */
+  margin-top: 20px;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.cta-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cta-links a:hover {
+  text-decoration: underline;
+}
+
+.cta-links span {
+  color: var(--muted, #a9b4d4);
+  font-weight: 400;
+}
+
+/* For mobile: wrap lines neatly */
+@media (max-width: 760px) {
+  .cta-links {
+    text-align: center;
+    line-height: 1.8;
+  }
+}
