@@ -57,3 +57,23 @@ section.k-card,
 section.hero {
   margin-bottom: 48px;   /* increase or reduce as you like */
 }
+/* --- Fix card text wrapping & layout (global) --- */
+.k-facts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); /* wider cards */
+  gap:14px;
+}
+.k-fact{
+  display:block;                  /* no nested grid needed for simple text */
+  padding:16px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;
+}
+.k-fact p{
+  margin:0;
+  word-break:normal;
+  overflow-wrap:break-word;       /* prevent letter-by-letter breaks */
+  hyphens:auto;
+  line-height:1.55;
+}
