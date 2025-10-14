@@ -38,33 +38,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     a { color:var(--accent); text-decoration:none; }
     a:hover { text-decoration:underline; }
 
-    .container {
-      max-width:1100px;
-      margin:0 auto;
-      padding:24px;
-    }
+    .container { max-width:1100px; margin:0 auto; padding:24px; }
 
     header {
-      display:flex;
-      gap:16px;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom: 40px;
+      display:flex; gap:16px; align-items:center; justify-content:space-between; margin-bottom:40px;
     }
-
-    .logo {
-      display:flex;
-      gap:12px;
-      align-items:center;
-    }
-    .logo-badge {
-      width:40px;
-      height:40px;
-      border-radius:12px;
-      background:linear-gradient(135deg,var(--brand),#ff8d70);
-    }
+    .logo { display:flex; gap:12px; align-items:center; }
+    .logo-badge { width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,var(--brand),#ff8d70); }
     .brand { font-weight:800; letter-spacing:.5px; }
-
     .nav a { margin-left:18px; color:var(--muted); }
 
     .card, .k-card {
@@ -75,44 +56,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding:28px;
     }
 
-    /* Add generous spacing between all major sections */
-    section {
-      margin-bottom: 60px;
-    }
+    /* Spacing between sections */
+    section { margin-bottom:60px; }
 
+    /* Aligned pill buttons (used by Information, Take Action, Letters) */
     .list {
       display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:10px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap:14px;
       list-style:none;
       padding:0;
       margin-top:20px;
     }
-
     .list a {
-      display:block;
-      padding:10px 12px;
+      display:flex; align-items:center; justify-content:center;
+      text-align:center;
+      padding:12px 10px;
+      height:55px;          /* uniform height for alignment */
       border:1px solid rgba(255,255,255,.12);
-      border-radius:10px;
+      border-radius:12px;
       background:rgba(255,255,255,.03);
-      text-align:center;
+      color:var(--accent);
+      font-weight:500;
+      line-height:1.3;
+      word-wrap:break-word;
     }
+    .list a:hover { background:rgba(255,255,255,.06); text-decoration:underline; }
 
-    footer {
-      margin:60px 0 36px 0;
-      color:var(--muted);
-      font-size:14px;
-      text-align:center;
-    }
-
+    footer { margin:60px 0 36px 0; color:var(--muted); font-size:14px; text-align:center; }
     h1,h2 { margin-top:0; }
   </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P36GDQ7D"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P36GDQ7D"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div class="container">
     <header>
       <div class="logo">
@@ -121,52 +101,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </header>
 
-    <!-- HERO SECTION -->
-<section class="hero" style="padding:40px 20px;text-align:center;">
-  <h1 style="font-size:2rem;font-weight:800;line-height:1.3;margin-bottom:18px;">
-    Help parents protect kids from dangerous <br>“herbal” drug products.
-  </h1>
+    <!-- HERO -->
+    <section class="hero" style="padding:40px 20px;text-align:center;">
+      <h1 style="font-size:2rem;font-weight:800;line-height:1.3;margin-bottom:18px;">
+        Help parents protect kids from dangerous <br>“herbal” drug products.
+      </h1>
 
-  <!-- NEW subtitle text -->
-  <p style="max-width:650px;margin:0 auto 16px auto;font-size:1rem;line-height:1.6;color:var(--muted,#b5c2de);">
-    Parents, the drug dealer isn’t lurking in alleys anymore. He’s standing under neon carnival lights, 
-    selling “herbal highs” and “mood boosters” right between the candy and the energy drinks.
-  </p>
+      <p style="max-width:650px;margin:0 auto 16px auto;font-size:1rem;line-height:1.6;color:var(--muted,#b5c2de);">
+        Parents, the drug dealer isn’t lurking in alleys anymore. He’s standing under neon carnival lights,
+        selling “herbal highs” and “mood boosters” right between the candy and the energy drinks.
+      </p>
 
- <!-- IMAGE SECTION (single image) -->
-<div style="max-width:900px;margin:24px auto;text-align:center;">
-  <figure style="margin:0;">
-    <img src="IMG_2262.jpeg" 
-         alt="Smoke and vape shop storefront selling Kratom, vape, cigar, and CBD products"
-         style="width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.4);">
-  </figure>
-</div>
+      <!-- Hero image -->
+      <div style="max-width:900px;margin:24px auto;text-align:center;">
+        <figure style="margin:0;">
+          <img src="IMG_2262.jpeg"
+               alt="Smoke and vape shop storefront selling Kratom, vape, cigar, and CBD products"
+               style="width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.4);">
+        </figure>
+      </div>
 
-  <p style="max-width:650px;margin:20px auto 28px auto;font-size:1.05rem;line-height:1.6;color:var(--muted,#b5c2de);">
-    Our goal is simple: <b>educate families</b> about what’s on store shelves and 
-    <b>empower parents to act</b> with clear, ready-to-use tools. <br><br>
-    Learn the facts, share your story, and use the resources below to make a difference in your community.
-  </p>
+      <p style="max-width:650px;margin:20px auto 28px auto;font-size:1.05rem;line-height:1.6;color:var(--muted,#b5c2de);">
+        Our goal is simple: <b>educate families</b> about what’s on store shelves and
+        <b>empower parents to act</b> with clear, ready-to-use tools. <br><br>
+        Learn the facts, share your story, and use the resources below to make a difference in your community.
+      </p>
 
- <!-- CTA LINKS -->
-<div class="cta-links" style="margin-top:24px;text-align:center;font-size:1.05rem;">
-  <a href="#info" style="color:#66c2ff;text-decoration:none;font-weight:500;">Start Learning</a>
-  <span style="color:var(--muted);margin:0 10px;">•</span>
-  
-  <a href="#letters" style="color:#66c2ff;text-decoration:none;font-weight:500;">Form Letters</a>
-  <span style="color:var(--muted);margin:0 10px;">•</span>
-  
-  <a href="#action" style="color:#66c2ff;text-decoration:none;font-weight:500;">See How to Take Action</a>
-  <span style="color:var(--muted);margin:0 10px;">•</span>
-  
-  <a href="#conversation-link" style="color:#66c2ff;text-decoration:none;font-weight:500;">Conversation Guide</a>
-  <span style="color:var(--muted);margin:0 10px;">•</span>
-  
-  <a href="#about" style="color:#66c2ff;text-decoration:none;font-weight:500;">Learn About MAHA</a>
-</div>
-</section>
-
-  
+      <!-- CTA LINKS -->
+      <div class="cta-links" style="margin-top:24px;text-align:center;font-size:1.05rem;">
+        <a href="#info" style="color:#66c2ff;text-decoration:none;font-weight:500;">Start Learning</a>
+        <span style="color:var(--muted);margin:0 10px;">•</span>
+        <a href="#letters" style="color:#66c2ff;text-decoration:none;font-weight:500;">Form Letters</a>
+        <span style="color:var(--muted);margin:0 10px;">•</span>
+        <a href="#action" style="color:#66c2ff;text-decoration:none;font-weight:500;">See How to Take Action</a>
+        <span style="color:var(--muted);margin:0 10px;">•</span>
+        <a href="#conversation-link" style="color:#66c2ff;text-decoration:none;font-weight:500;">Conversation Guide</a>
+        <span style="color:var(--muted);margin:0 10px;">•</span>
+        <a href="#about" style="color:#66c2ff;text-decoration:none;font-weight:500;">Learn About MAHA</a>
+      </div>
+    </section>
 
     <!-- INFORMATION CENTER -->
     <section id="info" class="card">
@@ -186,178 +159,134 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
     </section>
 
-<!-- ===== WHAT'S LEGAL IN MY STATE ===== -->
-<section id="laws" class="k-card">
-  <h2 style="margin-top:0;">What’s Legal in My State?</h2>
-  <p class="muted" style="margin-bottom:12px;">
-    Pick your state to see a quick, parent-friendly summary of current rules on kratom, tianeptine, Δ8 THC, nitrous oxide,
-    and related gas-station “herbal” products.
-  </p>
+    <!-- WHAT'S LEGAL IN MY STATE -->
+    <section id="laws" class="k-card">
+      <h2 style="margin-top:0;">What’s Legal in My State?</h2>
+      <p class="muted" style="margin-bottom:12px;">
+        Pick your state to see a quick, parent-friendly summary of current rules on kratom, tianeptine, Δ8 THC, nitrous oxide,
+        and related gas-station “herbal” products.
+      </p>
 
-  <!-- State dropdown (A–Z) -->
-  <label for="stateSelect" class="muted" style="display:block;margin-bottom:8px;">Select a state</label>
-  <select id="stateSelect" aria-label="Select a state"
-          style="width:100%;max-width:460px;padding:12px;border-radius:12px;
-                 border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);
-                 color:var(--text,#e8ecf8);">
-    <option value="">— Choose a state —</option>
-    <option value="AL">Alabama</option>
-    <option value="AK">Alaska</option>
-    <option value="AZ">Arizona</option>
-    <option value="AR">Arkansas</option>
-    <option value="CA">California</option>
-    <option value="CO">Colorado</option>
-    <option value="CT">Connecticut</option>
-    <option value="DE">Delaware</option>
-    <option value="DC">District of Columbia</option>
-    <option value="FL">Florida</option>
-    <option value="GA">Georgia</option>
-    <option value="HI">Hawaii</option>
-    <option value="ID">Idaho</option>
-    <option value="IL">Illinois</option>
-    <option value="IN">Indiana</option>
-    <option value="IA">Iowa</option>
-    <option value="KS">Kansas</option>
-    <option value="KY">Kentucky</option>
-    <option value="LA">Louisiana</option>
-    <option value="ME">Maine</option>
-    <option value="MD">Maryland</option>
-    <option value="MA">Massachusetts</option>
-    <option value="MI">Michigan</option>
-    <option value="MN">Minnesota</option>
-    <option value="MS">Mississippi</option>
-    <option value="MO">Missouri</option>
-    <option value="MT">Montana</option>
-    <option value="NE">Nebraska</option>
-    <option value="NV">Nevada</option>
-    <option value="NH">New Hampshire</option>
-    <option value="NJ">New Jersey</option>
-    <option value="NM">New Mexico</option>
-    <option value="NY">New York</option>
-    <option value="NC">North Carolina</option>
-    <option value="ND">North Dakota</option>
-    <option value="OH">Ohio</option>
-    <option value="OK">Oklahoma</option>
-    <option value="OR">Oregon</option>
-    <option value="PA">Pennsylvania</option>
-    <option value="RI">Rhode Island</option>
-    <option value="SC">South Carolina</option>
-    <option value="SD">South Dakota</option>
-    <option value="TN">Tennessee</option>
-    <option value="TX">Texas</option>
-    <option value="UT">Utah</option>
-    <option value="VT">Vermont</option>
-    <option value="VA">Virginia</option>
-    <option value="WA">Washington</option>
-    <option value="WV">West Virginia</option>
-    <option value="WI">Wisconsin</option>
-    <option value="WY">Wyoming</option>
-  </select>
-</section>
+      <label for="stateSelect" class="muted" style="display:block;margin-bottom:8px;">Select a state</label>
+      <select id="stateSelect" aria-label="Select a state"
+              style="width:100%;max-width:460px;padding:12px;border-radius:12px;
+                     border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);
+                     color:var(--text,#e8ecf8);">
+        <option value="">— Choose a state —</option>
+        <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option>
+        <option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option>
+        <option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option>
+        <option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option>
+        <option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option>
+        <option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option>
+        <option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option>
+        <option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+      </select>
+    </section>
 
-<!-- ===== MODAL (pop-up) ===== -->
-<div id="lawModal" aria-hidden="true" role="dialog" aria-labelledby="lawModalTitle" aria-modal="true"
-     style="position:fixed;inset:0;display:none;z-index:9999;">
-  <!-- Backdrop -->
-  <div id="lawModalBackdrop" style="position:absolute;inset:0;background:rgba(0,0,0,.55);"></div>
+    <!-- MODAL -->
+    <div id="lawModal" aria-hidden="true" role="dialog" aria-labelledby="lawModalTitle" aria-modal="true"
+         style="position:fixed;inset:0;display:none;z-index:9999;">
+      <div id="lawModalBackdrop" style="position:absolute;inset:0;background:rgba(0,0,0,.55);"></div>
 
-  <!-- Dialog -->
-  <div style="position:relative;max-width:820px;margin:6vh auto;
-              background-color:#0b1020;
-              border:1px solid rgba(255,255,255,.15);
-              border-radius:16px;padding:22px 20px;color:var(--text,#e8ecf8);
-              box-shadow:0 20px 60px rgba(0,0,0,.55);">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px;">
-      <h3 id="lawModalTitle" style="margin:0;font-size:1.25rem;font-weight:800;">State Law Summary</h3>
-      <button id="lawModalClose" aria-label="Close"
-              style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
-                     color:var(--text,#e8ecf8);border-radius:10px;padding:8px 12px;cursor:pointer;">
-        Close ✕
-      </button>
+      <div style="position:relative;max-width:820px;margin:6vh auto;
+                  background-color:#0b1020;
+                  border:1px solid rgba(255,255,255,.15);
+                  border-radius:16px;padding:22px 20px;color:var(--text,#e8ecf8);
+                  box-shadow:0 20px 60px rgba(0,0,0,.55);">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px;">
+          <h3 id="lawModalTitle" style="margin:0;font-size:1.25rem;font-weight:800;">State Law Summary</h3>
+          <button id="lawModalClose" aria-label="Close"
+                  style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+                         color:var(--text,#e8ecf8);border-radius:10px;padding:8px 12px;cursor:pointer;">
+            Close ✕
+          </button>
+        </div>
+
+        <div id="lawModalBody" style="max-height:70vh;overflow:auto;line-height:1.6;">
+          <p class="muted">Loading…</p>
+        </div>
+
+        <div class="muted" style="margin-top:10px;font-size:.9rem;">
+          Tip: press <b>Esc</b> or tap outside the box to close.
+        </div>
+      </div>
     </div>
 
-    <!-- Scrollable body -->
-    <div id="lawModalBody" style="max-height:70vh;overflow:auto;line-height:1.6;">
-      <p class="muted">Loading…</p>
-    </div>
+    <script>
+      (function(){
+        const sel       = document.getElementById('stateSelect');
+        const modal     = document.getElementById('lawModal');
+        const backdrop  = document.getElementById('lawModalBackdrop');
+        const titleEl   = document.getElementById('lawModalTitle');
+        const bodyEl    = document.getElementById('lawModalBody');
+        const closeBtn  = document.getElementById('lawModalClose');
 
-    <!-- Tiny helper row -->
-    <div class="muted" style="margin-top:10px;font-size:.9rem;">
-      Tip: press <b>Esc</b> or tap outside the box to close.
-    </div>
-  </div>
-</div>
+        const NAMES = {
+          AL:'Alabama', AK:'Alaska', AZ:'Arizona', AR:'Arkansas', CA:'California', CO:'Colorado', CT:'Connecticut',
+          DE:'Delaware', DC:'District of Columbia', FL:'Florida', GA:'Georgia', HI:'Hawaii', ID:'Idaho', IL:'Illinois',
+          IN:'Indiana', IA:'Iowa', KS:'Kansas', KY:'Kentucky', LA:'Louisiana', ME:'Maine', MD:'Maryland',
+          MA:'Massachusetts', MI:'Michigan', MN:'Minnesota', MS:'Mississippi', MO:'Missouri', MT:'Montana',
+          NE:'Nebraska', NV:'Nevada', NH:'New Hampshire', NJ:'New Jersey', NM:'New Mexico', NY:'New York',
+          NC:'North Carolina', ND:'North Dakota', OH:'Ohio', OK:'Oklahoma', OR:'Oregon', PA:'Pennsylvania',
+          RI:'Rhode Island', SC:'South Carolina', SD:'South Dakota', TN:'Tennessee', TX:'Texas', UT:'Utah',
+          VT:'Vermont', VA:'Virginia', WA:'Washington', WV:'West Virginia', WI:'Wisconsin', WY:'Wyoming'
+        };
 
-<script>
-  (function(){
-    const sel       = document.getElementById('stateSelect');
-    const modal     = document.getElementById('lawModal');
-    const backdrop  = document.getElementById('lawModalBackdrop');
-    const titleEl   = document.getElementById('lawModalTitle');
-    const bodyEl    = document.getElementById('lawModalBody');
-    const closeBtn  = document.getElementById('lawModalClose');
-
-    const NAMES = {
-      AL:'Alabama', AK:'Alaska', AZ:'Arizona', AR:'Arkansas', CA:'California', CO:'Colorado', CT:'Connecticut',
-      DE:'Delaware', DC:'District of Columbia', FL:'Florida', GA:'Georgia', HI:'Hawaii', ID:'Idaho', IL:'Illinois',
-      IN:'Indiana', IA:'Iowa', KS:'Kansas', KY:'Kentucky', LA:'Louisiana', ME:'Maine', MD:'Maryland',
-      MA:'Massachusetts', MI:'Michigan', MN:'Minnesota', MS:'Mississippi', MO:'Missouri', MT:'Montana',
-      NE:'Nebraska', NV:'Nevada', NH:'New Hampshire', NJ:'New Jersey', NM:'New Mexico', NY:'New York',
-      NC:'North Carolina', ND:'North Dakota', OH:'Ohio', OK:'Oklahoma', OR:'Oregon', PA:'Pennsylvania',
-      RI:'Rhode Island', SC:'South Carolina', SD:'South Dakota', TN:'Tennessee', TX:'Texas', UT:'Utah',
-      VT:'Vermont', VA:'Virginia', WA:'Washington', WV:'West Virginia', WI:'Wisconsin', WY:'Wyoming'
-    };
-
-    function openModal(stateCode, html){
-      titleEl.textContent = (NAMES[stateCode] || 'State') + ' — Law Summary';
-      bodyEl.innerHTML    = html;
-      modal.style.display = 'block';
-      modal.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';      // lock scroll
-      // focus for accessibility
-      closeBtn.focus();
-    }
-
-    function closeModal(){
-      modal.style.display = 'none';
-      modal.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-      sel.focus();
-    }
-
-    // Close actions
-    closeBtn.addEventListener('click', closeModal);
-    backdrop.addEventListener('click', closeModal);
-    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal.style.display==='block'){ closeModal(); } });
-
-    // Load state HTML from /state-laws/XX.html
-    sel.addEventListener('change', async (e)=>{
-      const code = e.target.value;
-      if(!code) return;
-      bodyEl.innerHTML = '<p class="muted">Loading…</p>';
-      try {
-        const res = await fetch(`state-laws/${code}.html?nocache=${Date.now()}`);
-        if(!res.ok){
-          bodyEl.innerHTML = `<p class="muted">Sorry — we don’t have a summary for ${NAMES[code] || 'this state'} yet.</p>`;
-        } else {
-          const html = await res.text();
-          openModal(code, html);
+        function openModal(stateCode, html){
+          titleEl.textContent = (NAMES[stateCode] || 'State') + ' — Law Summary';
+          bodyEl.innerHTML    = html;
+          modal.style.display = 'block';
+          modal.setAttribute('aria-hidden','false');
+          document.body.style.overflow = 'hidden';
+          closeBtn.focus();
         }
-      } catch(err){
-        bodyEl.innerHTML = `<p class="muted">Could not load this state right now. Please try again later.</p>`;
-      }
-    });
+        function closeModal(){
+          modal.style.display = 'none';
+          modal.setAttribute('aria-hidden','true');
+          document.body.style.overflow = '';
+          sel.focus();
+        }
+        closeBtn.addEventListener('click', closeModal);
+        backdrop.addEventListener('click', closeModal);
+        document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal.style.display==='block'){ closeModal(); } });
 
-    // Optional: support deep links like #state=TX
-    const params = new URLSearchParams(location.hash.replace(/^#/, ''));
-    const startState = (params.get('state') || '').toUpperCase();
-    if (NAMES[startState]) {
-      sel.value = startState;
-      sel.dispatchEvent(new Event('change'));
-    }
-  })();
-</script>
-    
+        sel.addEventListener('change', async (e)=>{
+          const code = e.target.value;
+          if(!code) return;
+          bodyEl.innerHTML = '<p class="muted">Loading…</p>';
+          try {
+            const res = await fetch(`state-laws/${code}.html?nocache=${Date.now()}`);
+            if(!res.ok){
+              bodyEl.innerHTML = `<p class="muted">Sorry — we don’t have a summary for ${NAMES[code] || 'this state'} yet.</p>`;
+            } else {
+              const html = await res.text();
+              openModal(code, html);
+            }
+          } catch(err){
+            bodyEl.innerHTML = `<p class="muted">Could not load this state right now. Please try again later.</p>`;
+          }
+        });
+
+        // Optional deep link: #state=TX
+        const params = new URLSearchParams(location.hash.replace(/^#/, ''));
+        const startState = (params.get('state') || '').toUpperCase();
+        if (NAMES[startState]) {
+          sel.value = startState;
+          sel.dispatchEvent(new Event('change'));
+        }
+      })();
+    </script>
+
     <!-- TAKE ACTION -->
     <section id="action" class="k-card">
       <h2 style="margin-top:0;">Take Action</h2>
@@ -365,7 +294,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Parents and citizens can help get dangerous “herbal” products off store shelves by pushing for change at every level
         of government. Choose a level below to learn what each can do and how to contact them.
       </p>
-
       <div class="list">
         <a href="federal.html">Federal</a>
         <a href="state.html">State</a>
@@ -379,7 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="muted" style="margin-bottom:12px;">
         Ready-to-use letter pages for each product. Pick one to open a pre-formatted letter you can copy, download, or email.
       </p>
-      <div class="list letters-grid">
+      <div class="list">
         <a href="kratomletter.html">Kratom</a>
         <a href="tiianeptineletter.html">Tianeptine</a>
         <a href="phenibutletter.html">Phenibut</a>
@@ -390,7 +318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
-    <!-- CONVERSATION GUIDE BUTTON -->
+    <!-- CONVERSATION GUIDE -->
     <section id="conversation-link" class="k-card" style="text-align:center;">
       <h2 style="margin-top:0;">Parent Conversation Guides</h2>
       <p class="muted" style="margin-bottom:18px;">
@@ -406,7 +334,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Learn more about MAHA’s mission to protect families from unregulated herbal drugs — and meet the person behind the advocacy.
       </p>
       <div class="list" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px;">
-        
         <a href="aboutmaha.html" class="btn btn-primary" style="text-align:center;">About Us</a>
       </div>
     </section>
@@ -416,8 +343,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </footer>
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
