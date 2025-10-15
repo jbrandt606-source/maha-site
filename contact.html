@@ -11,22 +11,122 @@
   <link rel="stylesheet" href="style.css?v=1">
 
   <style>
-    .k-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-    .k-card form{display:grid;gap:10px;margin-top:10px}
-    .input, textarea{
-      width:100%; padding:12px;border-radius:12px;
-      border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.04);
-      color:var(--text,#e8ecf8);
+    :root {
+      --bg:#0b1020;
+      --card:#121832;
+      --text:#e8ecf8;
+      --muted:#a9b4d4;
+      --accent:#66c2ff;
     }
-    textarea{min-height:140px;resize:vertical}
-    .btn-row{display:flex;flex-wrap:wrap;gap:10px}
-    .btn{
-      display:inline-block;padding:10px 14px;border-radius:12px;
-      border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06);
-      color:var(--text,#e8ecf8); font-weight:600; text-decoration:none; cursor:pointer;
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 70% -10%, rgba(102,194,255,.15), transparent 60%), var(--bg);
+      color: var(--text);
+      line-height: 1.55;
     }
-    .btn:hover{background:rgba(255,255,255,.12)}
-    .muted{color:var(--muted,#a9b4d4)}
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #e94e4e, #ff8d70);
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: rgba(255,255,255,.12);
+      text-decoration: none;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .k-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .email-text {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-all;
+      white-space: normal;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
@@ -36,36 +136,36 @@
         <div class="logo-badge" aria-hidden="true"></div>
         <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
       </div>
-      <nav class="nav"><a href="index.html" class="btn">← Back</a></nav>
+      <a href="index.html" class="btn">← Back</a>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-      <h1 class="k-title">Contact MAHA</h1>
-      <p class="k-sub">
+      <h1 style="font-size:2rem;font-weight:800;line-height:1.3;margin-bottom:12px;">Contact MAHA</h1>
+      <p class="muted" style="margin-bottom:28px;max-width:700px;">
         We’d love to hear from you. Share your story, send suggestions, or ask a question. Your voice helps us protect families.
       </p>
 
       <div class="k-facts">
-        <div class="k-card">
+        <div class="card">
           <h2 style="margin:0 0 8px;">Email</h2>
-          <p class="muted" style="margin:0 0 10px;">
+          <p class="muted email-text" style="margin:0 0 10px;">
             Email us directly at <b>contactus@mothersagainstherbalabuse.org</b> — or use the quick form below to open a pre-filled message in your mail app.
           </p>
-          <div class="btn-row">
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;">
             <a class="btn" href="mailto:contactus@mothersagainstherbalabuse.org">Open Email App</a>
             <button class="btn" id="copyBtn" type="button">Copy Address</button>
           </div>
         </div>
 
-        <div class="k-card">
+        <div class="card">
           <h2 style="margin:0 0 8px;">Quick Email (opens your mail app)</h2>
           <form id="contactForm">
-            <input class="input" id="name" type="text" placeholder="Your name (optional)">
-            <input class="input" id="fromEmail" type="email" placeholder="Your email (optional)">
-            <input class="input" id="subject" type="text" placeholder="Subject (e.g., Story, Question, Suggestion)">
-            <textarea class="input" id="message" placeholder="Write your message here…"></textarea>
-            <div class="btn-row">
+            <input id="name" type="text" placeholder="Your name (optional)">
+            <input id="fromEmail" type="email" placeholder="Your email (optional)">
+            <input id="subject" type="text" placeholder="Subject (e.g., Story, Question, Suggestion)">
+            <textarea id="message" placeholder="Write your message here…"></textarea>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;">
               <button class="btn" type="submit">Open Pre-filled Email</button>
               <a class="btn" href="index.html">Back to Home</a>
             </div>
@@ -75,7 +175,7 @@
       </div>
     </section>
 
-    <footer style="margin-top:18px;color:var(--muted);text-align:center;">
+    <footer>
       © <span id="year"></span> MothersAgainstHerbalAbuse.org
     </footer>
   </div>
@@ -85,15 +185,15 @@
 
     // Copy email address
     document.getElementById('copyBtn').addEventListener('click', async () => {
-      try{
+      try {
         await navigator.clipboard.writeText('contactus@mothersagainstherbalabuse.org');
         alert('Email address copied!');
-      }catch(e){
+      } catch (e) {
         alert('Could not copy. Please copy manually: contactus@mothersagainstherbalabuse.org');
       }
     });
 
-    // Build mailto with prefilled subject/body
+    // Open pre-filled email
     document.getElementById('contactForm').addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
