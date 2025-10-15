@@ -161,3 +161,48 @@ section.hero {
   background:rgba(255,255,255,.12);
   text-decoration:none;
 }
+/* Header layout */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;                   /* prevents ugly wrapping */
+}
+
+/* Contact Us CTA (top-right) */
+.nav .contact-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 16px;
+  border-radius:14px;
+  background:var(--accent,#66c2ff);
+  color:#0b1020;                    /* high contrast text */
+  font-weight:800;
+  letter-spacing:.2px;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 6px 18px rgba(102,194,255,.30);
+  text-decoration:none;
+  transition:transform .08s ease, box-shadow .08s ease, background .15s ease;
+}
+.nav .contact-cta:hover{
+  background:#7ad0ff;
+  text-decoration:none;
+  box-shadow:0 8px 22px rgba(102,194,255,.38);
+  transform:translateY(-1px);
+}
+.nav .contact-cta:active{
+  transform:translateY(0);
+}
+
+/* Optional: keep brand from wrapping too early on medium screens */
+@media (min-width: 640px){
+  .brand{ white-space:nowrap; }
+}
+
+/* On narrow phones, make the button full-width under the logo */
+@media (max-width: 520px){
+  .nav { width:100%; display:flex; justify-content:flex-end; }
+  .nav .contact-cta{ width:auto; }
+}
