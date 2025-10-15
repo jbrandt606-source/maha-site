@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us • MAHA</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+
+  <style>
+    .k-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .k-card form{display:grid;gap:10px;margin-top:10px}
+    .input, textarea{
+      width:100%; padding:12px;border-radius:12px;
+      border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.04);
+      color:var(--text,#e8ecf8);
+    }
+    textarea{min-height:140px;resize:vertical}
+    .btn-row{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:12px;
+      border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06);
+      color:var(--text,#e8ecf8); font-weight:600; text-decoration:none; cursor:pointer;
+    }
+    .btn:hover{background:rgba(255,255,255,.12)}
+    .muted{color:var(--muted,#a9b4d4)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
+      </div>
+      <nav class="nav"><a href="index.html" class="btn">← Back</a></nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="k-title">Contact MAHA</h1>
+      <p class="k-sub">
+        We’d love to hear from you. Share your story, send suggestions, or ask a question. Your voice helps us protect families.
+      </p>
+
+      <div class="k-facts">
+        <div class="k-card">
+          <h2 style="margin:0 0 8px;">Email</h2>
+          <p class="muted" style="margin:0 0 10px;">
+            Email us directly at <b>contactus@mothersagainstherbalabuse.org</b> — or use the quick form below to open a pre-filled message in your mail app.
+          </p>
+          <div class="btn-row">
+            <a class="btn" href="mailto:contactus@mothersagainstherbalabuse.org">Open Email App</a>
+            <button class="btn" id="copyBtn" type="button">Copy Address</button>
+          </div>
+        </div>
+
+        <div class="k-card">
+          <h2 style="margin:0 0 8px;">Quick Email (opens your mail app)</h2>
+          <form id="contactForm">
+            <input class="input" id="name" type="text" placeholder="Your name (optional)">
+            <input class="input" id="fromEmail" type="email" placeholder="Your email (optional)">
+            <input class="input" id="subject" type="text" placeholder="Subject (e.g., Story, Question, Suggestion)">
+            <textarea class="input" id="message" placeholder="Write your message here…"></textarea>
+            <div class="btn-row">
+              <button class="btn" type="submit">Open Pre-filled Email</button>
+              <a class="btn" href="index.html">Back to Home</a>
+            </div>
+            <p class="muted" style="margin:8px 0 0;">We do not publish personal stories without permission.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top:18px;color:var(--muted);text-align:center;">
+      © <span id="year"></span> MothersAgainstHerbalAbuse.org
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copy email address
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      try{
+        await navigator.clipboard.writeText('contactus@mothersagainstherbalabuse.org');
+        alert('Email address copied!');
+      }catch(e){
+        alert('Could not copy. Please copy manually: contactus@mothersagainstherbalabuse.org');
+      }
+    });
+
+    // Build mailto with prefilled subject/body
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const from = document.getElementById('fromEmail').value.trim();
+      const subject = document.getElementById('subject').value.trim() || 'Message for MAHA';
+      const msg = document.getElementById('message').value.trim();
+
+      let body = '';
+      if (name) body += `Name: ${name}\n`;
+      if (from) body += `Email: ${from}\n`;
+      if (name || from) body += `\n`;
+      body += msg || '';
+
+      const mailto = `mailto:contactus@mothersagainstherbalabuse.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
