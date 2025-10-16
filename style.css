@@ -218,6 +218,8 @@ header {
 }
 
 /* Optional: keep brand from wrapping too early on medium screens */
+
+
 @media (min-width: 640px){
   .brand{ white-space:nowrap; }
 }
@@ -228,3 +230,30 @@ header {
   .nav .contact-cta{ width:auto; }
 }
 select { color-scheme: dark; }
+
+
+/* Restore hero to a stable banner */
+.hero-banner{
+  position:relative;
+  max-width:900px;
+  margin:24px auto;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,.4);
+  background:#0b1020;       /* fallback color while loading */
+  aspect-ratio:16/9;        /* keeps a consistent banner height on phones */
+}
+.hero-banner img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;         /* fills the banner (like your old look) */
+  object-position:50% 35%;  /* shows more of the sign; tweak if needed */
+}
+
+/* Fallback for very old browsers with no aspect-ratio support */
+@supports not (aspect-ratio: 1){
+  .hero-banner{padding-top:56.25%;}  /* 16/9 */
+  .hero-banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+}
