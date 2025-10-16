@@ -206,3 +206,4 @@ header {
   .nav { width:100%; display:flex; justify-content:flex-end; }
   .nav .contact-cta{ width:auto; }
 }
+select { color-scheme: dark; }
