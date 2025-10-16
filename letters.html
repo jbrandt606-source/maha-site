@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Letters to Lawmakers • MAHA</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+
+  <style>
+    :root { --text:#e8ecf8; --muted:#a9b4d4; }
+    .k-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .k-fact{display:block;padding:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px}
+    .k-fact p{margin:0;line-height:1.6}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:var(--text);font-weight:600;text-decoration:none;cursor:pointer}
+    .btn:hover{background:rgba(255,255,255,.12);text-decoration:none}
+    .btn-row{display:flex;flex-wrap:wrap;gap:10px}
+    textarea.copybox{width:100%;min-height:260px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:var(--text);padding:12px;line-height:1.55;resize:vertical}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true" style="width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#e94e4e,#ff8d70)"></div>
+        <div class="brand" style="font-weight:800;letter-spacing:.5px;">MAHA • Mothers Against Herbal Abuse</div>
+      </div>
+      <nav class="nav"><a class="btn" href="index.html">← Back</a></nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="k-title">Write a Letter to Your Lawmaker</h1>
+      <p class="k-sub">
+        Your voice matters. A short, personal letter from a parent or community member is one of the most effective ways
+        to move policy. This guide shows you what to say, how to say it, and gives you a copy-ready template you can send today.
+      </p>
+    </section>
+
+    <!-- QUICK TOOLS -->
+    <section class="card">
+      <h2 style="margin-top:0;">Quick Tools</h2>
+      <div class="k-facts">
+        <div class="k-fact">
+          <p><b>Find your officials</b><br>
+            <a class="btn" href="https://www.usa.gov/elected-officials" target="_blank" rel="noopener">All Elected Officials (USA.gov)</a>
+            <a class="btn" href="https://www.house.gov/representatives/find-your-representative" target="_blank" rel="noopener">U.S. House</a>
+            <a class="btn" href="https://www.senate.gov/senators/senators-contact.htm" target="_blank" rel="noopener">U.S. Senate</a>
+          </p>
+        </div>
+        <div class="k-fact">
+          <p><b>Form letters by topic</b><br>
+            <a class="btn" href="kratomletter.html">Kratom</a>
+            <a class="btn" href="tiianeptineletter.html">Tianeptine</a>
+            <a class="btn" href="phenibutletter.html">Phenibut</a>
+            <a class="btn" href="thcletter.html">THC Extracts</a>
+            <a class="btn" href="hallucinogenletter.html">Hallucinogens</a>
+            <a class="btn" href="madhoneyletter.html">Mad Honey</a>
+            <a class="btn" href="nitrouoxideletter.html">Nitrous Oxide</a>
+          </p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Tip: Email and paper letters both work. Email reaches staff fast; paper is formally logged.</p>
+    </section>
+
+    <!-- HOW TO: STEPS -->
+    <section class="card">
+      <h2 style="margin-top:0;">How to Write an Effective Letter</h2>
+      <div class="k-facts">
+        <div class="k-fact"><p><b>1) Know your goal.</b> Do you want the lawmaker to support a bill, introduce one, or ask the Health Department for a warning? Your goal shapes the tone and the ask.</p></div>
+        <div class="k-fact"><p><b>2) Use a simple structure.</b> Greeting → Who you are → What’s happening → Why it matters → What you want → Thanks + contact info.</p></div>
+        <div class="k-fact"><p><b>3) Make it personal.</b> One short story is more memorable than five statistics. Add one sentence about how local families are affected.</p></div>
+        <div class="k-fact"><p><b>4) Be specific in the ask.</b> “Please support legislation to restrict or ban retail sales of unapproved psychoactive products such as kratom and tianeptine” <i>or</i> “Please request a DOH advisory.”</p></div>
+        <div class="k-fact"><p><b>5) Keep it short.</b> One page. Clear. Respectful. Thank them for their time and offer to share resources at <i>MothersAgainstHerbalAbuse.org</i>.</p></div>
+      </div>
+    </section>
+
+    <!-- TEMPLATE -->
+    <section class="card">
+      <h2 style="margin-top:0;">Copy-Ready Template</h2>
+      <p class="muted" style="margin-bottom:8px;">Edit the fields in [brackets], then click <b>Copy</b> or <b>Open Email</b>.</p>
+
+<textarea id="letterBox" class="copybox">
+The Honorable [First Last Name]
+[Title] [Chamber]
+[Address]
+
+Dear [Senator/Representative] [Last Name]:
+
+I am a [pharmacist / parent / constituent] from [City, State], writing on behalf of Mothers Against Herbal Abuse (MAHA). We work to protect children and families by raising awareness of unregulated “herbal” and gas-station drugs like kratom, tianeptine, and others.
+
+Across our state, these products are being sold in gas stations and vape shops, packaged to attract youth and marketed as “natural supplements” despite causing addiction, withdrawal, and ER visits. Families are being misled by deceptive labels and candy-style packaging.
+
+As a [pharmacist/parent/health professional], I have seen firsthand how easy access to these substances harms families. Parents often have no idea these items are legal and placed next to candy and energy drinks.
+
+I respectfully ask that you [support bill ___ / introduce legislation / request a Department of Health advisory] to restrict or ban retail sales of unapproved psychoactive products such as kratom and tianeptine, or at minimum require age-limits, labeling, and testing. You can view images and resources at MothersAgainstHerbalAbuse.org.
+
+Thank you for your attention to this public-safety issue. I would be honored to discuss this further or share additional data.
+
+Sincerely,
+[Your Full Name]
+[Your City, State]
+[Your Email / Phone]
+</textarea>
+
+      <div class="btn-row" style="margin-top:10px;">
+        <button class="btn" id="copyBtn">Copy Letter</button>
+        <button class="btn" id="emailBtn">Open Email (paste letter)</button>
+      </div>
+    </section>
+
+    <!-- EXTRA COMFORT / FAQ -->
+    <section class="card">
+      <h2 style="margin-top:0;">Tips for Impact</h2>
+      <div class="k-facts">
+        <div class="k-fact"><p><b>One page wins.</b> Clear, respectful, and specific beats long and technical.</p></div>
+        <div class="k-fact"><p><b>Facts + emotion.</b> A single data point plus a short story is memorable and persuasive.</p></div>
+        <div class="k-fact"><p><b>Follow up.</b> Send a thank-you, ask for a meeting, or attend office hours. Staff are your allies.</p></div>
+        <div class="k-fact"><p><b>Send to multiple targets.</b> City/County Council, State Reps/Senators, and your U.S. House/Senators.</p></div>
+      </div>
+    </section>
+
+    <footer style="margin-top:18px;color:var(--muted);text-align:center;">
+      © <span id="year"></span> MothersAgainstHerbalAbuse.org
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copy letter
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const txt = document.getElementById('letterBox').value;
+      try{
+        await navigator.clipboard.writeText(txt);
+        alert('Letter copied to clipboard.');
+      }catch(e){
+        alert('Could not copy automatically. Please select and copy the text.');
+      }
+    });
+
+    // Open mail client with subject line and placeholder body
+    document.getElementById('emailBtn').addEventListener('click', () => {
+      const body = document.getElementById('letterBox').value;
+      const subject = 'Public-safety letter from a MAHA constituent';
+      const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
