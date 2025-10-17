@@ -401,3 +401,49 @@ select { color-scheme: dark; }
     margin-right: auto;
   }
 }
+/* ---- MOBILE TUNING: hero text + image ---- */
+
+/* Apply to most phones */
+@media (max-width: 768px){
+  /* center and tighten hero text */
+  .hero{
+    text-align:center;
+    padding: 0 16px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .hero h1{
+    font-size: 1.75rem;      /* was very large on phones */
+    line-height: 1.25;
+    margin: 0 auto 10px;
+    max-width: 22ch;         /* nicer wrapping */
+  }
+  .hero p{
+    font-size: 1rem;
+    margin: 0 auto 14px;
+    max-width: 46ch;
+  }
+
+  /* cap image height so it doesn't take over */
+  .hero-media{
+    width: 92%;
+    margin: 14px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.4);
+  }
+  .hero-img{
+    width: 100%;
+    height: auto;
+    max-height: 240px;        /* adjust 220–280 to taste */
+    object-fit: cover;        /* crop edges instead of shrinking text */
+    object-position: center;
+    display: block;
+  }
+}
+
+/* very small phones */
+@media (max-width: 380px){
+  .hero h1{ font-size: 1.6rem; }
+  .hero-img{ max-height: 220px; }
+}
