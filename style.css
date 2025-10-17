@@ -260,3 +260,14 @@ select{ color-scheme:dark; } /* helps native selects on dark UI */
     display: none !important;
   }
 }
+/* === Add breathing room below the logo/header === */
+header {
+  margin-bottom: 48px; /* default spacing for desktop */
+}
+
+/* Mobile-only: slightly more space under the logo */
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 60px;
+  }
+}
