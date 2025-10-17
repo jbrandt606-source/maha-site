@@ -343,3 +343,61 @@ select { color-scheme: dark; }
     margin-right: auto;
   }
 }
+/* === HERO (mobile-first fixes) === */
+.hero {
+  text-align: center;                 /* center headline & subtitle */
+  padding: 0 16px;
+}
+
+.hero h1 {
+  margin: 0 auto 12px;
+  max-width: 22ch;                    /* nicer wrap on phones */
+}
+
+.hero p {
+  margin: 0 auto 16px;
+  max-width: 46ch;
+  color: var(--muted);
+}
+
+.hero-media {
+  width: 92%;
+  max-width: 900px;
+  margin: 16px auto;
+  border-radius: 12px;
+  overflow: hidden;                   /* keeps rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;                       /* natural on phones by default */
+}
+
+/* Small phones: keep image from getting too tall */
+@media (max-width: 480px){
+  .hero-img {
+    max-height: 260px;                /* adjust 240–300 if you like */
+    object-fit: cover;                /* crop edges, not squish */
+    object-position: center;
+  }
+}
+
+/* Desktop: modest width, centered text; keep full image (no giant banner) */
+@media (min-width: 1024px){
+  .hero {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .hero-media {
+    max-width: 950px;
+    margin: 24px auto 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.4);
+  }
+  .hero h1, .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
