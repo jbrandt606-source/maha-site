@@ -293,3 +293,53 @@ select { color-scheme: dark; }
   .hero-media { max-width: 1200px; }
   .hero-img { height: 460px; }
 }
+/* === FIX: Keep perfect mobile view, improve desktop image layout === */
+
+/* Default (mobile/tablet): do nothing new */
+.hero-media {
+  max-width: 900px;
+  margin: 24px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Desktop only (wide screens) */
+@media (min-width: 1024px) {
+  .hero-media {
+    max-width: 950px;        /* matches content width */
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.4);
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;            /* don’t force banner crop */
+    object-fit: contain;     /* preserve full image */
+    object-position: center; /* keep centered horizontally */
+    border-radius: 16px;
+  }
+
+  /* Center-align all hero text above image */
+  .hero {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero h1,
+  .hero p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
