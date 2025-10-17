@@ -1,6 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- BEGIN HOTFIX (place directly before </head>) -->
+<style>
+  /* Tidy hero heading + paragraph (mobile + desktop) */
+  .hero{
+    text-align:center;
+    padding:0 16px;
+    margin:0 auto;
+    max-width:980px;
+  }
+  .hero h1{
+    font-size:clamp(28px, 6.2vw, 44px);
+    line-height:1.18;
+    letter-spacing:-.02em;
+    margin:10px auto 12px;
+    max-width:18ch;
+  }
+  .hero p{
+    font-size:clamp(15px, 2.7vw, 18px);
+    line-height:1.55;
+    color:var(--muted, #a9b4d4);
+    margin:8px auto 16px;
+    max-width:48ch;
+  }
+
+  /* Desktop-only hero image: show full image, no crop */
+  @media (min-width:1024px){
+    .hero-media{
+      max-width:950px !important;
+      margin:24px auto 32px !important;
+      border-radius:16px !important;
+      overflow:hidden !important;
+      box-shadow:0 10px 40px rgba(0,0,0,.4) !important;
+    }
+    .hero-img{
+      width:100% !important;
+      height:auto !important;            /* full image shown */
+      object-fit:contain !important;      /* no cropping */
+      object-position:center !important;
+      display:block !important;
+    }
+
+    /* Desktop-only: readable state dropdown */
+    #stateSelect{
+      background:rgba(255,255,255,.08) !important;
+      color:#e8ecf8 !important;
+      border:1px solid rgba(255,255,255,.18) !important;
+      color-scheme:dark !important;
+    }
+    #stateSelect option{
+      color:#e8ecf8 !important;
+      background:#0b1020 !important;
+    }
+  }
+</style>
+<!-- END HOTFIX -->
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
