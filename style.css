@@ -257,3 +257,39 @@ select { color-scheme: dark; }
   .hero-banner{padding-top:56.25%;}  /* 16/9 */
   .hero-banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 }
+/* === HERO IMAGE (mobile + desktop responsive) === */
+
+/* Mobile-first default */
+.hero-media {
+  max-width: 900px;
+  margin: 24px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Desktop: convert to banner */
+@media (min-width: 1024px) {
+  .hero-media {
+    max-width: 1100px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.55);
+  }
+  .hero-img {
+    height: 420px;              /* Adjust height for desktop banner */
+    object-fit: cover;          /* Crop edges neatly */
+    object-position: center;    /* Keep main focus centered */
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1440px) {
+  .hero-media { max-width: 1200px; }
+  .hero-img { height: 460px; }
+}
