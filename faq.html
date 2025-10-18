@@ -12,14 +12,24 @@
   <title>Q&amp;A: What Is “Herbal Abuse”? | Mothers Against Herbal Abuse (MAHA)</title>
   <meta name="description" content="Answers for parents: what ‘herbal abuse’ means, how kids are being targeted, how stores dodge laws, why these products are legal, and who created MAHA." />
 
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph / Twitter (absolute URLs + extras) -->
   <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mothers Against Herbal Abuse (MAHA)" />
   <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/qa.html" />
   <meta property="og:title" content="Q&A: What Is ‘Herbal Abuse’? | MAHA" />
   <meta property="og:description" content="Straight answers for parents: what ‘herbal abuse’ means, how kids are targeted, how gas stations dodge laws, why this stuff is legal, and who runs MAHA." />
   <meta property="og:image" content="https://www.mothersagainstherbalabuse.org/assets/og-hero.jpg" />
+  <meta property="og:image:secure_url" content="https://www.mothersagainstherbalabuse.org/assets/og-hero.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Vape and smoke shop storefront advertising kratom, CBD, and vapes" />
+  <meta property="article:modified_time" content="2025-10-18T00:00:00Z" />
+
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Q&A: What Is ‘Herbal Abuse’? | MAHA" />
+  <meta name="twitter:description" content="Straight answers for parents about ‘herbal’ and gas-station drugs." />
+  <meta name="twitter:image" content="https://www.mothersagainstherbalabuse.org/assets/og-hero.jpg" />
+  <meta name="twitter:image:alt" content="Vape and smoke shop storefront advertising kratom, CBD, and vapes" />
 
   <!-- Brand basics -->
   <meta name="theme-color" content="#0b1020" />
@@ -49,9 +59,12 @@
     details+details{margin-top:12px}
     summary{cursor:pointer;font-weight:600}
     footer{margin:40px 0 24px;color:var(--muted);font-size:14px;text-align:center}
+    /* tiny internal-links row */
+    .see-also{margin:10px 0 0 0;color:var(--muted)}
+    .see-also a{color:#66c2ff}
   </style>
 
-  <!-- FAQPage JSON-LD -->
+  <!-- FAQPage JSON-LD (kept) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -88,6 +101,42 @@
         "acceptedAnswer":{"@type":"Answer","text":"MAHA uses data from peer-reviewed studies, poison-control reports, FDA and DEA advisories, and state medical examiner findings. Each product page includes citations so readers can verify the facts directly."}
       }
     ]
+  }
+  </script>
+
+  <!-- JSON-LD: Organization (light) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Mothers Against Herbal Abuse (MAHA)",
+    "url":"https://www.mothersagainstherbalabuse.org/",
+    "logo":"https://www.mothersagainstherbalabuse.org/img/logo.png",
+    "sameAs":[
+      "https://www.facebook.com/mothersagainstherbalabuse"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs + Article metadata -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+      {"@type":"ListItem","position":2,"name":"Q&A: What Is “Herbal Abuse”?","item":"https://www.mothersagainstherbalabuse.org/qa.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Q&A: What Is “Herbal Abuse”?",
+    "url":"https://www.mothersagainstherbalabuse.org/qa.html",
+    "publisher":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)","url":"https://www.mothersagainstherbalabuse.org/"},
+    "dateModified":"2025-10-18"
   }
   </script>
 </head>
@@ -148,16 +197,16 @@
         </div>
       </details>
 
- <details>
-  <summary>Who created this group?</summary>
-  <div>
-    MAHA was created by a <strong>pharmacist and mother</strong> who was horrified to see unregulated, drug-like products
-    being sold openly in gas stations and vape shops, right next to candy and energy drinks. What began as one parent’s
-    outrage grew into a effort to <strong>educate families</strong>, <strong>expose industry loopholes</strong>,
-    and <strong>push for stronger laws</strong> to protect kids. MAHA continues that mission today through data-driven
-    education, advocacy, and community action.
-  </div>
-</details>
+      <details>
+        <summary>Who created this group?</summary>
+        <div>
+          MAHA was created by a <strong>pharmacist and mother</strong> who was horrified to see unregulated, drug-like products
+          being sold openly in gas stations and vape shops, right next to candy and energy drinks. What began as one parent’s
+          outrage grew into a effort to <strong>educate families</strong>, <strong>expose industry loopholes</strong>,
+          and <strong>push for stronger laws</strong> to protect kids. MAHA continues that mission today through data-driven
+          education, advocacy, and community action.
+        </div>
+      </details>
 
       <details>
         <summary>Where does your information come from?</summary>
@@ -168,10 +217,12 @@
         </div>
       </details>
 
-      <div style="margin-top:18px;">
-        Ready to take action? Use our <a href="/letters.html">Letter Writing Guide</a> to contact lawmakers, or explore
-        the <a href="/#info">Information Center</a> to learn more about specific products.
-      </div>
+      <!-- Light internal-link cluster -->
+      <p class="see-also">
+        See also:
+        <a href="/letters.html">Letter Templates</a> •
+        <a href="/index.html#info">Information Center</a>
+      </p>
     </section>
   </main>
 
