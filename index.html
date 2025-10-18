@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- BEGIN HOTFIX (place directly before </head>) -->
@@ -66,22 +66,37 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mothers Against Herbal Abuse (MAHA)</title>
-  <meta name="description" content="Mothers Against Herbal Abuse – take action to ban dangerous 'herbal' drug products. Learn the facts, share your story, and email lawmakers in one click." />
+
+  <!-- Canonical + robots -->
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+  <!-- SEO: title & description (keeps brand; adds pharmacist-mom origin + target entities) -->
+  <title>Mothers Against Herbal Abuse (MAHA) — Parent Guide to Kratom, 7-OH, Tianeptine & Gas-Station Drugs</title>
+  <meta name="description" content="Created by a pharmacist and mother. MAHA is a parent-focused guide exposing unregulated ‘herbal’ and gas-station drugs like kratom (7-hydroxymitragynine/7-OH), tianeptine, phenibut, and Δ8 THC — plus state laws and ready-to-send letters to protect kids." />
+  <meta name="keywords" content="kratom, 7-hydroxymitragynine, 7-OH, American Kratom Association, Mac Haddow, tianeptine, phenibut, delta-8 THC, gas-station drugs, parent guide, MAHA" />
+
   <meta name="theme-color" content="#0b1020" />
 
-  <!-- Open Graph / social -->
-  <meta property="og:title" content="Mothers Against Herbal Abuse (MAHA)" />
-  <meta property="og:description" content="Parent-friendly facts, resources, and tools to stop dangerous 'herbal' products. Learn, act, and share your story." />
+  <!-- Open Graph / social (absolute URLs, rich alt, dimensions) -->
+  <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mothers Against Herbal Abuse (MAHA)" />
   <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/" />
-  <meta property="og:image" content="/IMG_2262.jpeg" />
+  <meta property="og:title" content="MAHA — Parent Guide to Kratom, 7-OH, Tianeptine & Gas-Station Drugs" />
+  <meta property="og:description" content="Evidence-based summaries, state laws, and one-click letters to protect families from unregulated ‘herbal’ drug products." />
+  <meta property="og:image" content="https://www.mothersagainstherbalabuse.org/IMG_2262.jpeg" />
+  <meta property="og:image:secure_url" content="https://www.mothersagainstherbalabuse.org/IMG_2262.jpeg" />
+  <meta property="og:image:alt" content="Neon smoke & vape storefront listing KRATOM, VAPE, CIGAR, HOOKAH and CBD" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mothers Against Herbal Abuse (MAHA)" />
-  <meta name="twitter:description" content="Parent-friendly facts, resources, and tools to stop dangerous 'herbal' products." />
-  <meta name="twitter:image" content="/IMG_2262.jpeg" />
+  <meta name="twitter:title" content="MAHA — Parent Guide to Kratom, 7-OH, Tianeptine & Gas-Station Drugs" />
+  <meta name="twitter:description" content="Pharmacist-led and parent-powered: the facts, laws, and letters that help communities stop ‘herbal’ drug sales." />
+  <meta name="twitter:image" content="https://www.mothersagainstherbalabuse.org/IMG_2262.jpeg" />
+  <meta name="twitter:image:alt" content="Neon smoke & vape storefront listing KRATOM, VAPE, CIGAR, HOOKAH and CBD" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,6 +105,54 @@
 
   <!-- Main stylesheet (cache-busted so updates always load) -->
   <link rel="stylesheet" href="style.css?v=55">
+
+  <!-- JSON-LD: Organization (adds entity trust + topical context) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Mothers Against Herbal Abuse (MAHA)",
+    "url":"https://www.mothersagainstherbalabuse.org/",
+    "logo":"https://www.mothersagainstherbalabuse.org/assets/logo.png",
+    "description":"Parent- and pharmacist-led education on kratom (7-hydroxymitragynine/7-OH), tianeptine, phenibut, Δ8 THC, nitrous oxide, and other gas-station drugs — with tools to contact lawmakers.",
+    "founder": {
+      "@type":"Person",
+      "name":"Pharmacist & Mother",
+      "description":"Founded after witnessing kratom and similar drugs sold openly near children; MAHA translates public-health data into parent-friendly actions."
+    },
+    "sameAs":[
+      "https://www.facebook.com/mothersagainstherbalabuse",
+      "https://x.com/maha_parent",
+      "https://www.instagram.com/mothersagainstherbalabuse"
+    ],
+    "knowsAbout":[
+      "Kratom",
+      "7-hydroxymitragynine",
+      "7-OH",
+      "American Kratom Association",
+      "Mac Haddow",
+      "Tianeptine",
+      "Phenibut",
+      "Delta-8 THC",
+      "Gas-station drugs"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite + SearchAction (enables sitelinks search box if you add /search.html) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://www.mothersagainstherbalabuse.org/",
+    "name":"Mothers Against Herbal Abuse (MAHA)",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://www.mothersagainstherbalabuse.org/search.html?q={query}",
+      "query-input":"required name=query"
+    }
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
