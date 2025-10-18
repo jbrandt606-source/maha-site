@@ -1,0 +1,19 @@
+# Security.txt for Mothers Against Herbal Abuse (MAHA)
+# Purpose: Provide a clear point of contact for security vulnerabilities
+# Specification: https://datatracker.ietf.org/doc/html/rfc9116
+
+Contact: mailto:contact@mothersagainstherbalabuse.org
+Contact: https://www.mothersagainstherbalabuse.org/contact.html
+Encryption: https://www.mothersagainstherbalabuse.org/pgp-key.txt
+Acknowledgments: https://www.mothersagainstherbalabuse.org/thanks.html
+Preferred-Languages: en
+Policy: https://www.mothersagainstherbalabuse.org/privacy.html
+
+
+# Notes:
+# - MAHA is a public-safety advocacy organization hosted on GitHub Pages.
+# - This address is for technical security reports only (e.g., vulnerabilities, data exposure, site spoofing).
+# - For general questions or media inquiries, please visit our contact page.
+# - Please do not send personal or medical information through this channel.
+
+Expires: 2026-12-31T23:59:59Z
