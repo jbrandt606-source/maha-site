@@ -3,7 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>State • MAHA</title>
+
+  <!-- Light SEO: canonical + robots + concise title/description -->
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/state.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <title>State Actions: Lawmakers, Health Dept & Boards • MAHA</title>
+  <meta name="description" content="How parents can act at the state level: contact legislators and the governor, alert the health department, and petition boards of pharmacy and medical associations. Links and steps included." />
+
+  <!-- Light Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mothers Against Herbal Abuse (MAHA)" />
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/state.html" />
+  <meta property="og:title" content="State Actions: Lawmakers, Health Dept & Boards • MAHA" />
+  <meta property="og:description" content="Contact lawmakers, report to health departments, and request scheduling by boards. Parent-ready links and steps." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -13,7 +26,41 @@
     .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px}
     .k-fact p{margin:0}
     @media (max-width:760px){.k-facts{grid-template-columns:1fr!important}}
+    /* tiny internal-links row */
+    .see-also{margin-top:12px;font-size:.95rem;color:var(--muted)}
+    .see-also a{color:#66c2ff;text-decoration:none}
+    .see-also a:hover{text-decoration:underline}
   </style>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+      {"@type":"ListItem","position":2,"name":"Take Action","item":"https://www.mothersagainstherbalabuse.org/index.html#action"},
+      {"@type":"ListItem","position":3,"name":"State"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: HowTo (state-level action steps) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"How to take action at the state level",
+    "description":"Parents can contact state legislators and the governor, alert the health department, and petition boards of pharmacy and medical associations.",
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Find your state lawmakers","text":"Use the official directory to find your state senators/representatives and the governor, then send a short, referenced letter."},
+      {"@type":"HowToStep","position":2,"name":"Alert the state health department","text":"Report products and request statewide advisories and school/parent outreach."},
+      {"@type":"HowToStep","position":3,"name":"Contact the Board of Pharmacy","text":"Request emergency scheduling or addition to the controlled list and guidance to retailers."},
+      {"@type":"HowToStep","position":4,"name":"Engage medical associations","text":"Ask physician groups to testify, publish guidance, and share de-identified cases."}
+    ],
+    "publisher":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)","url":"https://www.mothersagainstherbalabuse.org/"}
+  }
+  </script>
 </head>
 <body>
 <div class="container">
@@ -28,6 +75,14 @@
   <section class="hero">
     <h1 class="k-title">State – How to Take Action</h1>
     <p class="k-sub">States can stop sales quickly. Ask lawmakers and agencies to use every tool they have.</p>
+
+    <!-- Light internal link coverage to core pillars & tools -->
+    <p class="see-also">
+      See also:
+      <a href="letters.html">Letter Templates</a> •
+      <a href="index.html#laws">State Law Picker</a> •
+      <a href="qa.html">Q&amp;A</a>
+    </p>
   </section>
 
   <!-- Quick State Contacts -->
