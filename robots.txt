@@ -1,4 +1,20 @@
+# MAHA Robots.txt — MothersAgainstHerbalAbuse.org
+# Last updated: 2025-10-18
+
 User-agent: *
 Allow: /
 
+# Crawl-delay can help prevent server overload if needed (uncomment if site slows down)
+# Crawl-delay: 10
+
+# Disallow internal or utility files that don’t need indexing
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /drafts/
+Disallow: /*.zip$
+Disallow: /*.pdf$  # only if you don’t want PDF indexing
+
+# Explicit sitemap(s)
+Sitemap: https://www.mothersagainstherbalabuse.org/sitemap.xml
 Sitemap: https://www.mothersagainstherbalabuse.org/sitemap.txt
