@@ -3,8 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Federal • MAHA</title>
 
+  <!-- Light SEO: canonical + robots + concise title/description -->
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/federal.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <title>Federal Actions: Contact FDA, DEA, FTC & Congress • MAHA</title>
+  <meta name="description" content="How parents can act at the federal level: email Congress, submit FDA MedWatch reports, file FTC complaints about deceptive ‘herbal’ marketing, and send tips to DEA. Templates and links included." />
+
+  <!-- Light Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mothers Against Herbal Abuse (MAHA)" />
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/federal.html" />
+  <meta property="og:title" content="Federal Actions: Contact FDA, DEA, FTC & Congress • MAHA" />
+  <meta property="og:description" content="Email Congress, report products to FDA, file FTC complaints, and submit DEA tips. Parent-ready links and steps." />
+
+  <!-- Fonts / stylesheet (unchanged) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -15,7 +28,41 @@
     .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px}
     .k-fact p{margin:0;word-break:normal;overflow-wrap:break-word;hyphens:auto}
     @media (max-width:760px){.k-facts{grid-template-columns:1fr!important}}
+    /* tiny internal-links row */
+    .see-also{margin-top:12px;font-size:.95rem;color:var(--muted)}
+    .see-also a{color:#66c2ff;text-decoration:none}
+    .see-also a:hover{text-decoration:underline}
   </style>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+      {"@type":"ListItem","position":2,"name":"Take Action","item":"https://www.mothersagainstherbalabuse.org/index.html#action"},
+      {"@type":"ListItem","position":3,"name":"Federal"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: HowTo (federal-level action steps) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"How to take action at the federal level",
+    "description":"Parents can email Congress, submit FDA MedWatch reports on unsafe ‘herbal’ products, file FTC complaints for deceptive marketing, and send tips to DEA.",
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Email Congress","text":"Use letter templates to email your U.S. Senators and Representative about gas-station drug sales and deceptive ‘herbal’ marketing."},
+      {"@type":"HowToStep","position":2,"name":"Submit FDA MedWatch","text":"Report adverse events or unsafe products to FDA MedWatch with brand, lot, and where it was sold."},
+      {"@type":"HowToStep","position":3,"name":"File an FTC complaint","text":"Report false or deceptive claims, undisclosed ingredients, and kid-targeted marketing to the FTC Complaint Assistant."},
+      {"@type":"HowToStep","position":4,"name":"Send a DEA tip","text":"Provide information about illegal online sales, diversion, or interstate shipping of controlled substances or analogs."}
+    ],
+    "publisher":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)","url":"https://www.mothersagainstherbalabuse.org/"}
+  }
+  </script>
 </head>
 <body>
 <div class="container">
@@ -30,6 +77,14 @@
   <section class="hero">
     <h1 class="k-title">Federal – How to Take Action</h1>
     <p class="k-sub">The FDA tests and warns, the DEA schedules drugs, and the FTC polices deceptive advertising. Congress funds and closes loopholes. Here’s what to push for — and where to report problems.</p>
+
+    <!-- Light internal link coverage to core pillars & tools -->
+    <p class="see-also">
+      See also:
+      <a href="letters.html">Letter Templates</a> •
+      <a href="index.html#laws">State Law Picker</a> •
+      <a href="qa.html">Q&amp;A</a>
+    </p>
   </section>
 
   <!-- Quick Contacts -->
