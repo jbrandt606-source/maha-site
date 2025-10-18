@@ -1,0 +1,32 @@
+/* TEAM */
+Mothers Against Herbal Abuse (MAHA)
+Website: https://www.mothersagainstherbalabuse.org
+Email: info@mothersagainstherbalabuse.org
+
+Founder: Jennifer Brandt, PharmD — Pharmacist, Parent, and Advocate
+Contributors: Volunteer parents, pharmacists, educators, and community members
+Design & Content: MAHA Digital Team
+Hosting: GitHub Pages
+
+/* MISSION */
+To protect families by exposing the dangers of unregulated “herbal” and gas-station drug products
+and empowering parents with accurate information, advocacy tools, and community education.
+
+/* VALUES */
+Science over slogans.
+Transparency over marketing.
+Health, family, and truth above all.
+
+/* THANKS */
+Special thanks to parents, pharmacists, educators, and lawmakers across the U.S.
+who contribute data, stories, and courage to this work.
+
+/* TECHNOLOGY */
+Built with HTML5, CSS3, and JSON-LD structured data
+Optimized for accessibility and mobile
+Deployed via GitHub Pages CDN
+Analytics: Google Analytics 4 (G-P31PD1SSTD)
+
+/* LEGAL */
+© MothersAgainstHerbalAbuse.org — Non-partisan public-safety advocacy.
+Content licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
