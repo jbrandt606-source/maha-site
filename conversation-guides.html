@@ -3,8 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Parent Conversation Guides • MAHA</title>
 
+  <!-- Light SEO: canonical + robots + concise title/description -->
+  <title>Parent Conversation Guides • MAHA</title>
+  <meta name="description" content="Calm, practical conversation guides to help parents talk with kids about kratom, tianeptine, and other gas-station ‘herbal’ products—what they are, why they’re risky, and how to respond." />
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/conversation-guides.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mothers Against Herbal Abuse (MAHA)" />
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/conversation-guides.html" />
+  <meta property="og:title" content="Parent Conversation Guides • MAHA" />
+  <meta property="og:description" content="Practical scripts and tips for talking with kids about gas-station ‘herbal’ products—without fear, with facts." />
+  <meta property="og:image" content="https://www.mothersagainstherbalabuse.org/img/og-conversations.jpg" />
+  <meta property="og:image:secure_url" content="https://www.mothersagainstherbalabuse.org/img/og-conversations.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Parent and teen having a calm conversation with MAHA guidance" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Parent Conversation Guides • MAHA" />
+  <meta name="twitter:description" content="Calm, practical scripts and tips for parents—how to talk about kratom, tianeptine, and ‘herbal’ highs." />
+  <meta name="twitter:image" content="https://www.mothersagainstherbalabuse.org/img/og-conversations.jpg" />
+  <meta name="twitter:image:alt" content="Parent and teen having a calm conversation with MAHA guidance" />
+
+  <!-- Fonts & base stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -23,7 +48,39 @@
       padding: 16px;
     }
     .k-fact p { margin: 0; line-height: 1.55; }
+    /* tiny internal-links row */
+    .see-also{margin:12px auto 0;max-width:700px;font-size:.95rem;color:var(--muted,#a9b4d4);text-align:center}
+    .see-also a{color:#66c2ff;text-decoration:none}
+    .see-also a:hover{text-decoration:underline}
   </style>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+      {"@type":"ListItem","position":2,"name":"Parent Conversation Guides","item":"https://www.mothersagainstherbalabuse.org/conversation-guides.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: LearningResource (education-focused) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LearningResource",
+    "name":"Parent Conversation Guides",
+    "description":"Calm, practical guidance for parents on discussing gas-station ‘herbal’ products like kratom and tianeptine—what they are, why they’re risky, and how to respond.",
+    "learningResourceType":"Parent conversation guide",
+    "educationalLevel":"Parents and caregivers",
+    "isFamilyFriendly": true,
+    "audience":{"@type":"Audience","audienceType":"Parents and caregivers"},
+    "publisher":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)","url":"https://www.mothersagainstherbalabuse.org/"},
+    "url":"https://www.mothersagainstherbalabuse.org/conversation-guides.html"
+  }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -33,21 +90,29 @@
         <div class="logo-badge" aria-hidden="true"></div>
         <div class="brand">MAHA • Mothers Against Herbal Abuse</div>
       </div>
-      <nav class="nav"><a href="index.html">Back</a></nav>
+      <nav class="nav" aria-label="Primary"><a href="index.html">Back</a></nav>
     </header>
 
     <!-- HERO -->
-    <section class="hero" style="padding:40px 20px;text-align:center;">
-      <h1 class="k-title">How to Talk to Your Kids</h1>
+    <section class="hero" role="region" aria-labelledby="pcg-title" style="padding:40px 20px;text-align:center;">
+      <h1 id="pcg-title" class="k-title">How to Talk to Your Kids</h1>
       <p style="max-width:700px;margin:0 auto;color:var(--muted,#b5c2de);">
         Kids see “herbal highs,” kratom, and gas-station products every day — on shelves that look safe. 
         This guide helps you turn those moments into calm, honest, and practical conversations that protect your family.
       </p>
+      <!-- Light internal link coverage -->
+      <p class="see-also">
+        See also:
+        <a href="kratom.html">Kratom</a> •
+        <a href="tianeptine.html">Tianeptine</a> •
+        <a href="phenibut.html">Phenibut</a> •
+        <a href="thc-extracts.html">THC Extracts</a>
+      </p>
     </section>
 
     <!-- GUIDE CONTENT -->
-    <section class="k-card">
-      <h2 style="margin-top:0;">Talking About Gas-Station “Herbal” Products</h2>
+    <section class="k-card" role="region" aria-labelledby="pcg-content">
+      <h2 id="pcg-content" style="margin-top:0;">Talking About Gas-Station “Herbal” Products</h2>
       <p class="muted" style="margin-bottom:12px;">
         These conversations don’t need to be awkward — they need to be real. 
         The goal isn’t to scare kids, but to make sure they know what’s out there, why it’s risky, and that they can always come to you with questions.
