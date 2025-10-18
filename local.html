@@ -3,7 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Local • MAHA</title>
+
+  <!-- Light SEO: canonical + robots + concise title/description -->
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/local.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <title>Local Actions: City & County Ordinances, Licensing & Schools • MAHA</title>
+  <meta name="description" content="How parents can act locally: work with city/county councils on ordinances and licensing, coordinate with police and health departments, and bring education to schools. Links and steps included." />
+
+  <!-- Light Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mothers Against Herbal Abuse (MAHA)" />
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/local.html" />
+  <meta property="og:title" content="Local Actions: City & County Ordinances, Licensing & Schools • MAHA" />
+  <meta property="og:description" content="City/county tools to stop gas-station drugs now: ordinances, licensing, enforcement, and school education. Parent-ready links and steps." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -13,7 +26,41 @@
     .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px}
     .k-fact p{margin:0}
     @media (max-width:760px){.k-facts{grid-template-columns:1fr!important}}
+    /* tiny internal-links row */
+    .see-also{margin-top:12px;font-size:.95rem;color:var(--muted)}
+    .see-also a{color:#66c2ff;text-decoration:none}
+    .see-also a:hover{text-decoration:underline}
   </style>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+      {"@type":"ListItem","position":2,"name":"Take Action","item":"https://www.mothersagainstherbalabuse.org/index.html#action"},
+      {"@type":"ListItem","position":3,"name":"Local"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: HowTo (local-level action steps) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HowTo",
+    "name":"How to take action at the local level",
+    "description":"Parents can work with city/county councils, police, local health departments, and schools to stop sales and educate families.",
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Request a council agenda item","text":"Email the clerk or council chair to request time to present on gas-station drug sales; attach a one-page brief and proposed ordinance."},
+      {"@type":"HowToStep","position":2,"name":"Coordinate with local health department","text":"Ask for a public advisory and retailer education; request signage and school outreach."},
+      {"@type":"HowToStep","position":3,"name":"Engage police/code enforcement","text":"Share locations, packaging photos, and age-sale concerns; request compliance checks after an ordinance passes."},
+      {"@type":"HowToStep","position":4,"name":"Bring education to schools","text":"Provide parent-night slides, health-class handouts, and links to official alerts."}
+    ],
+    "publisher":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)","url":"https://www.mothersagainstherbalabuse.org/"}
+  }
+  </script>
 </head>
 <body>
 <div class="container">
@@ -28,6 +75,14 @@
   <section class="hero">
     <h1 class="k-title">Local – How to Take Action</h1>
     <p class="k-sub">Cities and counties can protect neighborhoods now with ordinances, licensing, and community education.</p>
+
+    <!-- Light internal link coverage to core pillars & tools -->
+    <p class="see-also">
+      See also:
+      <a href="letters.html">Letter Templates</a> •
+      <a href="index.html#laws">State Law Picker</a> •
+      <a href="qa.html">Q&amp;A</a>
+    </p>
   </section>
 
   <!-- Quick Local Contacts -->
