@@ -293,3 +293,71 @@ header {
   margin: 0;
   line-height: 1.05;
 }
+
+/* === HERO NEW COPY STYLES === */
+
+/* Mobile-first */
+.hero {
+  text-align: center;
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.hero-kicker{
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin: 4px auto 10px;
+  font-size: clamp(12px, 2.6vw, 14px);
+}
+
+.hero-title{
+  margin: 0 auto 8px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  /* scales nicely across phones/tablets/desktops */
+  font-size: clamp(32px, 7vw, 52px);
+}
+
+.hero-tagline{
+  color: var(--muted);
+  margin: 0 auto 16px;
+  line-height: 1.55;
+  max-width: 52ch;
+  font-size: clamp(14px, 2.8vw, 18px);
+}
+
+/* keep the photo look you prefer on phones */
+.hero-media{
+  width: 92%;
+  max-width: 900px;
+  margin: 16px auto 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+.hero-img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Desktop tweaks — no cropping, nicely centered */
+@media (min-width: 1024px){
+  .hero { max-width: 980px; }
+  .hero-media{
+    max-width: 950px;
+    margin: 24px auto 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.4);
+  }
+  .hero-img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;     /* show the full image */
+    object-position: center;
+  }
+}
