@@ -361,3 +361,26 @@ header {
     object-position: center;
   }
 }
+
+.post-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0 20px;
+}
+
+.btn-nav {
+  display: inline-block;
+  background: rgba(255,255,255,0.08);
+  color: #e8ecf8;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn-nav:hover {
+  background: rgba(255,255,255,0.18);
+}
