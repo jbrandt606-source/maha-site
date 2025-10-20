@@ -470,3 +470,43 @@ header, .hero, .hero-section, .hero .wrap {
   pointer-events: none;
   /* REMOVE any extra top offset like: top:-80px; height:120% */
 }
+
+/* --- HERO TOP-GAP HOTFIXES --- */
+
+/* 0) Basic reset that often fixes phantom gaps */
+html, body { margin:0; padding:0; }
+
+/* 1) Stop 100vh bugs on mobile and account for the iOS safe area */
+.hero, .hero-section {
+  height: auto !important;           /* kill any fixed height */
+  min-height: 68svh;                  /* modern viewport unit, respects iOS UI */
+  padding-top: calc(20px + env(safe-area-inset-top));
+  padding-bottom: 20px;
+  position: relative;                 /* prevents margin-collapsing with first child */
+  overflow: visible !important;
+}
+
+/* 2) Prevent margin-collapsing from the first heading/paragraph */
+.hero > * { margin-top: 0 !important; }
+.hero h1, .hero h2, .hero p { margin-block-start: 0 !important; }
+
+/* 3) If you have any gradient overlay, make sure it doesn't extend above */
+.hero::before, .hero .gradient, .hero .cover {
+  position: absolute; inset: 0;       /* remove any top:-Xpx or height:120% */
+  pointer-events: none;
+}
+
+/* 4) If you use a sticky header, reserve its space on mobile */
+:root { --header-h: 56px; }           /* adjust to your header height */
+@media (max-width: 640px) {
+  body.has-sticky .hero,
+  body.has-sticky .hero-section {
+    padding-top: calc(20px + var(--header-h) + env(safe-area-inset-top));
+  }
+}
+
+/* 5) Tighten typography so it doesn't push the hero taller than needed */
+@media (max-width: 640px) {
+  .hero h1 { font-size: clamp(22px, 6vw, 32px); line-height: 1.15; }
+  .hero p  { font-size: clamp(14px, 3.8vw, 18px); max-width: 36ch; }
+}
