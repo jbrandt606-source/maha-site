@@ -384,3 +384,47 @@ header {
 .btn-nav:hover {
   background: rgba(255,255,255,0.18);
 }
+
+/* 1) Let the FAQ section grow and be scrollable */
+#faq, .faq {
+  height: auto !important;          /* kill any fixed height like 100vh */
+  max-height: none !important;
+  overflow: visible !important;     /* stop clipping */
+  padding-bottom: 24px;
+}
+
+/* 2) Make sure parent sections don't clip children */
+section, .section {
+  overflow: visible;                 /* if you used overflow:hidden for effects */
+}
+
+/* 3) If you have a sticky header/footer, give mobile some breathing room */
+@media (max-width: 600px) {
+  #faq, .faq {
+    padding: 16px 16px 72px;        /* extra bottom padding so last item isn’t hidden */
+    line-height: 1.5;               /* improve wrapping on small screens */
+  }
+}
+
+/* 4) List formatting that wraps nicely on narrow screens */
+.faq ul { margin: 0; padding-left: 1.1rem; }
+.faq li {
+  list-style: disc;
+  margin: 8px 0;
+  white-space: normal;              /* prevent single-line bullets */
+  overflow-wrap: anywhere;          /* break long words/URLs if present */
+}
+
+/* 5) If the FAQ is inside a 100vh hero, switch to min-height on mobile */
+@media (max-width: 600px) {
+  .hero, .hero-section {
+    height: auto;
+    min-height: 60vh;               /* optional: keep some height but allow growth */
+  }
+}
+
+/* 6) Z-index insurance if a sticky footer covers the last lines */
+.sticky-footer, .mobile-cta {
+  z-index: 1000;
+}
+#faq, .faq { position: relative; z-index: 1; }
