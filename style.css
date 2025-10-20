@@ -558,3 +558,27 @@ header, .page, .section, .wrap { overflow: visible !important; }
 
 /* 6) Images in the hero should not add phantom space */
 .hero img { display:block; width:100%; height:auto; }
+
+/* FIX: remove the forced tall hero on mobile */
+@media (max-width: 600px){
+  .hero, .hero-section{
+    height:auto !important;
+    min-height:unset !important;     /* kill the 60vh */
+    padding-top:12px !important;
+    padding-bottom:12px !important;
+  }
+
+  /* stop first-child margin from creating a gap */
+  .hero > *{ margin-top:0 !important; }
+  .hero .eyebrow,
+  .hero h1,
+  .hero p{ margin-top:0 !important; }
+}
+
+/* safety: no parent adds space above */
+.container, header, .section{ padding-top:0 !important; margin-top:0 !important; }
+
+/* if you have a gradient layer on the hero, keep it within bounds */
+.hero::before, .hero .gradient, .hero .cover{
+  position:absolute; inset:0; pointer-events:none;
+}
