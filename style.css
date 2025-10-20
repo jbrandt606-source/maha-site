@@ -510,3 +510,51 @@ html, body { margin:0; padding:0; }
   .hero h1 { font-size: clamp(22px, 6vw, 32px); line-height: 1.15; }
   .hero p  { font-size: clamp(14px, 3.8vw, 18px); max-width: 36ch; }
 }
+
+
+/* ===== MOBILE HERO HOTFIX (paste at end of CSS) ===== */
+
+/* 0) Baseline reset */
+html, body { margin:0; padding:0; }
+
+/* 1) Kill 100vh issues and margin-collapsing */
+.hero, .hero-section {
+  position: relative;
+  height: auto !important;         /* stop forcing 100vh */
+  min-height: 68svh;               /* safe viewport on iOS */
+  padding-top: calc(20px + env(safe-area-inset-top));
+  padding-bottom: 20px;
+  overflow: visible !important;
+}
+.hero > * { margin-top: 0 !important; }  /* stop first-child margin collapsing */
+.hero h1, .hero h2, .hero p { margin-block-start: 0 !important; }
+
+/* 2) Tame gradient/cover overlays that can create tall gaps */
+.hero::before,
+.hero .gradient,
+.hero .cover {
+  position: absolute;
+  inset: 0;                        /* remove top:-X; height:120%; etc. */
+  pointer-events: none;
+}
+
+/* 3) Account for sticky header on small screens (adjust --header-h) */
+:root { --header-h: 56px; }
+@media (max-width: 640px) {
+  body.has-sticky .hero,
+  body.has-sticky .hero-section {
+    padding-top: calc(20px + var(--header-h) + env(safe-area-inset-top));
+  }
+}
+
+/* 4) Make sure parents don't clip */
+header, .page, .section, .wrap { overflow: visible !important; }
+
+/* 5) Tighten mobile type so it doesn't force tall blocks */
+@media (max-width: 640px) {
+  .hero h1 { font-size: clamp(22px, 6vw, 32px); line-height: 1.15; }
+  .hero p  { font-size: clamp(14px, 3.8vw, 18px); max-width: 36ch; }
+}
+
+/* 6) Images in the hero should not add phantom space */
+.hero img { display:block; width:100%; height:auto; }
