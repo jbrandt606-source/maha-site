@@ -1,48 +1,61 @@
 <!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- BEGIN HOTFIX (place directly before </head>) -->
+  <!-- BEGIN GAP FIX (replace previous HOTFIX) -->
 <style>
-  /* Tidy hero heading + paragraph (mobile + desktop) */
+  /* remove any default page gap */
+  html, body { margin:0; padding:0; }
+
+  /* hero container — kill phantom top space and margin-collapsing */
   .hero{
+    position:relative;              /* stops first-child margin collapsing */
     text-align:center;
-    padding:0 16px;
+    padding: clamp(8px, 2svh, 16px) 16px clamp(12px, 2.5svh, 20px); /* tight top/btm */
     margin:0 auto;
     max-width:980px;
+    overflow:visible;
   }
+
+  /* eyebrow / heading / paragraph spacing tightened */
+  .hero .eyebrow{ margin:0 0 6px 0; }
   .hero h1{
     font-size:clamp(28px, 6.2vw, 44px);
     line-height:1.18;
     letter-spacing:-.02em;
-    margin:10px auto 12px;
+    margin:0 auto 10px;            /* no top margin */
     max-width:18ch;
   }
   .hero p{
     font-size:clamp(15px, 2.7vw, 18px);
     line-height:1.55;
     color:var(--muted, #a9b4d4);
-    margin:8px auto 16px;
+    margin:0 auto 14px;            /* no top margin */
     max-width:48ch;
   }
 
-  /* Desktop-only hero image: show full image, no crop */
+  /* ensure no parent introduces extra top padding on small screens */
+  @media (max-width: 600px){
+    .container { padding-top:0 !important; margin-top:0 !important; }
+  }
+
+  /* Desktop-only hero media rules (unchanged look, no crop) */
   @media (min-width:1024px){
     .hero-media{
       max-width:950px !important;
-      margin:24px auto 32px !important;
+      margin:20px auto 28px !important;
       border-radius:16px !important;
       overflow:hidden !important;
       box-shadow:0 10px 40px rgba(0,0,0,.4) !important;
     }
     .hero-img{
       width:100% !important;
-      height:auto !important;            /* full image shown */
-      object-fit:contain !important;      /* no cropping */
+      height:auto !important;
+      object-fit:contain !important;
       object-position:center !important;
       display:block !important;
     }
 
-    /* Desktop-only: readable state dropdown */
+    /* Desktop: readable state dropdown */
     #stateSelect{
       background:rgba(255,255,255,.08) !important;
       color:#e8ecf8 !important;
@@ -55,7 +68,7 @@
     }
   }
 </style>
-<!-- END HOTFIX -->
+<!-- END GAP FIX -->
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
