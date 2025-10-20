@@ -582,3 +582,33 @@ header, .page, .section, .wrap { overflow: visible !important; }
 .hero::before, .hero .gradient, .hero .cover{
   position:absolute; inset:0; pointer-events:none;
 }
+
+/* --- HERO GAP FIX --- */
+.hero{
+  display: flow-root;
+  padding-bottom: 8px !important;
+  margin-bottom: 0 !important;
+  position: relative;
+}
+.hero h1,
+.hero p{ margin-top: 0 !important; }
+
+.hero + *,
+.hero + section,
+.hero + div,
+.hero + .wrap,
+.hero + .hero-media,
+.hero + figure,
+.hero + img{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.hero::before,
+.hero::after{
+  content: none !important;
+  display: none !important;
+  height: 0 !important;
+}
+@media (max-width: 640px){
+  .hero{ padding-bottom: 6px !important; }
+}
