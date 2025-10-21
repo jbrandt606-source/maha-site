@@ -1,74 +1,76 @@
 <!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
   <!-- BEGIN GAP FIX (replace previous HOTFIX) -->
-<style>
-  /* remove any default page gap */
-  html, body { margin:0; padding:0; }
+  <style>
+    /* no page chrome gap */
+    html, body { margin:0; padding:0; }
 
-  /* hero container — kill phantom top space and margin-collapsing */
-  .hero{
-    position:relative;              /* stops first-child margin collapsing */
-    text-align:center;
-    padding: clamp(8px, 2svh, 16px) 16px clamp(12px, 2.5svh, 20px); /* tight top/btm */
-    margin:0 auto;
-    max-width:980px;
-    overflow:visible;
-  }
-
-  /* eyebrow / heading / paragraph spacing tightened */
-  .hero .eyebrow{ margin:0 0 6px 0; }
-  .hero h1{
-    font-size:clamp(28px, 6.2vw, 44px);
-    line-height:1.18;
-    letter-spacing:-.02em;
-    margin:0 auto 10px;            /* no top margin */
-    max-width:18ch;
-  }
-  .hero p{
-    font-size:clamp(15px, 2.7vw, 18px);
-    line-height:1.55;
-    color:var(--muted, #a9b4d4);
-    margin:0 auto 14px;            /* no top margin */
-    max-width:48ch;
-  }
-
-  /* ensure no parent introduces extra top padding on small screens */
-  @media (max-width: 600px){
-    .container { padding-top:0 !important; margin-top:0 !important; }
-  }
-
-  /* Desktop-only hero media rules (unchanged look, no crop) */
-  @media (min-width:1024px){
-    .hero-media{
-      max-width:950px !important;
-      margin:20px auto 28px !important;
-      border-radius:16px !important;
-      overflow:hidden !important;
-      box-shadow:0 10px 40px rgba(0,0,0,.4) !important;
-    }
-    .hero-img{
-      width:100% !important;
-      height:auto !important;
-      object-fit:contain !important;
-      object-position:center !important;
-      display:block !important;
+    /* HERO: no top gap, keep only bottom gap */
+    .hero{
+      display:flow-root;                 /* stops margin-collapsing */
+      text-align:center;
+      max-width:980px;
+      margin:0 auto clamp(14px, 3svh, 28px); /* bottom-only space */
+      padding:0 16px clamp(12px, 2.5svh, 20px); /* no top padding */
     }
 
-    /* Desktop: readable state dropdown */
-    #stateSelect{
-      background:rgba(255,255,255,.08) !important;
-      color:#e8ecf8 !important;
-      border:1px solid rgba(255,255,255,.18) !important;
-      color-scheme:dark !important;
+    /* kill top margins inside hero */
+    .hero .eyebrow{ margin:0 0 6px 0; }
+    .hero h1{
+      font-size:clamp(28px, 6.2vw, 44px);
+      line-height:1.18;
+      letter-spacing:-.02em;
+      margin:0 auto 10px;               /* no top margin */
+      max-width:18ch;
     }
-    #stateSelect option{
-      color:#e8ecf8 !important;
-      background:#0b1020 !important;
+    .hero p{
+      font-size:clamp(15px, 2.7vw, 18px);
+      line-height:1.55;
+      color:var(--muted,#a9b4d4);
+      margin:0 auto 14px;               /* no top margin */
+      max-width:48ch;
     }
-  }
-</style>
-<!-- END GAP FIX -->
+
+    /* ensure the next block after hero never adds its own top gap */
+    .hero + *{ margin-top:0 !important; }
+
+    /* MOBILE: be strict about no top padding on wrappers */
+    @media (max-width:600px){
+      .container{ padding-top:0 !important; margin-top:0 !important; }
+    }
+
+    /* DESKTOP media inside hero: keep only bottom space */
+    @media (min-width:1024px){
+      .hero-media{
+        max-width:950px !important;
+        margin:0 auto clamp(16px, 2.5vh, 28px) !important; /* no top margin */
+        border-radius:16px !important;
+        overflow:hidden !important;
+        box-shadow:0 10px 40px rgba(0,0,0,.4) !important;
+      }
+      .hero-img{
+        width:100% !important;
+        height:auto !important;
+        object-fit:contain !important;
+        object-position:center !important;
+        display:block !important;
+      }
+
+      /* desktop select styling (unchanged) */
+      #stateSelect{
+        background:rgba(255,255,255,.08) !important;
+        color:#e8ecf8 !important;
+        border:1px solid rgba(255,255,255,.18) !important;
+        color-scheme:dark !important;
+      }
+      #stateSelect option{
+        color:#e8ecf8 !important;
+        background:#0b1020 !important;
+      }
+    }
+  </style>
+</head>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
