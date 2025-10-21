@@ -612,3 +612,49 @@ header, .page, .section, .wrap { overflow: visible !important; }
 @media (max-width: 640px){
   .hero{ padding-bottom: 6px !important; }
 }
+
+/* ──────────────────────────────────────────────
+   Evidence & Data Section Styling (Homepage)
+   Matches Conversation, Letter, and About cards
+   ────────────────────────────────────────────── */
+
+.home-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 680px;
+  text-align: center;
+}
+
+.home-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.home-card p {
+  color: var(--muted, #a9b4d4);
+  font-size: 16px;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+/* Shared blue button style (for Conversation, Evidence & Data, About, etc.) */
+.home-btn {
+  display: inline-block;
+  background: #7aa2ff;
+  color: #0b1020;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+  background: #9bc1ff;
+}
