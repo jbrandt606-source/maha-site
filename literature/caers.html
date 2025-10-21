@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P31PD1SSTD');
+  </script>
 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>FDA CAERS Data • MAHA | Kratom, Tianeptine, Phenibut, Mushrooms, Nitrous Oxide</title>
+  <meta name="description" content="Parent-friendly CAERS (FDA CFSAN Adverse Event Reporting System) summaries for kratom (mitragynine), tianeptine, phenibut (4-amino-3-phenylbutyric acid), amanita/mushroom hallucinogens, and nitrous oxide: total reports, deaths, hospitalizations, and top reactions." />
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/literature/caers.html" />
+
+  <meta property="og:title" content="FDA CAERS Data • MAHA" />
+  <meta property="og:description" content="CAERS summaries for kratom, tianeptine, phenibut, mushroom hallucinogens, and nitrous oxide: reports, deaths, hospitalizations, top reactions." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/literature/caers.html" />
+  <meta property="og:site_name" content="MAHA • Mothers Against Herbal Abuse" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Site stylesheet -->
+  <link rel="stylesheet" href="../style.css?v=1">
+
+  <!-- Page styles (matches MAHA aesthetic) -->
+  <style>
+    :root { --bg:#0b1020; --card:#121832; --text:#e8ecf8; --muted:#a9b4d4; --accent:#7aa2ff; --ok:#5cd67a; --warn:#ffbe5c; --bad:#ff6b6b; }
+    body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;}
+    .wrap{max-width:1060px; margin:0 auto; padding:24px 18px 72px;}
+    .crumbs{font-size:14px; color:var(--muted); margin:10px 0 18px}
+    .crumbs a{color:var(--muted); text-decoration:none}
+    .crumbs span{opacity:.6; margin:0 6px}
+    h1{font-size:clamp(28px,5.4vw,44px); line-height:1.15; letter-spacing:-.01em; margin:6px 0 6px}
+    .lede{color:var(--muted); max-width:70ch; line-height:1.55; font-size:clamp(15px,2.6vw,18px)}
+    .meta{margin-top:10px; font-size:14px; color:var(--muted)}
+    .note{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); padding:14px 16px; border-radius:14px; margin:18px 0 26px}
+
+    .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:14px; margin-top:14px}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.10); border-radius:16px; padding:16px; position:relative}
+    .badge{display:inline-block; font-size:12px; letter-spacing:.02em; text-transform:uppercase; color:#0b1020; background:linear-gradient(180deg,#bcd1ff,#7aa2ff); padding:4px 8px; border-radius:999px; font-weight:700}
+    .drug{font-size:20px; font-weight:800; margin:10px 0 8px}
+    .nums{display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin:10px 0 12px}
+    .n{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10); border-radius:12px; padding:10px}
+    .n .k{font-size:12px; color:var(--muted)}
+    .n .v{font-size:20px; font-weight:800; margin-top:2px}
+    .n.ok .v{color:var(--ok)}
+    .n.warn .v{color:var(--warn)}
+    .n.bad .v{color:var(--bad)}
+
+    details{margin-top:8px}
+    summary{cursor:pointer; color:var(--accent); font-weight:600}
+    .list{margin:10px 0 0; padding-left:18px; color:var(--text)}
+    .list li{margin:4px 0}
+    .src{font-size:13px; color:var(--muted); margin-top:8px}
+    .backstrip{margin-top:28px; font-size:14px}
+    .backstrip a{color:var(--accent); text-decoration:none}
+
+    @media (min-width: 920px){
+      .ledebar{display:flex; align-items:flex-end; gap:20px}
+      .meta{margin-left:auto}
+    }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Dataset",
+    "name":"CAERS summaries for kratom (mitragynine), tianeptine, phenibut, mushroom hallucinogens, and nitrous oxide",
+    "creator":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)"},
+    "description":"Aggregated counts from FDA CAERS: total reports, deaths, hospitalizations, and common adverse reactions for selected products.",
+    "license":"https://creativecommons.org/licenses/by/4.0/",
+    "keywords":["CAERS","kratom","mitragynine","tianeptine","phenibut","4-amino-3-phenylbutyric acid","amanita muscaria","psilocybin","nitrous oxide","adverse events","safety"]
+  }
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="crumbs">
+      <a href="../index.html">Home</a><span>›</span><a href="./index.html">The Literature</a><span>›</span><strong>FDA CAERS Data</strong>
+    </nav>
+
+    <header>
+      <div class="ledebar">
+        <div>
+          <h1>FDA CAERS Data</h1>
+          <p class="lede">Summaries from the FDA CFSAN Adverse Event Reporting System (CAERS) for products often sold in gas stations and vape shops. Parent-friendly, signal-focused.</p>
+        </div>
+        <div class="meta">Last updated: <strong>October 21, 2025</strong></div>
+      </div>
+      <div class="note">
+        <strong>Important context:</strong> CAERS is a spontaneous reporting system for foods and dietary supplements. Reports may be incomplete or duplicative and do not prove causation. They do help detect safety <em>signals</em> that deserve attention.
+      </div>
+    </header>
+
+    <!-- Data cards -->
+    <section class="grid">
+
+      <!-- Kratom / Mitragynine -->
+      <article class="card" id="kratom">
+        <span class="badge">Kratom • Mitragynine</span>
+        <h2 class="drug">Mitragynine (Kratom)</h2>
+        <div class="nums">
+          <div class="n"><div class="k">Total reports</div><div class="v">733</div></div>
+          <div class="n bad"><div class="k">Deaths</div><div class="v">258</div></div>
+          <div class="n warn"><div class="k">Hospitalizations</div><div class="v">191</div></div>
+          <div class="n"><div class="k">Serious cases</div><div class="v">404</div></div>
+        </div>
+        <details>
+          <summary>Top reported reactions (5)</summary>
+          <ul class="list">
+            <li>Death</li>
+            <li>Dependence</li>
+            <li>Toxicity to various agents</li>
+            <li>Vomiting</li>
+            <li>Withdrawal syndrome</li>
+          </ul>
+        </details>
+        <p class="src">Source: CAERS JSON (uploaded to MAHA).</p>
+      </article>
+
+      <!-- Tianeptine -->
+      <article class="card" id="tianeptine">
+        <span class="badge">Antidepressant sold as “supplement”</span>
+        <h2 class="drug">Tianeptine</h2>
+        <div class="nums">
+          <div class="n"><div class="k">Total reports</div><div class="v">65</div></div>
+          <div class="n bad"><div class="k">Deaths</div><div class="v">9</div></div>
+          <div class="n warn"><div class="k">Hospitalizations</div><div class="v">28</div></div>
+          <div class="n"><div class="k">Serious cases</div><div class="v">47</div></div>
+        </div>
+        <details>
+          <summary>Top reported reactions (5)</summary>
+          <ul class="list">
+            <li>Dependence</li>
+            <li>Toxicity to various agents</li>
+            <li>Confusional state</li>
+            <li>Drug abuse</li>
+            <li>Withdrawal syndrome</li>
+          </ul>
+        </details>
+        <p class="src">Source: CAERS JSON (uploaded to MAHA).</p>
+      </article>
+
+      <!-- Phenibut -->
+      <article class="card" id="phenibut">
+        <span class="badge">GABA analog</span>
+        <h2 class="drug">4-amino-3-phenylbutyric acid (Phenibut)</h2>
+        <div class="nums">
+          <div class="n"><div class="k">Total reports</div><div class="v">22</div></div>
+          <div class="n bad"><div class="k">Deaths</div><div class="v">4</div></div>
+          <div class="n warn"><div class="k">Hospitalizations</div><div class="v">10</div></div>
+          <div class="n"><div class="k">Serious cases</div><div class="v">12</div></div>
+        </div>
+        <details>
+          <summary>Top reported reactions (5)</summary>
+          <ul class="list">
+            <li>Loss of consciousness</li>
+            <li>Tachycardia</li>
+            <li>Mydriasis</li>
+            <li>Blood pressure increased</li>
+            <li>Poisoning</li>
+          </ul>
+        </details>
+        <p class="src">Note: often appears as “4-amino-3-phenylbutyric acid.” Source: CAERS JSON (uploaded to MAHA).</p>
+      </article>
+
+      <!-- Amanita muscaria -->
+      <article class="card" id="amanita">
+        <span class="badge">Mushroom • Ibotenic/Muscimol</span>
+        <h2 class="drug">Amanita muscaria</h2>
+        <div class="nums">
+          <div class="n"><div class="k">Total reports</div><div class="v">6</div></div>
+          <div class="n ok"><div class="k">Deaths</div><div class="v">0</div></div>
+          <div class="n warn"><div class="k">Hospitalizations</div><div class="v">1</div></div>
+          <div class="n"><div class="k">Serious cases</div><div class="v">1</div></div>
+        </div>
+        <details>
+          <summary>Top reported reactions (5)</summary>
+          <ul class="list">
+            <li>Nausea</li>
+            <li>Vomiting</li>
+            <li>Hallucination</li>
+            <li>Confusional state</li>
+            <li>Dizziness</li>
+          </ul>
+        </details>
+        <p class="src">Source: CAERS JSON (uploaded to MAHA).</p>
+      </article>
+
+      <!-- Mushroom hallucinogen (psilocybin/psilocin terms) -->
+      <article class="card" id="mushroom-hallucinogen">
+        <span class="badge">Mushroom • Psilocybin</span>
+        <h2 class="drug">Mushroom hallucinogen (psilocybin/psilocin)</h2>
+        <div class="nums">
+          <div class="n"><div class="k">Total reports</div><div class="v">28</div></div>
+          <div class="n ok"><div class="k">Deaths</div><div class="v">0</div></div>
+          <div class="n warn"><div class="k">Hospitalizations</div><div class="v">2</div></div>
+          <div class="n"><div class="k">Serious cases</div><div class="v">5</div></div>
+        </div>
+        <details>
+          <summary>Top reported reactions (5)</summary>
+          <ul class="list">
+            <li>Hallucination</li>
+            <li>Anxiety</li>
+            <li>Nausea</li>
+            <li>Vomiting</li>
+            <li>Dizziness</li>
+          </ul>
+        </details>
+        <p class="src">Source: CAERS JSON (uploaded to MAHA).</p>
+      </article>
+
+      <!-- Nitrous Oxide -->
+      <article class="card" id="nitrous">
+        <span class="badge">Inhalant</span>
+        <h2 class="drug">Nitrous Oxide</h2>
+        <div class="nums">
+          <div class="n"><div class="k">Total reports</div><div class="v">1</div></div>
+          <div class="n ok"><div class="k">Deaths</div><div class="v">0</div></div>
+          <div class="n warn"><div class="k">Hospitalizations</div><div class="v">1</div></div>
+          <div class="n"><div class="k">Serious cases</div><div class="v">1</div></div>
+        </div>
+        <details>
+          <summary>Top reported reactions (5)</summary>
+          <ul class="list">
+            <li>Balance disorder</li>
+            <li>Brain injury</li>
+            <li>Central nervous system lesion</li>
+            <li>Confusional state</li>
+            <li>Cystitis</li>
+          </ul>
+        </details>
+        <p class="src">Source: CAERS JSON (uploaded to MAHA).</p>
+      </article>
+
+    </section>
+
+    <section class="note" aria-label="CAERS methodology and caveats">
+      <strong>How to read CAERS numbers:</strong>
+      <ul class="list">
+        <li>Counts reflect what consumers/clinicians reported; one report can list multiple products and reactions.</li>
+        <li>Under-reporting is common; media attention can drive spikes in reports.</li>
+        <li>CAERS covers foods & dietary supplements (different scope than FAERS for drugs/devices).</li>
+      </ul>
+    </section>
+
+    <p class="backstrip">← <a href="./index.html">Back to The Literature</a></p>
+  </main>
+</body>
+</html>
