@@ -658,3 +658,46 @@ header, .page, .section, .wrap { overflow: visible !important; }
 .home-btn:focus {
   background: #9bc1ff;
 }
+
+/* --- Hero gap: keep bottom only, remove ALL top gap after it --- */
+
+/* Safety: no page chrome gap */
+html, body { margin:0; padding:0; }
+
+/* Make the hero immune to margin-collapsing and keep only bottom space */
+.hero{
+  display: flow-root;                          /* breaks margin collapse */
+  margin: 0 auto clamp(14px, 3svh, 28px);      /* bottom-only gap */
+  padding: 0 16px clamp(12px, 2.5svh, 20px);   /* no top padding */
+  max-width: 980px;
+}
+
+/* Zero top margins inside hero (headings/eyebrow/lead) */
+.hero :is(h1,h2,h3,p,.eyebrow){ margin-top:0; }
+
+/* 🔨 The hammer: remove ANY top gap on the very next block */
+.hero + *{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: 0 !important;
+}
+
+/* If that next block is one of these common wrappers, be explicit */
+.hero + :is(section,.k-card,.card,figure,.hero-media){ 
+  margin-top:0 !important; 
+  padding-top:0 !important; 
+}
+
+/* If the next block starts with an image/figure, kill its top gap too */
+.hero + * :is(figure:first-child, img:first-child){
+  margin-top:0 !important;
+  display:block;            /* removes line-height/inline gaps on img */
+}
+
+/* Some themes give figures default margins—override globally but gently */
+figure{ margin-block-start:0; }
+
+/* Mobile wrappers sometimes inject padding—strip it */
+@media (max-width: 600px){
+  .container{ padding-top:0 !important; margin-top:0 !important; }
+}
