@@ -701,3 +701,58 @@ figure{ margin-block-start:0; }
 @media (max-width: 600px){
   .container{ padding-top:0 !important; margin-top:0 !important; }
 }
+
+/* ==== FINAL HERO GAP KILLER (desktop + mobile) ==== */
+
+/* 1) Strip any forced height/space on the hero */
+.hero{
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-height:auto !important;   /* kill tall hero */
+  height:auto !important;       /* override fixed heights */
+  display:block;                /* undo flex/grid centering gaps */
+  gap:0 !important;             /* if grid/flex had gap */
+  margin-bottom: clamp(16px, 2.5vh, 28px) !important; /* bottom-only space */
+}
+
+/* 2) Some themes add pseudo-element spacers */
+.hero::before,
+.hero::after{
+  content:none !important;
+  display:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  height:0 !important;
+}
+
+/* 3) Headings/paragraphs often add their own top margin */
+.hero :is(h1,h2,h3,p,.eyebrow,.lead){ margin-top:0 !important; }
+
+/* 4) If a spacer/wave/section-gap follows the hero, vaporize it */
+.hero + :is(.spacer,.space,.section-gap,.pad-top,.wave,.divider){
+  display:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  height:0 !important;
+  border:0 !important;
+}
+
+/* 5) Force the next real block to start flush */
+.hero + *{
+  margin-top:0 !important;
+  padding-top:0 !important;
+  border-top-width:0 !important;
+}
+
+/* 6) If that next block's first child is an image/figure/card, zero its top margin */
+.hero + * > :first-child{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+/* 7) Common wrappers/images that sneak margins back in */
+figure, .k-card, .card, .hero-media, .k-card > figure:first-child, .card > img:first-child{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+img{ display:block; } /* avoid inline-image line-height gaps */
