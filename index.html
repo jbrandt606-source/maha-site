@@ -253,68 +253,54 @@
     Choose a topic to learn more (parent-friendly summaries with references):
   </p>
 
-  <!-- two-column grid of bright buttons -->
-  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:600px;margin:0 auto;">
-    <a href="kratom.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Kratom
-    </a>
-
-    <!-- NEW BUTTON for 7-OH -->
-    <a href="7OH.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       7-Hydroxymitragynine (7-OH)
-    </a>
-
-    <a href="tianeptine.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Tianeptine
-    </a>
-    <a href="phenibut.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Phenibut
-    </a>
-    <a href="thc-extracts.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       THC Extracts
-    </a>
-    <a href="salvia.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Salvia divinorum
-    </a>
-    <a href="hallucinogens.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Hallucinogens
-    </a>
-    <a href="amyl-nitrite.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Poppers (Amyl Nitrite)
-    </a>
-    <a href="nitrous.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Nitrous Oxide
-    </a>
-    <a href="mad-honey.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Mad Honey
-    </a>
-    <a href="other.html"
-       style="display:block;padding:12px 20px;border-radius:12px;background:#66c2ff;color:#0b1020;
-       font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25);">
-       Other
-    </a>
+  <!-- uniform buttons grid -->
+  <div class="info-grid">
+    <a href="kratom.html">Kratom</a>
+    <a href="7OH.html">7-Hydroxymitragynine (7-OH)</a>
+    <a href="tianeptine.html">Tianeptine</a>
+    <a href="phenibut.html">Phenibut</a>
+    <a href="thc-extracts.html">THC Extracts</a>
+    <a href="salvia.html">Salvia divinorum</a>
+    <a href="hallucinogens.html">Hallucinogens</a>
+    <a href="amyl-nitrite.html">Poppers (Amyl Nitrite)</a>
+    <a href="nitrous.html">Nitrous Oxide</a>
+    <a href="mad-honey.html">Mad Honey</a>
+    <a href="other.html">Other</a>
   </div>
 </section>
+
+<style>
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .info-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 18px;
+    min-height: 60px;
+    border-radius: 12px;
+    background: #66c2ff;
+    color: #0b1020;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    line-height: 1.3;
+    transition: transform .1s ease, background .2s ease;
+  }
+  .info-grid a:hover {
+    background: #5bb0e5;
+    transform: translateY(-2px);
+  }
+  @media (max-width: 600px) {
+    .info-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
 
     <!-- WHAT'S LEGAL IN MY STATE -->
 <section id="laws" class="k-card"
