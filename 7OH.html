@@ -147,22 +147,88 @@
       </div>
     </section>
 
-   <img src="7oh-kratom-metabolite-parent-guide-maha.jpg?v=1"
-     alt="Bottled kratom tablets marketed as natural energy supplements containing 7-hydroxymitragynine (7-OH)"
-     style="width:100%;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.25);background:#121826;">
+   <!-- IMAGE CARD -->
+<section class="k-card">
+  <h2 style="margin:0 0 8px">Examples of 7-OH–Containing Kratom Products</h2>
+  <p class="muted" style="margin-bottom:12px;">
+    The following photos show how 7-hydroxymitragynine (7-OH) appears in kratom-containing tablets and liquid shots
+    marketed as “natural energy,” “relaxation,” or “focus.” These products are often unregulated and sold beside candy,
+    vapes, or energy drinks — creating a false sense of safety for young buyers.
+  </p>
 
-<img src="7oh-opioid-receptor-risk-explainer.jpg?v=1"
-     alt="Multiple blister packs of kratom capsules with 7-hydroxymitragynine listed on label"
-     style="width:100%;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.25);background:#121826;">
+  <div class="gallery">
+    <figure>
+      <img src="7oh-kratom-metabolite-parent-guide-maha.jpg?v=1"
+           alt="Bottled kratom tablets marketed as natural energy supplements containing 7-hydroxymitragynine (7-OH)">
+      <figcaption>Example of kratom tablets promoted as “energy boosters.” Contains the active metabolite 7-OH.</figcaption>
+    </figure>
 
-<img src="7oh-in-kratom-packaging-warning-maha.jpg?v=1"
-     alt="Colorful kratom capsule bottles and display boxes highlighting 7-hydroxymitragynine content"
-     style="width:100%;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.25);background:#121826;">
+    <figure>
+      <img src="7oh-opioid-receptor-risk-explainer.jpg?v=1"
+           alt="Blister packs of kratom capsules showing 7-hydroxymitragynine on the label">
+      <figcaption>Tablet products labeled as herbal or nootropic supplements that generate 7-OH inside the body.</figcaption>
+    </figure>
 
-<img src="7oh-facts-for-parents-infographic.jpg?v=1"
-     alt="Single-serving liquid kratom shot containing 7-hydroxymitragynine (7-OH) marketed as focus or chill product"
-     style="width:100%;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.25);background:#121826;">
+    <figure>
+      <img src="7oh-in-kratom-packaging-warning-maha.jpg?v=1"
+           alt="Colorful kratom capsule bottles and display boxes highlighting 7-hydroxymitragynine content">
+      <figcaption>Brightly branded tablet card sold in convenience stores, often next to candy at the check out.</figcaption>
+    </figure>
 
+    <figure>
+      <img src="7oh-facts-for-parents-infographic.jpg?v=1"
+           alt="Single-serving liquid kratom shot containing 7-hydroxymitragynine (7-OH)">
+      <figcaption>Liquid “energy” or “chill” shots with concentrated kratom alkaloids including 7-OH.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<style>
+/* --- Gallery spacing & presentation --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 40px; /* space after image grid */
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 0;
+  background: rgba(255,255,255,.02);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  background: #121826;
+}
+
+.gallery figcaption {
+  font-size: 13px;
+  color: var(--muted, #a9b4d4);
+  line-height: 1.4;
+  padding: 8px 10px 10px;
+}
+
+/* Space before next k-card (Myths vs Facts) */
+.gallery + .k-card {
+  margin-top: 40px !important;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .gallery {
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+}
+</style>
     <!-- MYTHS VS FACTS -->
     <section class="k-card">
       <h2 style="margin:0 0 8px">Myths vs. Facts</h2>
