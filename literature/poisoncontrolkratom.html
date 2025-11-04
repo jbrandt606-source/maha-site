@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    /* MAHA property */
+    gtag('config', 'G-MQKC65VZVY', {
+      'linker': { 'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org'] }
+    });
+    /* Gas Station Heroin property */
+    gtag('config', 'G-P31PD1SSTD');
+  </script>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kratom • Poison Control Data (NPDS) • MAHA</title>
+  <meta name="description" content="Parent-friendly view of America’s Poison Centers (NPDS) data for kratom (2019–2023): exposures, outcomes, healthcare utilization, and key toxicology literature."/>
+  <meta name="keywords" content="kratom, NPDS, poison control, America’s Poison Centers, exposures, severity, hospitalization, withdrawal, MAHA"/>
+  <meta name="robots" content="index,follow,max-image-preview:large"/>
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/literature/poison_control_kratom.html"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Kratom • Poison Control Data (NPDS) • MAHA"/>
+  <meta property="og:description" content="NPDS poison-center view of kratom: five-year exposures, outcomes, and healthcare utilization, plus key literature."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/literature/poison_control_kratom.html"/>
+  <meta property="og:site_name" content="MAHA • Mothers Against Herbal Abuse"/>
+  <meta property="og:image" content="https://www.mothersagainstherbalabuse.org/assets/og/maha-evidence.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Mothers Against Herbal Abuse (MAHA)",
+    "url":"https://www.mothersagainstherbalabuse.org",
+    "logo":"https://www.mothersagainstherbalabuse.org/assets/brand/maha-logo.png"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Kratom • Poison Control Data (NPDS)",
+    "url":"https://www.mothersagainstherbalabuse.org/literature/poison_control_kratom.html",
+    "description":"America’s Poison Centers (NPDS) trends for kratom with outcomes and literature.",
+    "breadcrumb":{
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+        {"@type":"ListItem","position":2,"name":"The Literature","item":"https://www.mothersagainstherbalabuse.org/literature/index.html"},
+        {"@type":"ListItem","position":3,"name":"Poison Control • Kratom (NPDS)","item":"https://www.mothersagainstherbalabuse.org/literature/poison_control_kratom.html"}
+      ]
+    }
+  }
+  </script>
+
+  <!-- MAHA styling -->
+  <style>
+    :root{
+      --bg:#0b1020;        /* MAHA charcoal */
+      --card:#121832;      /* card surface */
+      --line:rgba(255,255,255,.12);
+      --muted:#a9b4d4;
+      --text:#e8ecf8;
+      --accent:#7aa2ff;
+      --zebra:rgba(255,255,255,.03);
+      --pill:#1d274f;
+      --pill-brd:#30407a;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0}
+    .wrap{max-width:1060px;margin:0 auto;padding:24px 18px 72px}
+    .crumbs{font-size:14px;color:var(--muted);margin:10px 0 18px}
+    .crumbs a{color:var(--muted);text-decoration:none}
+    .crumbs span{opacity:.6;margin:0 6px}
+    h1{margin:.25rem 0;font-size:clamp(26px,5vw,40px);font-weight:800;letter-spacing:-.01em}
+    h2{margin:.25rem 0;font-size:clamp(18px,3vw,22px);font-weight:800}
+    .lead{color:var(--muted);font-size:clamp(14px,2.2vw,16px);margin:0 0 14px;max-width:72ch;line-height:1.55}
+    .card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card);margin:14px 0}
+    .head{background:#0f1530;color:#fff;padding:.9rem 1rem;font-weight:800;letter-spacing:.02em}
+    .body{padding:1rem}
+    .table-wrap{overflow-x:auto}
+    table{width:100%;border-collapse:collapse;font-size:.92rem}
+    th,td{padding:.65rem .7rem;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+    th{background:#0f1530;color:#fff;font-weight:700;position:sticky;top:0}
+    tbody tr:nth-child(even){background:var(--zebra)}
+    .note{font-size:.85rem;color:var(--muted);margin:.6rem 0 0}
+    .chips{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 0}
+    .chip{background:var(--pill);color:#cfe0ff;border:1px solid var(--pill-brd);border-radius:999px;padding:.26rem .6rem;font-size:.75rem}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-block;background:var(--accent);color:#0b1020;font-weight:800;padding:10px 14px;border-radius:10px;text-decoration:none;border:1px solid var(--line)}
+    .btn:hover,.btn:focus{background:#9bc1ff}
+    @media (max-width:860px){th,td{font-size:.86rem}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="crumbs">
+      <a href="../index.html">Home</a><span>›</span>
+      <a href="./index.html">The Literature</a><span>›</span>
+      <strong>Poison Control • Kratom (NPDS)</strong>
+    </nav>
+
+    <header>
+      <h1>Poison Control • Kratom (Mitragyna speciosa)</h1>
+      <p class="lead">Verified U.S. poison-center (NPDS) data and key literature on kratom exposures, severity, and healthcare utilization.</p>
+    </header>
+
+    <!-- Five-year NPDS table -->
+    <div class="card" id="kratom-npds">
+      <div class="head">Kratom Poison Control Data (U.S. Poison Centers, 2019–2023)</div>
+      <div class="body">
+        <div class="table-wrap">
+          <table aria-label="Kratom Poison Control (NPDS)">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Total Cases<br>(Case Mentions)</th>
+                <th>Single-Substance</th>
+                <th>Pediatric &lt; 20 yrs<br>(≤5 + 6–12 + 13–19)</th>
+                <th>Adults ≥ 20</th>
+                <th>Intentional</th>
+                <th>Treated in HCF</th>
+                <th>Outcome: None</th>
+                <th>Minor</th>
+                <th>Moderate</th>
+                <th>Major</th>
+                <th>Deaths</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>2019</strong></td><td>428</td><td>363</td><td>175</td><td>148</td><td>30%</td><td>26%</td><td>—</td><td>—</td><td>68</td><td>45</td><td>3</td></tr>
+              <tr><td><strong>2020</strong></td><td>1,262</td><td>794</td><td>42</td><td>637</td><td>513</td><td>614</td><td>59</td><td>175</td><td>259</td><td>65</td><td>5</td></tr>
+              <tr><td><strong>2021</strong></td><td>1,524</td><td>948</td><td>56</td><td>741</td><td>588</td><td>712</td><td>49</td><td>213</td><td>385</td><td>24</td><td>4</td></tr>
+              <tr><td><strong>2022</strong></td><td>1,278</td><td>794</td><td>44</td><td>627</td><td>497</td><td>586</td><td>66</td><td>167</td><td>248</td><td>35</td><td>3</td></tr>
+              <tr><td><strong>2023</strong></td><td>1,489</td><td>880</td><td>106</td><td>723</td><td>519</td><td>671</td><td>60</td><td>184</td><td>305</td><td>70</td><td>5</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          <strong>Sources:</strong> America’s Poison Centers® NPDS Annual Reports, Appendix B (Table 22A/22B) 2019–2023.
+          Pediatric counts are combined (≤5 + 6–12 + 13–19). HCF = treated/managed in a Health Care Facility.
+        </p>
+        <div class="chips" aria-label="Key points">
+          <span class="chip">5-yr total case mentions: 5,981</span>
+          <span class="chip">Single-substance: 3,779</span>
+          <span class="chip">Serious outcomes remain common</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2023 New & Emerging summary -->
+    <div class="card" id="new-emerging">
+      <div class="head">2023 “New &amp; Emerging” Findings for Kratom</div>
+      <div class="body">
+        <ul style="margin:.25rem 0 0 1rem;line-height:1.55">
+          <li><strong>Severity:</strong> Among single-substance cases with known outcomes, <strong>57.6%</strong> of kratom exposures produced a <em>moderate/major/fatal</em> effect (third-highest after tianeptine and phenibut).</li>
+          <li><strong>Hospitalization:</strong> <strong>34.3%</strong> of kratom exposures resulted in hospital admission.</li>
+          <li><strong>Withdrawal:</strong> <strong>4.76%</strong> of all kratom exposures were coded for withdrawal; of those seen in healthcare, <strong>33.5%</strong> were admitted, and <strong>13.5%</strong> of withdrawal calls originated from home.</li>
+          <li><strong>Bottom line:</strong> Despite unregulated retail availability, kratom shows high rates of clinically significant toxicity and frequent healthcare utilization—be prepared for both <em>acute overdose</em> and <em>withdrawal management</em>.</li>
+        </ul>
+        <p class="note">Extracted from the 2023 NPDS Annual Report “Emerging Trends” analysis of kratom, phenibut, tianeptine, and nitrous oxide.</p>
+      </div>
+    </div>
+
+    <!-- PubMed / literature -->
+    <div class="card" id="literature">
+      <div class="head">Poison-Center &amp; Toxicology Literature (PubMed)</div>
+      <div class="body">
+        <ol style="margin:.25rem 0 0 1.1rem;line-height:1.55">
+          <li><strong>Kratom exposures reported to United States poison control centers (2011–2017).</strong> Epidemiologic analysis of 1,807 exposures; ~52% serious outcomes; 11 deaths. <a href="https://pubmed.ncbi.nlm.nih.gov/30786220/" target="_blank" rel="noopener">PubMed</a></li>
+          <li><strong>Kratom exposures among older adults reported to U.S. poison centers.</strong> 2014–2019 data; highlights higher adverse-reaction rates in ≥70. <a href="https://pubmed.ncbi.nlm.nih.gov/34143890/" target="_blank" rel="noopener">PubMed</a></li>
+          <li><strong>Characteristics of deaths associated with kratom use.</strong> Fatal case characteristics; polysubstance risk emphasized. <a href="https://pubmed.ncbi.nlm.nih.gov/31429622/" target="_blank" rel="noopener">PubMed</a></li>
+          <li><strong>A case of kratom overdose in a pediatric patient.</strong> 15-year-old with massive ingestion; serious cardiotoxicity noted. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7443027/" target="_blank" rel="noopener">PMC</a></li>
+          <li><strong>Legally lethal kratom: a herbal supplement with overdose potential.</strong> Case report of severe toxicity requiring intubation. <a href="https://pubmed.ncbi.nlm.nih.gov/30620247/" target="_blank" rel="noopener">PubMed</a></li>
+        </ol>
+        <p class="note">Need more? I can generate an expanded PubMed bibliography (10–20 studies) filtered to poison-center/NPDS analyses.</p>
+
+        <div class="btn-row">
+          <a class="btn" href="../index.html">← Home</a>
+          <a class="btn" href="./evidence.html">↩︎ Evidence &amp; Data</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
