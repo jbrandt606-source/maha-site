@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    /* MAHA property */
+    gtag('config', 'G-MQKC65VZVY', {
+      'linker': { 'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org'] }
+    });
+    /* Gas Station Heroin property */
+    gtag('config', 'G-P31PD1SSTD');
+  </script>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Kratom Adverse Events • FAERS & CAERS (Combined) • MAHA</title>
+  <meta name="description" content="Parent-friendly view of FDA adverse-event data for Kratom (mitragynine): FAERS (drugs/biologics) and CAERS (foods/supplements) combined on one page. What they are, how to access, and headline numbers."/>
+  <meta name="keywords" content="kratom, mitragynine, FAERS, CAERS, FDA adverse events, hospitalizations, deaths, Mothers Against Herbal Abuse"/>
+  <meta name="robots" content="index,follow,max-image-preview:large"/>
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/literature/adverseeventskratom.html"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Kratom Adverse Events • FAERS & CAERS (Combined) • MAHA"/>
+  <meta property="og:description" content="FAERS and CAERS snapshots for Kratom (mitragynine), with links to the public sources and parent-friendly context."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/literature/adverseeventskratom.html"/>
+  <meta property="og:site_name" content="MAHA • Mothers Against Herbal Abuse"/>
+  <meta property="og:image" content="https://www.mothersagainstherbalabuse.org/assets/og/maha-evidence.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Kratom Adverse Events • FAERS & CAERS (Combined)",
+    "url":"https://www.mothersagainstherbalabuse.org/literature/adverseeventskratom.html",
+    "description":"FDA FAERS and CAERS snapshots for Kratom (mitragynine) with access instructions and headline numbers.",
+    "breadcrumb":{
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+        {"@type":"ListItem","position":2,"name":"The Literature","item":"https://www.mothersagainstherbalabuse.org/literature/index.html"},
+        {"@type":"ListItem","position":3,"name":"Kratom Adverse Events (FAERS & CAERS)","item":"https://www.mothersagainstherbalabuse.org/literature/adverseeventskratom.html"}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Styles (MAHA theme) -->
+  <style>
+    :root{
+      --bg:#0b1020; --card:#121832; --muted:#a9b4d4; --text:#e8ecf8; --line:rgba(255,255,255,.12);
+      --accent:#7aa2ff; --warn:#ffbe5c; --bad:#ff6b6b; --ok:#5cd67a; --chip:#1b2447; --chip-brd:#2a3b7b;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0}
+    .wrap{max-width:1060px;margin:0 auto;padding:24px 18px 72px}
+    .crumbs{font-size:14px;color:var(--muted);margin:10px 0 18px}
+    .crumbs a{color:var(--muted);text-decoration:none}
+    .crumbs span{opacity:.6;margin:0 6px}
+    h1{font-size:clamp(28px,5.4vw,44px);line-height:1.15;font-weight:800;letter-spacing:-.01em;margin:.25rem 0}
+    .lede{color:var(--muted);max-width:72ch;line-height:1.55;margin:0 0 10px}
+    .meta{color:var(--muted);font-size:.9rem;margin:6px 0 16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0}
+    .head{background:#0f1530;color:#fff;padding:.9rem 1rem;font-weight:800;border-radius:12px;margin:-16px -16px 12px}
+    .pill{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:#0b1020;background:linear-gradient(180deg,#bcd1ff,#7aa2ff);padding:4px 8px;border-radius:999px}
+    .kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:10px 0}
+    .tile{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:12px}
+    .tile .k{font-size:12px;color:var(--muted)}
+    .tile .v{font-size:20px;font-weight:800;margin-top:2px}
+    .tile.bad .v{color:var(--bad)}
+    .tile.warn .v{color:var(--warn)}
+    .tile.ok .v{color:var(--ok)}
+    details{margin-top:8px}
+    summary{cursor:pointer;color:var(--accent);font-weight:800}
+    .note{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px;color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .chip{background:var(--chip);color:#cfe0ff;border:1px solid var(--chip-brd);border-radius:999px;padding:.28rem .6rem;font-size:.75rem}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-block;background:var(--accent);color:#0b1020;font-weight:800;padding:10px 14px;border-radius:10px;text-decoration:none;border:1px solid var(--line)}
+    .btn:hover,.btn:focus{background:#9bc1ff}
+    @media (min-width:720px){ .kpi{grid-template-columns:repeat(4,1fr);} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="crumbs">
+      <a href="../index.html">Home</a><span>›</span>
+      <a href="./index.html">The Literature</a><span>›</span>
+      <strong>Kratom Adverse Events (FAERS &amp; CAERS)</strong>
+    </nav>
+
+    <header>
+      <h1>FAERS + CAERS • Kratom (Mitragynine)</h1>
+      <p class="lede">One page for parents and policymakers: what each FDA dataset is, how to open it yourself, and the headline counts for kratom (mitragynine).</p>
+      <div class="meta">Last updated: <strong>October 2025</strong></div>
+    </header>
+
+    <!-- CAERS (foods/supplements) -->
+    <section class="card" id="caers">
+      <div class="head">FDA CAERS Data (Foods &amp; Dietary Supplements)</div>
+      <span class="pill">Kratom • Mitragynine</span>
+      <h2 style="margin:10px 0 6px">Mitragynine (Kratom) — CAERS Snapshot</h2>
+      <div class="kpi">
+        <div class="tile"><div class="k">Total reports</div><div class="v">733</div></div>
+        <div class="tile bad"><div class="k">Deaths</div><div class="v">258</div></div>
+        <div class="tile warn"><div class="k">Hospitalizations</div><div class="v">191</div></div>
+        <div class="tile"><div class="k">Serious cases</div><div class="v">404</div></div>
+      </div>
+      <details>
+        <summary>What CAERS is</summary>
+        <div class="note">
+          CAERS is FDA CFSAN’s spontaneous adverse-event reporting system for <strong>foods and dietary supplements</strong>.
+          Reports do <em>not</em> prove causation and may be incomplete or duplicative, but they help detect safety <em>signals</em>.
+        </div>
+      </details>
+      <details>
+        <summary>Open CAERS yourself</summary>
+        <div class="note">
+          • FDA overview: <a href="https://www.fda.gov/food/compliance-enforcement-food/cfsan-adverse-event-reporting-system-caers" target="_blank" rel="noopener">CFSAN Adverse Event Reporting System (CAERS)</a><br/>
+          • Download data files / dashboard when available and search terms like <em>kratom</em>, <em>mitragynine</em>, <em>Mitragyna speciosa</em>.<br/>
+          • Filter by <em>Outcome</em> (death, hospitalization) and export to CSV/JSON for analysis.
+        </div>
+      </details>
+      <div class="chips">
+        <span class="chip">Source: CAERS JSON (uploaded to MAHA)</span>
+        <span class="chip">Scope: Kratom/Mitragynine only</span>
+      </div>
+    </section>
+
+    <!-- FAERS (drugs/biologics) -->
+    <section class="card" id="faers">
+      <div class="head">FDA FAERS Data (Drugs &amp; Biologics)</div>
+      <span class="pill">Kratom • Mitragynine</span>
+      <h2 style="margin:10px 0 6px">Mitragynine (Kratom) — FAERS Snapshot</h2>
+      <div class="kpi">
+        <div class="tile"><div class="k">Total reports</div><div class="v">1,452</div></div>
+        <div class="tile bad"><div class="k">Deaths</div><div class="v">714</div></div>
+        <div class="tile warn"><div class="k">Hospitalizations</div><div class="v">362</div></div>
+        <div class="tile"><div class="k">% with death outcome</div><div class="v">49%</div></div>
+      </div>
+      <details>
+        <summary>What FAERS is</summary>
+        <div class="note">
+          FAERS is the FDA’s spontaneous adverse-event reporting system for <strong>drugs/biologics</strong>.
+          Like CAERS, it detects signals and does not by itself prove causation.
+        </div>
+      </details>
+      <details>
+        <summary>Open FAERS yourself</summary>
+        <div class="note">
+          • Public dashboard: <a href="https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-public-dashboard" target="_blank" rel="noopener">FAERS Public Dashboard</a><br/>
+          • In the dashboard, search for <em>mitragynine</em> or related terms; view counts by <em>Outcome</em> (death, hospitalization), and export.
+        </div>
+      </details>
+      <div class="chips">
+        <span class="chip">Source: FAERS line listing provided to MAHA</span>
+        <span class="chip">Scope: Kratom/Mitragynine only</span>
+      </div>
+    </section>
+
+    <section class="note" aria-label="Context">
+      <strong>Important context:</strong> Both FAERS and CAERS are spontaneous reporting systems.
+      Figures reflect what was reported; they help identify <em>signals</em> but do not establish incidence or causation.
+      Under- and over-reporting can occur; media attention and product labeling affect trends.
+    </section>
+
+    <div class="btn-row">
+      <a class="btn" href="../index.html">← Home</a>
+      <a class="btn" href="./evidence.html">↩︎ Evidence &amp; Data</a>
+    </div>
+  </main>
+</body>
+</html>
