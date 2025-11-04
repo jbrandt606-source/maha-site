@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    /* MAHA */
+    gtag('config', 'G-MQKC65VZVY', {
+      'linker': { 'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org'] }
+    });
+    /* Gas Station Heroin */
+    gtag('config', 'G-P31PD1SSTD');
+  </script>
+
   <meta charset="utf-8" />
   <title>Kratom Case Reports • MAHA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-        content="Plain-English summaries of published kratom case reports with direct PDF links. For education and public health awareness." />
+  <meta name="description" content="Parent-friendly summaries of peer-reviewed kratom case reports with direct PDF links. Grouped by topic: cardiac, hepatic, neurologic, psychiatric, neonatal, forensic/overdose, dermatology, treatment, interactions." />
+  <meta name="keywords" content="kratom case reports, mitragynine, 7-hydroxymitragynine, cardiac arrest, ventricular fibrillation, liver injury, cholestasis, seizures, PRES, neonatal abstinence, naloxone reversal, serotonin syndrome, hyperpigmentation, buprenorphine treatment" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/literature/case-reports.html" />
+
+  <!-- OpenGraph / Twitter -->
+  <meta property="og:title" content="Kratom Case Reports • MAHA" />
+  <meta property="og:description" content="Browse real, peer-reviewed case reports linked to kratom — organized for parents by topic." />
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/literature/case-reports.html" />
+  <meta property="og:site_name" content="MAHA • Mothers Against Herbal Abuse" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://www.mothersagainstherbalabuse.org/assets/og/maha-cases.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css?v=1" />
+
+  <!-- JSON-LD: Organization + WebPage + Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Mothers Against Herbal Abuse (MAHA)",
+    "url":"https://www.mothersagainstherbalabuse.org",
+    "logo":"https://www.mothersagainstherbalabuse.org/assets/brand/maha-logo.png"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Kratom Case Reports • MAHA",
+    "url":"https://www.mothersagainstherbalabuse.org/literature/case-reports.html",
+    "description":"Parent-friendly summaries of peer-reviewed kratom case reports grouped by topic with direct PDF links.",
+    "breadcrumb":{
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.mothersagainstherbalabuse.org/"},
+        {"@type":"ListItem","position":2,"name":"The Literature","item":"https://www.mothersagainstherbalabuse.org/literature/index.html"},
+        {"@type":"ListItem","position":3,"name":"Kratom Case Reports","item":"https://www.mothersagainstherbalabuse.org/literature/case-reports.html"}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* Page-scoped helpers for filter bar and badges */
+    :root { --bg:#0b1020; --card:#121832; --text:#e8ecf8; --muted:#a9b4d4; --accent:#7aa2ff; --bad:#ff6b6b; }
+    body{background:var(--bg); color:var(--text); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;}
+    .wrap{max-width:1060px; margin:0 auto; padding:24px 18px 72px;}
+    .crumbs{font-size:14px; color:var(--muted); margin:10px 0 18px}
+    .crumbs a{color:var(--muted); text-decoration:none}
+    .crumbs span{opacity:.6; margin:0 6px}
+    h1{font-size:clamp(28px,5.4vw,44px); line-height:1.15; letter-spacing:-.01em; margin:6px 0 6px}
+    .lede{color:var(--muted); max-width:72ch; line-height:1.55; margin:0 0 14px}
+    .section-title{margin:22px 0 8px; font-size:20px; font-weight:800}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px,1fr));gap:14px}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.10); border-radius:16px; padding:16px}
+    .pill{display:inline-block;font-size:12px;text-transform:uppercase;font-weight:800;color:#0b1020;background:linear-gradient(180deg,#bcd1ff,#7aa2ff);padding:4px 8px;border-radius:999px}
+    .btn-row{display:flex; gap:8px; flex-wrap:wrap}
+    .btn{display:inline-block;background:#7aa2ff;color:#0b1020;font-weight:800;font-size:14px;padding:10px 12px;border-radius:999px;text-decoration:none;border:1px solid rgba(255,255,255,.12)}
+    .btn:hover,.btn:focus{background:#9bc1ff}
+    .note{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);padding:14px;border-radius:14px;margin-top:18px}
+    /* sticky filter bar */
+    .filterbar{position:sticky; top:0; z-index:5; backdrop-filter:blur(6px); background:rgba(11,16,32,.85); border-bottom:1px solid rgba(255,255,255,.08); margin:14px -18px 18px; padding:10px 18px}
+    .filterbar .chips{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{font-size:13px; color:var(--text); border:1px solid rgba(255,255,255,.2); border-radius:999px; padding:6px 10px; text-decoration:none; cursor:pointer}
+    .chip.active{background:#7aa2ff; color:#0b1020; border-color:transparent}
+    .section-anchor{scroll-margin-top:72px}
+  </style>
 </head>
 
-<body>
+  <body>
   <main class="wrap">
     <nav class="crumbs">
       <a href="../index.html">Home</a><span>›</span>
@@ -17,945 +104,481 @@
       <strong>Kratom Case Reports</strong>
     </nav>
 
-    <header style="margin-bottom:1rem">
+    <header>
       <h1>Kratom Case Reports</h1>
       <p class="lede">
-        Published peer-reviewed case reports describing real clinical presentations linked to <em>Mitragyna speciosa</em> (kratom).  
-        Each summary includes a direct link to the PDF stored in this site’s main repository.  
-        <strong>For education only — not medical advice.</strong>
+        Peer-reviewed, real-world cases linked to <em>Mitragyna speciosa</em> (kratom). Each card contains a plain-English summary and a direct PDF link.
+        <strong>Educational use only — not medical advice.</strong>
       </p>
     </header>
 
-    <section class="grid">
+    <!-- Sticky filter bar -->
+    <div class="filterbar" aria-label="Filter by topic">
+      <div class="chips" id="chips">
+        <a class="chip active" data-filter="all">All</a>
+        <a class="chip" data-filter="cardiac">Cardiac</a>
+        <a class="chip" data-filter="hepatic">Hepatic</a>
+        <a class="chip" data-filter="neurologic">Neurologic</a>
+        <a class="chip" data-filter="psychiatric">Psychiatric</a>
+        <a class="chip" data-filter="neonatal">Neonatal</a>
+        <a class="chip" data-filter="derm">Dermatology</a>
+        <a class="chip" data-filter="forensic">Forensic / Overdose</a>
+        <a class="chip" data-filter="treatment">Withdrawal / Treatment</a>
+        <a class="chip" data-filter="interactions">Drug Interactions</a>
+      </div>
+    </div>
 
+    <script>
+      // Simple client-side filter: show/hide cards by data-topic
+      document.getElementById('chips').addEventListener('click', function(e){
+        if(!e.target.classList.contains('chip')) return;
+        const chips = Array.from(document.querySelectorAll('.chip'));
+        chips.forEach(c => c.classList.remove('active'));
+        e.target.classList.add('active');
+
+        const val = e.target.getAttribute('data-filter');
+        const cards = Array.from(document.querySelectorAll('[data-topic]'));
+        if(val === 'all'){ cards.forEach(el => el.style.display=''); return; }
+        cards.forEach(el => {
+          el.style.display = (el.getAttribute('data-topic').includes(val)) ? '' : 'none';
+        });
+
+        // Send simple GA event for filter
+        if(window.gtag){
+          gtag('event','filter_click',{ 'filter': val, 'page':'kratom_case_reports' });
+        }
+      });
+    </script>
+    <!-- CARDIAC -->
+    <h2 id="cardiac" class="section-title section-anchor">Cardiac</h2>
+    <section class="grid">
+      <!-- Case 48 -->
+      <article class="card" data-topic="cardiac">
+        <span class="pill">Cardiac</span>
+        <h3>Cardiac arrest in a healthy young adult after kratom tea</h3>
+        <p>35M had out-of-hospital arrest with no co-ingestants; transient LV systolic dysfunction and small hypoxic infarcts; ultimately recovered.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2048%20Cardiac%20arrest%20in%20a%20young%20healthy%20male%20patient%20secondary%20to%20kratom%20ingestion.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 24 -->
+      <article class="card" data-topic="cardiac">
+        <span class="pill">Arrhythmia</span>
+        <h3>Ventricular Fibrillation & QT Prolongation with Kratom</h3>
+        <p>44M suffered out-of-hospital VF arrest; ECG showed prolonged QT. Cath and MRI were normal; he received a subcutaneous ICD. Authors warn of potential proarrhythmic risk (especially with stimulants/caffeine).</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2043%20Report%20of%20ventricular%20fibrillation%20in%20a%2044-year-old%20man%20using%20kratom.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 3 -->
+      <article class="card" data-topic="cardiac">
+        <span class="pill">Arrhythmia • Youth</span>
+        <h3>Ventricular Fibrillation During Football — Kratom + Caffeine</h3>
+        <p>18M collapsed in training with ventricular fibrillation; plasma mitragynine 98 ng/mL and caffeine present. Normal echo/CTA/CMR; ICD implanted for secondary prevention. Authors implicate synergy of kratom, energy drink, and exertion; caution against stimulant combinations.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case report 3 - Ventricular fibrillation during football training as a consequence of kratom and caffeine use in an adolescent.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case Study 2 -->
+      <article class="card" data-topic="cardiac">
+        <span class="pill">ECG</span>
+        <h3>Kratom Cardiotoxicity: Reversible Brugada Pattern + QTc Prolongation</h3>
+        <p>25M ingesting ~84–100 g/day kratom presented with seizure-like syncope; ECG showed type-1 Brugada pattern (QRS 160 ms, QTc 654 ms) that normalized after abstinence and electrolyte repletion.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case study 2 Kratom Cardiotoxicity Reversible Brugada Pattern and QTc Prolongation.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 9 -->
+      <article class="card" data-topic="cardiac">
+        <span class="pill">Cardiac / Toxicity</span>
+        <h3>Death from Kratom Toxicity and the Possible Role of Intralipid</h3>
+        <p>26-year-old male suffered cardiac arrest ~24 h after kratom ingestion. Temporary response to IV lipid emulsion (“lipid rescue”) before multi-organ failure. Authors propose cardiotoxic metabolites and discuss emergency treatment options.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2058%20Death%20from%20Kratom%20toxicity%20and%20the%20possible%20role%20of%20intralipid.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- HEPATIC -->
+    <h2 id="hepatic" class="section-title section-anchor">Hepatic</h2>
+    <section class="grid">
       <!-- Case 1 -->
-      <article class="card">
+      <article class="card" data-topic="hepatic">
         <span class="pill">Liver injury</span>
         <h3>Kratom: A “Dangerous Player” in the Opioid Crisis</h3>
-        <p>
-          32-year-old man with acute jaundice and cholestatic hepatitis after heavy kratom use.
-          Viral, autoimmune, and metabolic causes excluded. Liver enzymes improved after discontinuation.
-          Authors highlight kratom’s potential hepatotoxicity and misuse amid the opioid crisis.
-        </p>
+        <p>32-year-old man with acute jaundice and cholestatic hepatitis after heavy kratom use. Viral, autoimmune, and metabolic causes excluded. Liver enzymes improved after discontinuation. Authors highlight kratom’s potential hepatotoxicity and misuse amid the opioid crisis.</p>
         <div class="btn-row">
           <a class="btn" href="/Case%20report%2055%20Kratom%20a%20dangerous%20player%20in%20the%20opioid%20crisis.pdf">Open PDF</a>
         </div>
       </article>
 
-      <!-- Case 2 -->
-      <article class="card">
-        <span class="pill">Neurology</span>
-        <h3>Posterior Reversible Encephalopathy After Kratom + Stimulant Use</h3>
-        <p>
-          22-year-old male developed severe headache and confusion after kratom and amphetamine ingestion.
-          MRI revealed bilateral occipital and cerebellar vasogenic edema (PRES). Improved with supportive care.
-          Suggests synergistic hypertensive effects between kratom and stimulants.
-        </p>
-        <div class="btn-row">
-          <a class="btn" href="/Case%20report%2060%20Posterior%20reversible%20leukoencephalopathy%20syndrome%20after%20kratom%20ingestion.pdf">Open PDF</a>
-        </div>
-      </article>
-
-      <!-- Case 3 -->
-      <article class="card">
-        <span class="pill">Seizures</span>
-        <h3>Recurrent Seizures from Chronic Kratom Use</h3>
-        <p>
-          19-year-old chronic kratom user presented with recurrent tonic-clonic seizures and MRI changes in the basal ganglia.
-          Seizures ceased after kratom cessation. Authors describe atypical neuro-toxicity from prolonged exposure.
-        </p>
-        <div class="btn-row">
-          <a class="btn" href="/Case%20report%2055%20Recurrent%20seizures%20from%20chronic%20kratom%20use,%20an%20atypical%20herbal%20opioid.pdf">Open PDF</a>
-        </div>
-      </article>
-
       <!-- Case 4 -->
-      <article class="card">
+      <article class="card" data-topic="hepatic">
         <span class="pill">Liver pathology</span>
         <h3>Histologic Characterization of Kratom-Related Liver Injury</h3>
-        <p>
-          38-year-old man with dark urine and pruritus after kratom ingestion.
-          Biopsy showed portal inflammation with eosinophils, bile duct damage, and canalicular cholestasis.
-          First report detailing histopathology of kratom-induced liver injury.
-        </p>
+        <p>38-year-old man with dark urine and pruritus after kratom ingestion. Biopsy showed portal inflammation with eosinophils, bile duct damage, and canalicular cholestasis. First report detailing histopathology of kratom-induced liver injury.</p>
         <div class="btn-row">
           <a class="btn" href="/Case%20report%2057%20Histologic%20Characterization%20of%20Kratom%20Use-Associated%20Liver%20Injury.pdf">Open PDF</a>
         </div>
       </article>
 
-      <!-- Case 5 -->
-      <article class="card">
-        <span class="pill">Endocrine</span>
-        <h3>Kratom-Induced Hyperprolactinemia & Secondary Hypogonadism</h3>
-        <p>
-          42-year-old male presented with fatigue and low testosterone.
-          Found to have elevated prolactin while using kratom daily; values normalized after cessation.
-          Highlights opioid-like endocrine suppression via dopamine inhibition.
-        </p>
+      <!-- Case 44 -->
+      <article class="card" data-topic="hepatic">
+        <span class="pill">Hepatic</span>
+        <h3>Kratom cholestatic liver injury mimicking PBC</h3>
+        <p>37F developed severe cholestatic hepatitis that histologically mimicked PBC; autoimmune markers negative. Improved rapidly after stopping kratom.</p>
         <div class="btn-row">
-          <a class="btn" href="/Case%20report%2056%20Kratom,%20an%20Emerging%20Drug%20of%20Abuse,%20Raises%20Prolactin%20and%20Causes%20Secondary%20Hypogonadism.pdf">Open PDF</a>
+          <a class="btn" href="/Case%20report%2044%20Kratom%20induced%20severe%20cholestatic%20liver%20injury%20histologically%20mimicking%20primary%20biliary%20cholangitis.pdf">Open PDF</a>
         </div>
       </article>
 
-      <!-- Case 6 -->
-      <article class="card">
-        <span class="pill">Addiction</span>
-        <h3>Kratom Addiction and Withdrawal</h3>
-        <p>
-          37-year-old woman developed dependence on kratom extract with severe opioid-type withdrawal:
-          myalgias, chills, anxiety, and GI upset. Managed successfully with clonidine and hydroxyzine.
-          Demonstrates clear addictive potential and cross-tolerance with opioids.
-        </p>
+      <!-- Case 51 -->
+      <article class="card" data-topic="hepatic">
+        <span class="pill">Hepatic</span>
+        <h3>Kratom-induced cholestatic liver injury (biopsy-proven)</h3>
+        <p>52M developed bilirubin 28.9 mg/dL after ~2 months of daily kratom. Biopsy: canalicular cholestasis &amp; bile-duct injury. Improved with UDCA + cessation.</p>
         <div class="btn-row">
-          <a class="btn" href="/Case%20report%2061%20A%20Case%20Report%20of%20Kratom%20Addiction%20and%20Withdrawal.pdf">Open PDF</a>
+          <a class="btn" href="/Case%20report%2051%20Kratom-Induced%20Cholestatic%20Liver%20Injury%20and%20Its%20Conservative%20Management.pdf">Open PDF</a>
         </div>
       </article>
 
+      <!-- Case 53 -->
+      <article class="card" data-topic="hepatic">
+        <span class="pill">DILI</span>
+        <h3>Drug-induced liver injury with positive rechallenge</h3>
+        <p>47M developed mixed pattern DILI ~21 days after starting kratom; recurrence within 2 days on rechallenge confirmed causality (RUCAM high probability).</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2053%20Drug-Induced%20Liver%20Injury%20Caused%20by%20Kratom%20Use%20as%20an%20Alternative%20Pain%20Treatment%20Amid%20an%20Ongoing%20Opioid%20Epidemic.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 28 -->
+      <article class="card" data-topic="hepatic">
+        <span class="pill">Hepatic • Regulation</span>
+        <h3>Kratom-Induced Acute Liver Injury (Cholestatic) — Call for Regulation</h3>
+        <p>47M with jaundice/pruritus after 3 weeks of kratom; cholestatic pattern, improving off-product. Paper reviews rising DILI from herbal products and shows current U.S. patchwork legality.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2028%20Kratom-induced%20acute%20liver%20injury.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 33 -->
+      <article class="card" data-topic="hepatic">
+        <span class="pill">Hepatic</span>
+        <h3>Kratom-Induced Hepatitis (Biopsy-Proven)</h3>
+        <p>23M developed bilirubin 34 mg/dL and ALP 220 IU/L after 14 days of high-dose kratom (30 g/day). Biopsy: canalicular cholestasis, perivenular necrosis, mixed portal inflammation.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2033%20Kratom%20(Mitragyna%20speciosa)-Induced%20Hepatitis.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 23 -->
+      <article class="card" data-topic="hepatic">
+        <span class="pill">Hepatic Failure</span>
+        <h3>Severe Jaundice &amp; Life-Threatening Liver Failure — Reversed by Plasma Exchange</h3>
+        <p>56M with cholestatic liver failure after kratom; Tbili peaked at 70.6 mg/dL. Four therapeutic plasma exchanges rapidly reduced bilirubin and improved clinical status.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2023%20Severe%20jaundice%20with%20life-threatening%20liver%20failure%20after%20Kratom%20use.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- NEUROLOGIC -->
+    <h2 id="neurologic" class="section-title section-anchor">Neurologic</h2>
+    <section class="grid">
+      <!-- Case 2 already listed under PRES; repeat not required -->
+      <!-- Case 3 already listed under seizures; repeat not required -->
+
+      <!-- Case 18 -->
+      <article class="card" data-topic="neurologic">
+        <span class="pill">Neurology • Seizure</span>
+        <h3>Seizure and Coma Following Kratom Exposure</h3>
+        <p>64M experienced generalized seizure and coma after kratom–<em>Datura</em> tea; first lab-confirmed seizure case; neuroexcitation suspected.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2018%20-%20Seizure%20and%20coma%20following%20Kratom%20(Mitragynina%20speciosa%20Korth)%20exposure.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 19 -->
+      <article class="card" data-topic="neurologic">
+        <span class="pill">Neurology • Ischemia</span>
+        <h3>Reversible Ischemic MRI Changes Linked to Chronic Kratom Use</h3>
+        <p>20s M with heavy kratom use; bilateral cytotoxic edema on DWI/ADC reversed at 2 months; suggests transient vasospasm/vasculitis.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2019%20A%20case%20report%20of%20reversible%20ischemic%20MRI%20changes%20and%20discussion%20of%20possible%20link%20to%20kratom%20use.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 22 -->
+      <article class="card" data-topic="neurologic">
+        <span class="pill">Neurologic</span>
+        <h3>Transient Paralysis After Kratom</h3>
+        <p>39F sudden whole-body paralysis ~1h post-ingestion with intact awareness; workup negative; neuromuscular blockade mechanism proposed.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2041%20Transient%20Paralysis%20A%20Novel%20Expression%20of%20Kratom%20Toxicity%20in%20Humans.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- PSYCHIATRIC -->
+    <h2 id="psychiatric" class="section-title section-anchor">Psychiatric</h2>
+    <section class="grid">
+      <!-- Case 22 psych -->
+      <article class="card" data-topic="psychiatric">
+        <span class="pill">Psychiatry</span>
+        <h3>Kratom-Induced Psychiatric Decompensation &amp; Paranoid Delusions</h3>
+        <p>35M with schizoaffective disorder presented with new paranoid delusions after escalating kratom use; symptoms persistent despite trials; stimulant-like effects suspected.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2022%20Kratom-Induced%20Psychiatric%20Decompensation%20and%20Paranoid%20Delusions.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 27 -->
+      <article class="card" data-topic="psychiatric">
+        <span class="pill">Mental Health</span>
+        <h3>Self-Management of Depression/Anxiety with Kratom — Then Failure Under Stress</h3>
+        <p>63M long-term daily use “failed” under stress; detox and switch to standard pharmacotherapy/psychotherapy; functional dependence without clear withdrawal.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2037%20Kratom%20use%20for%20depression%3Aanxiety%20self-management%20challenges%20during%20the%20COVID-19%20pandemic%20-%20A%20case%20report.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case Study 1 -->
+      <article class="card" data-topic="psychiatric">
+        <span class="pill">Psychosis • Self-harm</span>
+        <h3>Cannabis + Kratom–Induced Psychosis With Self-Amputation</h3>
+        <p>31M substance-induced psychosis after cannabinoids + kratom; self-amputation; stabilized on antipsychotics; later reconstruction after abstinence.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case study 1 - Case Report Cannabis and kratom-induced self-amputation of ears and penis.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+    <!-- NEONATAL -->
+    <h2 id="neonatal" class="section-title section-anchor">Neonatal</h2>
+    <section class="grid">
+      <!-- Case 7 (already above) and Case 8 are the core neonatal set; include any NAS repeats if you want a trio -->
       <!-- Case 7 -->
-      <article class="card">
+      <article class="card" data-topic="neonatal">
         <span class="pill">Neonatal</span>
         <h3>Neonatal Abstinence Syndrome from Maternal Kratom Use</h3>
-        <p>
-          Term infant developed withdrawal (Finnegan >10) despite negative opioid tox screen.
-          Mother reported chronic kratom use for pain. Infant required oral morphine taper.
-          Authors stress including kratom exposure in NAS differential diagnosis.
-        </p>
+        <p>Term infant developed withdrawal (Finnegan &gt;10) despite negative opioid tox screen; oral morphine taper. Screen for kratom in NAS workups.</p>
         <div class="btn-row">
           <a class="btn" href="/Case%20report%2054%20Neonatal%20abstinence%20syndrome%20secondary%20to%20%27kratom%27.pdf">Open PDF</a>
         </div>
       </article>
 
       <!-- Case 8 -->
-      <article class="card">
-        <span class="pill">Maternal & Neonatal</span>
-        <h3>Maternal and Neonatal Kratom Dependence & Withdrawal</h3>
-        <p>
-          Postpartum mother using large daily kratom doses developed dependency;
-          her newborn required NICU morphine for withdrawal symptoms.
-          Demonstrates transplacental exposure and dependence potential.
-        </p>
+      <article class="card" data-topic="neonatal">
+        <span class="pill">Maternal &amp; Neonatal</span>
+        <h3>Maternal and Neonatal Kratom Dependence &amp; Withdrawal</h3>
+        <p>Postpartum mother using large daily kratom doses developed dependency; newborn required NICU morphine; placental transfer documented.</p>
         <div class="btn-row">
           <a class="btn" href="/Case%20report%2059%20Novel%20case%20of%20maternal%20and%20neonatal%20kratom%20dependence%20and%20withdrawal.pdf">Open PDF</a>
         </div>
       </article>
 
-      <!-- Case 9 -->
-      <article class="card">
-        <span class="pill">Cardiac / Toxicity</span>
-        <h3>Death from Kratom Toxicity and the Possible Role of Intralipid</h3>
-        <p>
-          26-year-old male suffered cardiac arrest ~24 h after kratom ingestion.
-          Temporary response to IV lipid emulsion (“lipid rescue”) before multi-organ failure.
-          Authors propose cardiotoxic metabolites and discuss emergency treatment options.
-        </p>
+      <!-- Case 52 -->
+      <article class="card" data-topic="neonatal">
+        <span class="pill">Neonatal</span>
+        <h3>Neonatal abstinence syndrome from maternal kratom</h3>
+        <p>Term infant Finnegan 18; required oral morphine for ~2 months; emphasizes detailed maternal supplement history.</p>
         <div class="btn-row">
-          <a class="btn" href="/Case%20report%2058%20Death%20from%20Kratom%20toxicity%20and%20the%20possible%20role%20of%20intralipid.pdf">Open PDF</a>
+          <a class="btn" href="/Case%20report%2052%20An%20unusual%20cause%20for%20neonatal%20abstinence%20syndrome.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- DERMATOLOGY -->
+    <h2 id="derm" class="section-title section-anchor">Dermatology</h2>
+    <section class="grid">
+      <!-- Case 20 -->
+      <article class="card" data-topic="derm">
+        <span class="pill">Dermatology</span>
+        <h3>Kratom-Induced Photo-Exposed Hyperpigmentation</h3>
+        <p>32M with blue-gray facial/neck hyperpigmentation after long-term kratom; biopsy: melanin-laden histiocytes; fades after cessation.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2020-%20implicating%20the%20botanical%20ingredient%20as%20a%20culprit%20in%20recalcitrant%20photo-exposed%20hyperpigmentation.pdf">Open PDF</a>
         </div>
       </article>
 
-<!-- Case 44 -->
-<article class="card">
-  <span class="pill">Hepatic</span>
-  <h3>Kratom cholestatic liver injury mimicking PBC</h3>
-  <p>37F developed severe cholestatic hepatitis that histologically mimicked PBC; autoimmune markers negative. Improved rapidly after stopping kratom.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2044%20Kratom%20induced%20severe%20cholestatic%20liver%20injury%20histologically%20mimicking%20primary%20biliary%20cholangitis.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 46 -->
-<article class="card">
-  <span class="pill">Pediatric</span>
-  <h3>Teen overdose from kratom capsules</h3>
-  <p>15F ingested ~225 g of capsules (suicide attempt): nausea, tremor, hypokalemia, QTc 474 ms. Supportive care; symptoms resolved in ~14 h.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2046%20Case%20of%20Kratom%20Overdose%20in%20a%20Pediatric%20Patient.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 47 -->
-<article class="card">
-  <span class="pill">Post-op withdrawal</span>
-  <h3>Complicated post-operative course due to kratom withdrawal</h3>
-  <p>55F using daily kratom for pain developed hallucinations, agitation, fever, and hypotension after surgery; required ICU. Highlights need to screen for kratom pre-op.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2047%20Complicated%20postoperative%20course%20secondary%20to%20kratom%20withdrawal.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 48 -->
-<article class="card">
-  <span class="pill">Cardiac</span>
-  <h3>Cardiac arrest in a healthy young adult after kratom tea</h3>
-  <p>35M had out-of-hospital arrest with no co-ingestants; transient LV systolic dysfunction and small hypoxic infarcts; ultimately recovered.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2048%20Cardiac%20arrest%20in%20a%20young%20healthy%20male%20patient%20secondary%20to%20kratom%20ingestion.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 49 -->
-<article class="card">
-  <span class="pill">Critical care</span>
-  <h3>Undifferentiated shock with extreme procalcitonin</h3>
-  <p>18M presented in shock with procalcitonin >200 ng/mL; cultures and imaging negative. Improved with fluids/pressors—likely kratom effect or withdrawal.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2049%20Undifferentiated%20Shock%20and%20Extreme%20Elevation%20of%20Procalcitonin%20Related%20to%20Kratom%20Use.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 51 -->
-<article class="card">
-  <span class="pill">Hepatic</span>
-  <h3>Kratom-induced cholestatic liver injury (biopsy-proven)</h3>
-  <p>52M developed bilirubin 28.9 mg/dL after ~2 months of daily kratom. Biopsy: canalicular cholestasis & bile-duct injury. Improved with UDCA + cessation.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2051%20Kratom-Induced%20Cholestatic%20Liver%20Injury%20and%20Its%20Conservative%20Management.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 52 -->
-<article class="card">
-  <span class="pill">Neonatal</span>
-  <h3>Neonatal abstinence syndrome from maternal kratom</h3>
-  <p>Term infant with Finnegan score 18 required oral morphine; weaned over ~2 months. Kratom undetectable on routine tox—history is key.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2052%20An%20unusual%20cause%20for%20neonatal%20abstinence%20syndrome.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 53 -->
-<article class="card">
-  <span class="pill">DILI</span>
-  <h3>Drug-induced liver injury with positive rechallenge</h3>
-  <p>47M developed mixed pattern DILI ~21 days after starting kratom; recurrence within 2 days on rechallenge confirmed causality (RUCAM high probability).</p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2053%20Drug-Induced%20Liver%20Injury%20Caused%20by%20Kratom%20Use%20as%20an%20Alternative%20Pain%20Treatment%20Amid%20an%20Ongoing%20Opioid%20Epidemic.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Fatal (Canada) -->
-<article class="card">
-  <span class="pill">Forensic</span>
-  <h3>Fatal mitragynine toxicity (Canada)</h3>
-  <p>56F with postmortem **mitragynine 2,500 ng/mL**—an independently lethal concentration. Highlights lethality of high-dose kratom powder.</p>
-  <div class="btn-row">
-    <a class="btn" href="/Fatal%20Mitragynine-Associated%20Toxicity%20in%20Canada.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 19 -->
-<article class="card">
-  <span class="pill">Emergency / ICU</span>
-  <h3>Kratom Ingestion → Shock, Severe Acidosis, Intubation</h3>
-  <p>
-    35M arrived apneic with mixed cardiogenic/distributive shock, profound metabolic acidosis, hyperkalemia, and required RSI, dual pressors, and emergent hemodialysis; extubated and discharged after 72h. Highlights ED/ICU management of severe kratom toxicity.  [oai_citation:0‡Case report 42 Kratom Ingestion and Emergency Care.pdf](sediment://file_00000000006c7230a5e2b531fb9a301a)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2042%20Kratom%20Ingestion%20and%20Emergency%20Care.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 20 -->
-<article class="card">
-  <span class="pill">Hepatic + Withdrawal</span>
-  <h3>Transaminitis; Naltrexone Triggered Opioid-Like Withdrawal</h3>
-  <p>
-    38M with chronic kratom use developed marked AST/ALT elevation; after reporting abstinence he received IM naltrexone and experienced classic opioid-type withdrawal within 24–48h. Paper urges <em>naloxone/naltrexone test dosing</em> before long-acting naltrexone in kratom users.  [oai_citation:1‡Case report 38 Kratom-induced transaminitis with subsequent precipitated opioid withdrawal following naltrexone .pdf](sediment://file_000000002774723083c73d14646bbe82)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2038%20Kratom-induced%20transaminitis%20with%20subsequent%20precipitated%20opioid%20withdrawal%20following%20naltrexone%20.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 21 -->
-<article class="card">
-  <span class="pill">Psychiatry</span>
-  <h3>Kratom-Induced Psychosis</h3>
-  <p>
-    43M with PTSD, adrenal insufficiency switched from capsule to liquid kratom, developed one week of insomnia, grandiose delusions, and AVH; rapid improvement with supportive inpatient care.  [oai_citation:2‡Case report 36 A Case Report of Kratom-Induced Psychosis.pdf](sediment://file_000000005d447230803a8a5b880722cc)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2036%20A%20Case%20Report%20of%20Kratom-Induced%20Psychosis.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 22 -->
-<article class="card">
-  <span class="pill">Neurologic</span>
-  <h3>Transient Paralysis After Kratom</h3>
-  <p>
-    39F experienced sudden whole-body paralysis with intact awareness ~1h after ingestion; workup negative. Authors propose kratom-related neuromuscular blockade as mechanism.  [oai_citation:3‡Case report 41 Transient Paralysis A Novel Expression of Kratom Toxicity in Humans.pdf](sediment://file_00000000359c72308375290c29f3700e)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2041%20Transient%20Paralysis%20A%20Novel%20Expression%20of%20Kratom%20Toxicity%20in%20Humans.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 23 -->
-<article class="card">
-  <span class="pill">Hepatic (Series)</span>
-  <h3>Kratom-Induced Liver Injury — Two Patients</h3>
-  <p>
-    Case-series: 27M with AST/ALT ~400s improved after cessation; 36F with bilirubin 39.5 mg/dL, INR 2.7 had cholestatic hepatitis on biopsy and required transfer to liver-transplant center. Emphasizes rising HDS-related DILI.  [oai_citation:4‡Case report 37 Kratom-Induced Liver Injury.pdf](sediment://file_00000000e72c7230b90b56cec121c3fc)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2037%20Kratom-Induced%20Liver%20Injury.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 24 -->
-<article class="card">
-  <span class="pill">Cardiac</span>
-  <h3>Ventricular Fibrillation & QT Prolongation with Kratom</h3>
-  <p>
-    44M suffered out-of-hospital VF arrest; ECG showed prolonged QT. Cath and MRI were normal; he received a subcutaneous ICD. Authors warn of potential proarrhythmic risk (especially with stimulants/caffeine).  [oai_citation:5‡Case report 43 Report of ventricular fibrillation in a 44-year-old man using kratom.pdf](sediment://file_000000007294723084062c92c68f4eaf)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2043%20Report%20of%20ventricular%20fibrillation%20in%20a%2044-year-old%20man%20using%20kratom.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 25 -->
-<article class="card">
-  <span class="pill">Multi-organ</span>
-  <h3>“Cheating Death”: Rhabdomyolysis, Stroke, Reversible Cardiomyopathy</h3>
-  <p>
-    28M kratom user found unresponsive; developed massive rhabdomyolysis, AKI needing dialysis, multifocal ischemic strokes, and transient non-ischemic cardiomyopathy that later normalized. Discharged dialysis-dependent.  [oai_citation:6‡Case report 35  A Rare Case Presentation of Kratom Toxicity.pdf](sediment://file_0000000052ec7230bef6e82bd52ddfee)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2035%20%20A%20Rare%20Case%20Presentation%20of%20Kratom%20Toxicity.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 26 -->
-<article class="card">
-  <span class="pill">Addiction Medicine</span>
-  <h3>Kratom Overdose & Medical Comorbidity — A Commentary</h3>
-  <p>
-    Editorial highlights rising kratom morbidity (e.g., compartment syndrome with rhabdomyolysis, renal failure) and urges non-addiction clinicians to screen, educate, and manage withdrawal like opioid use disorder when indicated.  [oai_citation:7‡Case report 39 A Case of Kratom Use.pdf](sediment://file_000000000090723088ee0a8860cc7a2d)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2039%20A%20Case%20of%20Kratom%20Use.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 27 -->
-<article class="card">
-  <span class="pill">Mental Health</span>
-  <h3>Self-Management of Depression/Anxiety with Kratom — Then Failure Under Stress</h3>
-  <p>
-    63M used kratom 3–4× daily for years to blunt major depression/anxiety and Menière symptoms; during COVID-related stress the regimen “failed,” prompting detox and switch to pharmacotherapy/psychotherapy. Illustrates functional dependence without clear withdrawal.  [oai_citation:8‡Case report 37 Kratom use for depression:anxiety self-management challenges during the COVID-19 pandemic - A case report.pdf](sediment://file_00000000bacc72309e4d50e584ddf8e1)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2037%20Kratom%20use%20for%20depression%3Aanxiety%20self-management%20challenges%20during%20the%20COVID-19%20pandemic%20-%20A%20case%20report.pdf">Open PDF</a>
-  </div>
-</article>
-
-      <!-- Case 29 -->
-<article class="card">
-  <span class="pill">Drug Interaction</span>
-  <h3>Adverse Drug Interaction: Kratom + Amitriptyline</h3>
-  <p>
-    37M with depression and opioid use disorder developed xerostomia, constipation, dry eyes, and mild liver enzyme elevation while taking both kratom and amitriptyline. Symptoms resolved when kratom was stopped. Authors attribute this to <strong>CYP2D6 inhibition</strong> by kratom alkaloids potentiating amitriptyline toxicity. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2029%20Adverse%20Drug%20Interaction%20Between%20Kratom%20and%20Amitriptyline%20With%20Gastrointestinal%20and%20Mild%20Hepatic%20Effects.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 30 -->
-<article class="card">
-  <span class="pill">Toxicology (Series)</span>
-  <h3>Mitragyna speciosa (Kratom) Poisoning — Ten Case Series</h3>
-  <p>
-    10 Czech patients (ages 18–45) presented with coma, agitation, or cardiac arrest after kratom ingestion. Some responded to naloxone, others required intubation. Toxicity included mixed <strong>opioid-like, sympathetic, and serotonin-syndrome features</strong>. All survived with supportive care. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2030%20Mitragyna%20speciosa%20(Kratom)%20poisoning.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 31A -->
-<article class="card">
-  <span class="pill">Gastrointestinal</span>
-  <h3>Kratom-Induced Common Bile Duct Dilation</h3>
-  <p>
-    57F using 10 g/day kratom for chronic pain developed bile-duct dilation up to 12 mm with normal labs. Imaging excluded stones. Authors attribute it to <strong>μ-opioid receptor–mediated sphincter spasm</strong> similar to opiates. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2031%20Kratom-induced%20common%20bile%20duct%20dilation.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 31B -->
-<article class="card">
-  <span class="pill">Psychiatry / Addiction</span>
-  <h3>Severe Kratom Addiction Contributing to a Suicide Attempt</h3>
-  <p>
-    38F with depression and opioid history replaced Suboxone with kratom (≈35–42 g/day), developed severe dependence and withdrawal during psychiatric hospitalization following a suicide attempt. Reintroduced to buprenorphine with full recovery. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2031%20Case%20of%20Severe%20Kratom%20Addiction%20Contributing%20to%20a%20Suicide%20Attempt.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 32A -->
-<article class="card">
-  <span class="pill">Electrolyte Disorder</span>
-  <h3>Hyperkalemia Induced by Kratom</h3>
-  <p>
-    61M with no comorbidities had persistent K⁺ > 5.5 mmol/L despite normal renal function; normalized after stopping kratom. First reported case of <strong>kratom-induced hyperkalemia</strong>, mechanism possibly renal tubular effect or hERG channel blockade. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2032%20A%20Case%20of%20Hyperkalemia%20Induced%20by%20Kratom%20(Mitragyna%20speciosa).pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 32B -->
-<article class="card">
-  <span class="pill">Metabolic / ICU</span>
-  <h3>Life-Threatening Hyponatremia from Chronic Kratom Use</h3>
-  <p>
-    62M presented with altered mental status, serum Na⁺ 103 mEq/L, due to excess ADH release via kratom’s kappa-receptor antagonism and GABA inhibition. Recovered after controlled saline correction and stopping kratom. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2032%20Life-Threatening%20Hyponatremia%20Secondary%20to%20Chronic%20Kratom%20Use.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 33 -->
-<article class="card">
-  <span class="pill">Hepatic</span>
-  <h3>Kratom-Induced Hepatitis (Biopsy-Proven)</h3>
-  <p>
-    23M developed bilirubin 34 mg/dL and ALP 220 IU/L after 14 days of high-dose kratom (30 g/day). Liver biopsy: canalicular cholestasis, perivenular necrosis, mixed portal inflammation. Improved with ursodiol and rifampin. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2033%20Kratom%20(Mitragyna%20speciosa)-Induced%20Hepatitis.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 34 -->
-<article class="card">
-  <span class="pill">Anesthesiology</span>
-  <h3>Anesthetic Challenges in Heavy Kratom Users</h3>
-  <p>
-    18M (35 g/day kratom) undergoing jaw surgery required unusually high propofol and opioid doses; experienced hypertension, severe postoperative pain, and emergence delirium. Authors recommend tapering kratom before surgery. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2034%20-%20Anesthetic%20Challenges%20Posed%20by%20Heavy%20Kratom%20Users.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 35 -->
-<article class="card">
-  <span class="pill">Multiorgan Failure</span>
-  <h3>Multiorgan Dysfunction from Chronic Kratom Ingestion</h3>
-  <p>
-    37F using kratom capsules daily for 1 yr developed acute cholestatic hepatitis, renal failure, and pancolitis; required dialysis and later liver transplant. First report of <strong>multisystem organ failure</strong> from kratom. 
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2035%20Multiorgan%20Dysfunction%20Related%20to%20Kratom%20Ingestion.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 21 -->
-<article class="card">
-  <span class="pill">Withdrawal • Treatment</span>
-  <h3>The Complexities of Kratom — Hospital Case with Successful Buprenorphine</h3>
-  <p>
-    72M admitted for DVT/obstructive uropathy developed clear kratom withdrawal in-hospital; symptoms controlled on buprenorphine–naloxone 8/2 mg daily. Paper also flags possible CYP/P-gp drug interactions with kratom.  [oai_citation:0‡Case report 21 The Complexities of Kratom.pdf](sediment://file_000000001f7471f5823303dadc3d135d)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2021%20The%20Complexities%20of%20Kratom.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 22 -->
-<article class="card">
-  <span class="pill">Psychiatry</span>
-  <h3>Kratom-Induced Psychiatric Decompensation & Paranoid Delusions</h3>
-  <p>
-    35M with schizoaffective disorder presented with new paranoid delusions after escalating kratom use; UDS positive only for cannabis. Persistent symptoms despite antipsychotic trials; authors suspect kratom’s stimulant-like effects as a contributor.  [oai_citation:1‡Case report 22 Kratom-Induced Psychiatric Decompensation and Paranoid Delusions.pdf](sediment://file_00000000dd94722f9eb1fe60bc6c3cfc)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2022%20Kratom-Induced%20Psychiatric%20Decompensation%20and%20Paranoid%20Delusions.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 23 -->
-<article class="card">
-  <span class="pill">Hepatic Failure</span>
-  <h3>Severe Jaundice & Life-Threatening Liver Failure — Reversed by Plasma Exchange</h3>
-  <p>
-    56M with cholestatic liver failure after kratom; total bilirubin peaked at <strong>70.6 mg/dL</strong>. Four sessions of therapeutic plasma exchange rapidly reduced bilirubin and improved clinical status — first reported use for kratom toxicity.  [oai_citation:2‡Case report 23 Severe jaundice with life-threatening liver failure after Kratom use.pdf](sediment://file_000000006554720cb1c605e5c5daf1f8)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2023%20Severe%20jaundice%20with%20life-threatening%20liver%20failure%20after%20Kratom%20use.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 24 -->
-<article class="card">
-  <span class="pill">Context • Polysubstance</span>
-  <h3>Rhabdomyolysis in Designer Benzodiazepine Misuse (Kratom Present)</h3>
-  <p>
-    26M overdosed on flubromazolam/clonazolam with CK 131,920 U/L and AKI; kratom found among belongings (co-use context). Highlights severe risks in polysubstance settings; designer benzos may not appear on standard UDS.  [oai_citation:3‡Case report 24 Rhabdomyolysis in the Context of Designer Benzodiazepine Misuse.pdf](sediment://file_00000000c8d4722fbb1811cbcaf1a387)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2024%20Rhabdomyolysis%20in%20the%20Context%20of%20Designer%20Benzodiazepine%20Misuse.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 25 -->
-<article class="card">
-  <span class="pill">Serotonin Syndrome</span>
-  <h3>Serotonin Syndrome After Paxlovid in Patient Using Buspirone, Quetiapine & Kratom</h3>
-  <p>
-    Early-40s F developed ocular clonus, tremor, diaphoresis, confusion two days after starting Paxlovid while on buspirone, quetiapine, and daily kratom; improved with lorazepam. Warns of strong CYP3A inhibition (ritonavir) with serotonergic agents/kratom.  [oai_citation:4‡Case report 25 Serotonin Syndrome Precipitated by Paxlovid Initiation.pdf](sediment://file_00000000ee9071f58da2c5d8c7a17439)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2025%20Serotonin%20Syndrome%20Precipitated%20by%20Paxlovid%20Initiation.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 26A -->
-<article class="card">
-  <span class="pill">Overdose • ED</span>
-  <h3>Accidental Kratom Overdose — Naloxone Responsive, Rebound Hypoxia Risk</h3>
-  <p>
-    40s F arrived apneic/cyanotic; reversed with naloxone, later had recurrent desaturation. Poison Control advised <strong>24-hour observation</strong> due to delayed respiratory depression after high-dose kratom shots/capsules.  [oai_citation:5‡Case report 26 A Case of Accidental Kratom Overdose.pdf](sediment://file_000000006634720ca7def56b9806e48d)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2026%20A%20Case%20of%20Accidental%20Kratom%20Overdose.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 26B -->
-<article class="card">
-  <span class="pill">Precipitated Withdrawal</span>
-  <h3>Severe Withdrawal After Naltrexone in Undisclosed Kratom User</h3>
-  <p>
-    56M started oral naltrexone 50 mg for weight loss → developed acute agitation, hallucinations, CIWA-AR 39; required dexmedetomidine infusion and IV benzodiazepines. Emphasizes screening for kratom before naltrexone or long-acting opioid antagonists.  [oai_citation:6‡Case report 26 Precipitated withdrawal with kratom.pdf](sediment://file_00000000fef0720c8525e69200965f1a)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2026%20Precipitated%20withdrawal%20with%20kratom.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 27 -->
-<article class="card">
-  <span class="pill">Patterns & Risks</span>
-  <h3>Examining Kratom’s Paradoxical Effects — Narrative Case Series</h3>
-  <p>
-    Interviews with regular U.S. users describe simultaneous analgesic–stimulant effects; “<em>wobbles</em>” (eye jitter/vertigo) possibly serotonergic; half met mild–moderate KUD by DSM-5 (tolerance/withdrawal) while functioning in work/school.  [oai_citation:7‡Case report 27 Examining the paradoxical effects of kratom.pdf](sediment://file_00000000546471f5b83c14d649910c8a)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2027%20Examining%20the%20paradoxical%20effects%20of%20kratom.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 28 -->
-<article class="card">
-  <span class="pill">Hepatic • Regulation</span>
-  <h3>Kratom-Induced Acute Liver Injury (Cholestatic) — Call for Regulation</h3>
-  <p>
-    47M with jaundice/pruritus after 3 weeks of kratom; cholestatic pattern, improving off-product. Paper reviews rising DILI from herbal products and shows current U.S. patchwork legality (see <em>map on page 2</em>) and lab trends (Table 1).  [oai_citation:8‡Case report 28 Kratom-induced acute liver injury.pdf](sediment://file_000000007e68722f87938627c333be1a)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2028%20Kratom-induced%20acute%20liver%20injury.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 16A -->
-<article class="card">
-  <span class="pill">Fatality • Drug Interaction</span>
-  <h3>Fatal Combination of Mitragynine and Quetiapine</h3>
-  <p>
-    27M found deceased with toxic <strong>quetiapine</strong> (12 000 ng/mL) and mitragynine present. Autopsy showed seizure-like activity and hyperthermia. Authors conclude mitragynine likely inhibited <strong>CYP3A4 metabolism</strong> of quetiapine, amplifying its toxicity. Demonstrates a potentially fatal <strong>herb-drug interaction</strong> [oai_citation:0‡Case report 16 - Fatal combination of mitragynine and quetiapine.pdf](sediment://file_00000000aeb071f6a2b1eb8015f69d41).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2016%20-%20Fatal%20combination%20of%20mitragynine%20and%20quetiapine.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 16B -->
-<article class="card">
-  <span class="pill">Forensic • Fatality</span>
-  <h3>Mitragynine Concentrations in Two Fatalities</h3>
-  <p>
-    Two unrelated deaths with confirmed kratom use. One showed among the <strong>highest mitragynine blood levels recorded (790 µg/L)</strong>, yet death resulted from aspiration and CNS depression from mixed sedative use. Suggests extreme mitragynine levels alone may not cause death without co-ingestants [oai_citation:1‡Case report 16 - Mitragynine concentrations in two fatalities.pdf](sediment://file_00000000dcdc71f6a307e02758268c34).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2016%20-%20Mitragynine%20concentrations%20in%20two%20fatalities.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 17 -->
-<article class="card">
-  <span class="pill">Accidental Poisoning</span>
-  <h3>An Accidental Poisoning with Mitragynine</h3>
-  <p>
-    Middle-aged man found deceased after ingesting kratom tea. Postmortem blood contained <strong>mitragynine 1.06 mg/L</strong> and <strong>7-hydroxymitragynine 0.15 mg/L</strong>—among the first reports confirming both. Cause of death: <strong>acute kratom toxicity</strong> with pulmonary congestion typical of opioid effect [oai_citation:2‡ Case report 17 - An accidental poisoning with mitragynine.pdf](sediment://file_00000000522871f69ab320dfee39c2fd).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/%20Case%20report%2017%20-%20An%20accidental%20poisoning%20with%20mitragynine.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 18 -->
-<article class="card">
-  <span class="pill">Neurology • Seizure</span>
-  <h3>Seizure and Coma Following Kratom Exposure</h3>
-  <p>
-    64M experienced generalized seizure and coma after drinking kratom–<em>Datura</em> tea. Urine confirmed mitragynine 167 ng/mL. First laboratory-confirmed seizure case; mechanism may involve serotonergic and adrenergic receptor overactivation similar to tramadol [oai_citation:3‡Case report 18 - Seizure and coma following Kratom (Mitragynina speciosa Korth) exposure.pdf](sediment://file_0000000029bc71f6b905b14591cfdf5c).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2018%20-%20Seizure%20and%20coma%20following%20Kratom%20(Mitragynina%20speciosa%20Korth)%20exposure.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 19 -->
-<article class="card">
-  <span class="pill">Neurology • Ischemia</span>
-  <h3>Reversible Ischemic MRI Changes Linked to Chronic Kratom Use</h3>
-  <p>
-    20s M with heavy kratom use presented with coma and seizure-like activity. MRI showed <strong>bilateral cytotoxic edema</strong> consistent with ischemic infarcts that fully reversed after 2 months. Suggests kratom may trigger transient cerebral vasospasm or vasculitis [oai_citation:4‡Case report 19 A case report of reversible ischemic MRI changes and discussion of possible link to kratom use.pdf](sediment://file_00000000498471f6b84c3426e2d3b0d4).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2019%20A%20case%20report%20of%20reversible%20ischemic%20MRI%20changes%20and%20discussion%20of%20possible%20link%20to%20kratom%20use.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 20 -->
-<article class="card">
-  <span class="pill">Dermatology</span>
-  <h3>Kratom-Induced Photo-Exposed Hyperpigmentation</h3>
-  <p>
-    32M developed <strong>gray-blue hyperpigmentation</strong> on face and neck after long-term kratom use. Biopsy showed melanin deposits and dermal histiocytes. Authors attribute pigmentation to <strong>melanocyte stimulation by mitragynine metabolites</strong>. Stopping kratom led to gradual improvement [oai_citation:5‡Case report 20- implicating the botanical ingredient as a culprit in recalcitrant photo-exposed hyperpigmentation.pdf](sediment://file_00000000584071f6a8f0a96b4e966ebd).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2020-%20implicating%20the%20botanical%20ingredient%20as%20a%20culprit%20in%20recalcitrant%20photo-exposed%20hyperpigmentation.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 21 -->
-<article class="card">
-  <span class="pill">Dermatology • Cosmetic Treatment</span>
-  <h3>Picosecond Laser Therapy for Kratom-Induced Hyperpigmentation</h3>
-  <p>
-    Two patients with diffuse <strong>photo-distributed brown-gray skin discoloration</strong> from kratom successfully treated using a 730 nm picosecond titanium-sapphire laser. Achieved >90 % clearance without recurrence—first documented therapeutic laser for kratom pigmentation [oai_citation:6‡Case report 21 The 730 nm Picosecond Titanium Sapphire Laser for Treatment of Kratom-Induced Hyperpigmentation.pdf](sediment://file_0000000027e071f6b3e5ec04ca2e42fd).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2021%20The%20730%20nm%20Picosecond%20Titanium%20Sapphire%20Laser%20for%20Treatment%20of%20Kratom-Induced%20Hyperpigmentation.pdf">Open PDF</a>
-  </div>
-</article>
-
-      <!-- Case 18B -->
-<article class="card">
-  <span class="pill">Hepatic • Cholestasis</span>
-  <h3>Intrahepatic Cholestasis After Powdered Kratom Abuse</h3>
-  <p>
-    25M took 14–21 g/day of powdered kratom for 2 weeks, then developed severe jaundice and intense pruritus. Work-up excluded viral/autoimmune causes; <strong>liver biopsy showed pure canalicular cholestasis</strong>. Kratom alkaloids were detected in urine up to ~2 weeks after cessation, suggesting prolonged elimination. First published case of kratom-related intrahepatic cholestasis [oai_citation:0‡Intrahepatic cholestasis following abuse of powdered kratom (Mitragyna speciosa).pdf](sediment://file_00000000323871f6b5818483442cf67c).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Intrahepatic%20cholestasis%20following%20abuse%20of%20powdered%20kratom%20(Mitragyna%20speciosa).pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 9 -->
-<article class="card">
-  <span class="pill">Forensic • Fatality</span>
-  <h3>Two Single-Drug Fatal Intoxications by Mitragynine</h3>
-  <p>
-    Two men (ages 33 and 37) died from <strong>acute mitragynine toxicity</strong> without any other drugs detected. 
-    Postmortem blood levels were 2,325 ng/mL and 3,809 ng/mL — among the highest recorded. 
-    These represent the clearest evidence of <strong>kratom-only deaths</strong> confirmed by toxicology [oai_citation:0‡Case report 9 - Two Single-Drug Fatal Intoxications by Mitragynine.pdf](sediment://file_00000000a0bc71f6b2dfaf0f54e243f6).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%209%20-%20Two%20Single-Drug%20Fatal%20Intoxications%20by%20Mitragynine.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 10 -->
-<article class="card">
-  <span class="pill">Toxicology • Pharmacology</span>
-  <h3>Pharmacokinetic Kratom-Drug Interactions and Serotonin Syndrome</h3>
-  <p>
-    36M using ~90 g/day kratom with <strong>venlafaxine 150 mg</strong> and <strong>quetiapine 300 mg</strong> developed serotonin syndrome and QT prolongation.  
-    Mechanism: kratom inhibited CYP2D6/3A metabolism of both drugs. Symptoms resolved after discontinuation.  
-    He was successfully detoxed with <strong>buprenorphine/naloxone</strong> at home [oai_citation:1‡Case report 10 - A Case of Potential Pharmacokinetic Kratom.pdf](sediment://file_0000000033ac71f6930f447d322ea4ee).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2010%20-%20A%20Case%20of%20Potential%20Pharmacokinetic%20Kratom.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 11 -->
-<article class="card">
-  <span class="pill">Psychiatry • Withdrawal</span>
-  <h3>Treatment of Kratom Use Disorder With a Classical Tricyclic Antidepressant</h3>
-  <p>
-    44M with kratom dependence and anxiety failed multiple SSRIs, bupropion, and benzodiazepines.  
-    Switching to <strong>clomipramine 75 mg/day</strong> produced full remission of anxiety and withdrawal symptoms within a month.  
-    First published use of a tricyclic for kratom withdrawal [oai_citation:2‡Case report 11 Treatment of Kratom Use Disorder With a Classical Tricyclic Antidepressant.pdf](sediment://file_000000009b1471f6bcd7c083634ef3f3).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2011%20Treatment%20of%20Kratom%20Use%20Disorder%20With%20a%20Classical%20Tricyclic%20Antidepressant.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 12 -->
-<article class="card">
-  <span class="pill">Multisystem • Overdose</span>
-  <h3>Unusual Presentation of Kratom Overdose — Rhabdomyolysis, Hearing Loss, Heart Failure</h3>
-  <p>
-    45F overdosed on kratom, presenting with <strong>rhabdomyolysis (>24,000 U/L CPK)</strong>, 
-    compartment syndrome, hearing loss, renal failure, and <strong>EF &lt; 15%</strong>.  
-    After fasciotomy and dialysis, she recovered fully — one of the most severe kratom toxicity cases reported [oai_citation:3‡Case report 12 - Unusual Presentation of Kratom Overdose With Rhabdomyolysis, Transient Hearing Loss, and Heart Failure.pdf](sediment://file_000000005b5871f6919ebc34f42a2f83).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2012%20-%20Unusual%20Presentation%20of%20Kratom%20Overdose%20With%20Rhabdomyolysis,%20Transient%20Hearing%20Loss,%20and%20Heart%20Failure.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 13 -->
-<article class="card">
-  <span class="pill">Neurology</span>
-  <h3>Kratom-Induced Seizures in a 27-Year-Old Man</h3>
-  <p>
-    27M using 3–4 bottles of kratom liquid daily for anxiety developed a <strong>witnessed tonic-clonic seizure</strong>.  
-    MRI and labs normal; urine screen negative except for false opioid signal.  
-    Treated symptomatically; seizure attributed directly to kratom exposure [oai_citation:4‡Case report 13 A Case of Kratom-induced Seizures.pdf](sediment://file_00000000f7d471f6b47b8c3cb5ddaeb6).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2013%20A%20Case%20of%20Kratom-induced%20Seizures.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 14 -->
-<article class="card">
-  <span class="pill">Adulteration • Stroke</span>
-  <h3>Kratom Adulterated with Phenylethylamine — Intracerebral Hemorrhage</h3>
-  <p>
-    54M fitness instructor switched kratom brands and suffered a <strong>massive intracerebral hemorrhage</strong>.  
-    Laboratory testing confirmed his new product contained <strong>15% phenylethylamine (PEA)</strong>, 
-    a stimulant similar to amphetamine, not listed on the label.  
-    First report linking PEA-adulterated kratom to hemorrhagic stroke [oai_citation:5‡Case report 14 Kratom Adulterated with Phenylethylamine and Associated Intracerebral Hemorrhage Linking Toxicologists and Public Health Officials to Identify Dangerous Adulterants.pdf](sediment://file_00000000af6871f69f5c3c6ff0b983c2).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2014%20Kratom%20Adulterated%20with%20Phenylethylamine%20and%20Associated%20Intracerebral%20Hemorrhage%20Linking%20Toxicologists%20and%20Public%20Health%20Officials%20to%20Identify%20Dangerous%20Adulterants.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case 15 -->
-<article class="card">
-  <span class="pill">Emergency • Reversal</span>
-  <h3>Kratom Ingestion Requiring Naloxone Reversal</h3>
-  <p>
-    38F presented with coma and respiratory depression after kratom use;  
-    recovered immediately after <strong>two doses of 0.4 mg naloxone</strong> — the first documented human reversal.  
-    Confirms kratom’s potent μ-opioid agonism and response to naloxone [oai_citation:6‡Case report 15 Kratom (Mitragynine) Ingestion Requiring Naloxone Reversal.pdf](sediment://file_000000008cfc71f6b6280997f4419e84).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20report%2015%20Kratom%20(Mitragynine)%20Ingestion%20Requiring%20Naloxone%20Reversal.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 7 -->
-<article class="card">
-  <span class="pill">Hepatic • COVID-19 Context</span>
-  <h3>Kratom-Associated Mixed Cholestatic–Hepatocellular Liver Injury After COVID-19</h3>
-  <p>
-    23M in Thailand consumed “<strong>4×100 kratom cocktail</strong>” (kratom tea + diphenhydramine + Coke) nightly for insomnia.  
-    Developed <strong>bilirubin 10.6 mg/dL, ALT 1635 U/L</strong>.  
-    Recovered after hospitalization and stopping use. Highlights risk of mixed hepatotoxicity post-COVID [oai_citation:7‡Case study 7 - research-article2022 Kratom-Associated Mixed Cholestatic-Hepatocellular Liver Injury in a Patient With Long COVID.pdf](sediment://file_00000000318471f69c206bc23fd59baa).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20study%207%20-%20research-article2022%20Kratom-Associated%20Mixed%20Cholestatic-Hepatocellular%20Liver%20Injury%20in%20a%20Patient%20With%20Long%20COVID.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 8 -->
-<article class="card">
-  <span class="pill">Dermatology</span>
-  <h3>Kratom as a Novel Cause of Photodistributed Hyperpigmentation</h3>
-  <p>
-    54M using kratom 3–4× daily for 5 years developed <strong>blue-gray hyperpigmented patches</strong> on sun-exposed skin.  
-    Biopsy confirmed <strong>melanin-laden histiocytes</strong> due to mitragynine-stimulated melanocyte activity.  
-    First pathologically proven pigmentation from chronic kratom use [oai_citation:8‡Case study 8 - Kratom as a novel cause of photodistributed hyperpigmentation.pdf](sediment://file_00000000b11471f695963cac44bd88d3).
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case%20study%208%20-%20Kratom%20as%20a%20novel%20cause%20of%20photodistributed%20hyperpigmentation.pdf">Open PDF</a>
-  </div>
-</article>
-
-      <!-- Case 18C -->
-<article class="card">
-  <span class="pill">Hepatic • Cholestasis</span>
-  <h3>Intrahepatic Cholestasis After Powdered Kratom Abuse</h3>
-  <p>
-    25-year-old male consumed 14–21 g/day powdered kratom for 2 weeks and developed severe jaundice with bilirubin > 10 mg/dL and pruritus.  
-    Viral and autoimmune work-ups were negative; liver biopsy showed pure canalicular cholestasis.  
-    This landmark 2011 report is the first biopsy-proven <strong>intrahepatic cholestasis from kratom</strong>. [oai_citation:0‡Case report 48 Cardiac arrest in a young healthy male patient secondary to kratom ingestion.pdf](sediment://file_00000000365c7230ba1237ed6eac214a)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Intrahepatic%20cholestasis%20following%20abuse%20of%20powdered%20kratom%20(Mitragyna%20speciosa).pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 1 -->
-<article class="card">
-  <span class="pill">Psychosis • Self-harm</span>
-  <h3>Cannabis + Kratom–Induced Psychosis With Self-Amputation</h3>
-  <p>
-    31M developed substance-induced psychosis after using cannabinoids with mitragynine/7-OH-mitragynine, leading to self-amputation of both auricles and the penis. Stabilized with antipsychotics; later underwent successful penile reconstruction after sustained abstinence. Highlights severe psychiatric risk in polysubstance settings and the importance of coordinated surgical + psychiatric care.  [oai_citation:0‡Case study 1 - Case Report Cannabis and kratom-induced self-amputation of ears and penis.pdf](sediment://file_000000003e2471f6a5a558357f639c76)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 1 - Case Report Cannabis and kratom-induced self-amputation of ears and penis.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 2 -->
-<article class="card">
-  <span class="pill">Cardiac • ECG</span>
-  <h3>Kratom Cardiotoxicity: Reversible Brugada Pattern + QTc Prolongation</h3>
-  <p>
-    25M ingesting ~84–100 g/day kratom presented with seizure-like syncope; ECG showed type-1 Brugada pattern (QRS 160 ms, QTc 654 ms) that normalized after abstinence and electrolyte repletion. Lab testing on the patient’s kratom showed only mitragynine/paynantheine/speciogynine—no contaminants. Demonstrates direct conduction/repolarization effects.  [oai_citation:1‡Case study 2 Kratom Cardiotoxicity Reversible Brugada Pattern and QTc Prolongation.pdf](sediment://file_0000000064c871f6805633a3fdae594f)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 2 Kratom Cardiotoxicity Reversible Brugada Pattern and QTc Prolongation.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Report 3 -->
-<article class="card">
-  <span class="pill">Arrhythmia • Youth</span>
-  <h3>Ventricular Fibrillation During Football — Kratom + Caffeine</h3>
-  <p>
-    18M collapsed in training with ventricular fibrillation; plasma mitragynine 98 ng/mL and caffeine present. Normal echo/CTA/CMR; ICD implanted for secondary prevention. Authors implicate synergy of kratom, energy drink, and exertion; caution against stimulant combinations.  [oai_citation:2‡Case report 3 - Ventricular fibrillation during football training as a consequence of kratom and caffeine use in an adolescent.pdf](sediment://file_000000002d0c71f6828315271fa124ff)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case report 3 - Ventricular fibrillation during football training as a consequence of kratom and caffeine use in an adolescent.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 4 -->
-<article class="card">
-  <span class="pill">Forensic • Poly-opioid</span>
-  <h3>Fatal Overdose: Hydromorphone With Kratom</h3>
-  <p>
-    44M found deceased; femoral blood showed hydromorphone 79 ng/mL, mitragynine 560 ng/mL, olanzapine 240 ng/mL; vitreous markers indicated renal impairment. Cause of death: hydromorphone toxicity with mitragynine as a contributing factor; underscores risk of co-use and possible kratom-related renal effects.  [oai_citation:3‡Case study 4 - A case of fatal overdose involving both hydromorphone and kratom.pdf](sediment://file_00000000d57471f6a6ec6ebc130c4274)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 4 - A case of fatal overdose involving both hydromorphone and kratom.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 5 -->
-<article class="card">
-  <span class="pill">Addiction Treatment</span>
-  <h3>Successful Kratom Use Disorder Treatment With Buprenorphine/Naloxone</h3>
-  <p>
-    40s male using up to 40 g/day kratom tapered off over ~6 months on buprenorphine/naloxone with structured dose reductions; maintained abstinence, minimal withdrawal. Supports MOUD approach for KUD management.  [oai_citation:4‡Case study 5 - Successful Management of Kratom Use Disorder With Buprenorphine and Naloxo.pdf](sediment://file_00000000e96471f691a506f37a4b54fa)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 5 - Successful Management of Kratom Use Disorder With Buprenorphine and Naloxo.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 6 -->
-<article class="card">
-  <span class="pill">Forensic • Kratom-only</span>
-  <h3>Postmortem Mitragynine Distribution in a Single-Drug Fatality</h3>
-  <p>
-    32M: central blood mitragynine 7.5 mg/L; peripheral 3.3 mg/L; liver 42.2 mg/kg; gastric 33.1 mg; 7-OH-mitragynine qualitatively in central blood only. Cause of death: acute mitragynine intoxication with cardiomegaly as contributor. Adds high-quality concentration and distribution data for kratom-only death.  [oai_citation:5‡Case study 6 - Postmortem Mitragynine Distribution in a Single Drug Fatality Case.pdf](sediment://file_0000000081fc71f6a48b3fa253cc8786)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 6 - Postmortem Mitragynine Distribution in a Single Drug Fatality Case.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 1 -->
-<article class="card">
-  <span class="pill">Psychosis • Self-harm</span>
-  <h3>Cannabis + Kratom–Induced Psychosis With Self-Amputation</h3>
-  <p>
-    31M developed substance-induced psychosis after using cannabinoids with mitragynine/7-OH-mitragynine, leading to self-amputation of both auricles and the penis. Stabilized with antipsychotics; later underwent successful penile reconstruction after sustained abstinence. Highlights severe psychiatric risk in polysubstance settings and the importance of coordinated surgical + psychiatric care.  [oai_citation:0‡Case study 1 - Case Report Cannabis and kratom-induced self-amputation of ears and penis.pdf](sediment://file_000000003e2471f6a5a558357f639c76)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 1 - Case Report Cannabis and kratom-induced self-amputation of ears and penis.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 2 -->
-<article class="card">
-  <span class="pill">Cardiac • ECG</span>
-  <h3>Kratom Cardiotoxicity: Reversible Brugada Pattern + QTc Prolongation</h3>
-  <p>
-    25M ingesting ~84–100 g/day kratom presented with seizure-like syncope; ECG showed type-1 Brugada pattern (QRS 160 ms, QTc 654 ms) that normalized after abstinence and electrolyte repletion. Lab testing on the patient’s kratom showed only mitragynine/paynantheine/speciogynine—no contaminants. Demonstrates direct conduction/repolarization effects.  [oai_citation:1‡Case study 2 Kratom Cardiotoxicity Reversible Brugada Pattern and QTc Prolongation.pdf](sediment://file_0000000064c871f6805633a3fdae594f)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 2 Kratom Cardiotoxicity Reversible Brugada Pattern and QTc Prolongation.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Report 3 -->
-<article class="card">
-  <span class="pill">Arrhythmia • Youth</span>
-  <h3>Ventricular Fibrillation During Football — Kratom + Caffeine</h3>
-  <p>
-    18M collapsed in training with ventricular fibrillation; plasma mitragynine 98 ng/mL and caffeine present. Normal echo/CTA/CMR; ICD implanted for secondary prevention. Authors implicate synergy of kratom, energy drink, and exertion; caution against stimulant combinations.  [oai_citation:2‡Case report 3 - Ventricular fibrillation during football training as a consequence of kratom and caffeine use in an adolescent.pdf](sediment://file_000000002d0c71f6828315271fa124ff)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case report 3 - Ventricular fibrillation during football training as a consequence of kratom and caffeine use in an adolescent.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 4 -->
-<article class="card">
-  <span class="pill">Forensic • Poly-opioid</span>
-  <h3>Fatal Overdose: Hydromorphone With Kratom</h3>
-  <p>
-    44M found deceased; femoral blood showed hydromorphone 79 ng/mL, mitragynine 560 ng/mL, olanzapine 240 ng/mL; vitreous markers indicated renal impairment. Cause of death: hydromorphone toxicity with mitragynine as a contributing factor; underscores risk of co-use and possible kratom-related renal effects.  [oai_citation:3‡Case study 4 - A case of fatal overdose involving both hydromorphone and kratom.pdf](sediment://file_00000000d57471f6a6ec6ebc130c4274)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 4 - A case of fatal overdose involving both hydromorphone and kratom.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 5 -->
-<article class="card">
-  <span class="pill">Addiction Treatment</span>
-  <h3>Successful Kratom Use Disorder Treatment With Buprenorphine/Naloxone</h3>
-  <p>
-    40s male using up to 40 g/day kratom tapered off over ~6 months on buprenorphine/naloxone with structured dose reductions; maintained abstinence, minimal withdrawal. Supports MOUD approach for KUD management.  [oai_citation:4‡Case study 5 - Successful Management of Kratom Use Disorder With Buprenorphine and Naloxo.pdf](sediment://file_00000000e96471f691a506f37a4b54fa)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 5 - Successful Management of Kratom Use Disorder With Buprenorphine and Naloxo.pdf">Open PDF</a>
-  </div>
-</article>
-
-<!-- Case Study 6 -->
-<article class="card">
-  <span class="pill">Forensic • Kratom-only</span>
-  <h3>Postmortem Mitragynine Distribution in a Single-Drug Fatality</h3>
-  <p>
-    32M: central blood mitragynine 7.5 mg/L; peripheral 3.3 mg/L; liver 42.2 mg/kg; gastric 33.1 mg; 7-OH-mitragynine qualitatively in central blood only. Cause of death: acute mitragynine intoxication with cardiomegaly as contributor. Adds high-quality concentration and distribution data for kratom-only death.  [oai_citation:5‡Case study 6 - Postmortem Mitragynine Distribution in a Single Drug Fatality Case.pdf](sediment://file_0000000081fc71f6a48b3fa253cc8786)
-  </p>
-  <div class="btn-row">
-    <a class="btn" href="/Case study 6 - Postmortem Mitragynine Distribution in a Single Drug Fatality Case.pdf">Open PDF</a>
-  </div>
-</article>
-      
+      <!-- Case 21 -->
+      <article class="card" data-topic="derm">
+        <span class="pill">Dermatology • Laser</span>
+        <h3>Picosecond Laser Therapy for Kratom-Induced Hyperpigmentation</h3>
+        <p>Two cases; 730 nm picosecond titanium-sapphire laser achieved &gt;90% clearance without recurrence.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2021%20The%20730%20nm%20Picosecond%20Titanium%20Sapphire%20Laser%20for%20Treatment%20of%20Kratom-Induced%20Hyperpigmentation.pdf">Open PDF</a>
+        </div>
+      </article>
     </section>
 
-    <p class="backstrip">← <a href="./index.html">Back to The Literature</a></p>
+    <!-- FORENSIC / OVERDOSE -->
+    <h2 id="forensic" class="section-title section-anchor">Forensic / Overdose</h2>
+    <section class="grid">
+      <!-- Fatal (Canada) -->
+      <article class="card" data-topic="forensic">
+        <span class="pill">Forensic</span>
+        <h3>Fatal mitragynine toxicity (Canada)</h3>
+        <p>56F with postmortem mitragynine 2,500 ng/mL — independently lethal; demonstrates kratom-only lethality at high dose.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Fatal%20Mitragynine-Associated%20Toxicity%20in%20Canada.pdf">Open PDF</a>
+        </div>
+      </article>
 
-    <section class="note">
-      <strong>Disclaimer:</strong> These summaries describe single-patient case reports for educational reference only.
-      They do not establish prevalence, safety, or causation.
+      <!-- Case 46 -->
+      <article class="card" data-topic="forensic">
+        <span class="pill">Pediatric Overdose</span>
+        <h3>Teen overdose from kratom capsules</h3>
+        <p>15F ingested ~225 g capsules; nausea, tremor, hypokalemia, QTc 474 ms; resolved in ~14 h with supportive care.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2046%20Case%20of%20Kratom%20Overdose%20in%20a%20Pediatric%20Patient.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 49 -->
+      <article class="card" data-topic="forensic">
+        <span class="pill">Critical care</span>
+        <h3>Undifferentiated shock with extreme procalcitonin</h3>
+        <p>18M in shock with PCT &gt;200 ng/mL; cultures negative; improved with pressors — overdose/tox effect suspected.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2049%20Undifferentiated%20Shock%20and%20Extreme%20Elevation%20of%20Procalcitonin%20Related%20to%20Kratom%20Use.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 19 (ED/ICU) -->
+      <article class="card" data-topic="forensic">
+        <span class="pill">Emergency / ICU</span>
+        <h3>Kratom Ingestion → Shock, Severe Acidosis, Intubation</h3>
+        <p>35M apneic with mixed shock; RSI, dual pressors, hemodialysis; extubated and discharged after 72 h.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2042%20Kratom%20Ingestion%20and%20Emergency%20Care.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 24 (context) -->
+      <article class="card" data-topic="forensic">
+        <span class="pill">Polysubstance Context</span>
+        <h3>Rhabdomyolysis in Designer Benzodiazepine Misuse (Kratom Present)</h3>
+        <p>26M with flubromazolam/clonazolam overdose, CK 131,920 U/L and AKI; kratom present among belongings.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2024%20Rhabdomyolysis%20in%20the%20Context%20of%20Designer%20Benzodiazepine%20Misuse.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- WITHDRAWAL / TREATMENT -->
+    <h2 id="treatment" class="section-title section-anchor">Withdrawal / Treatment</h2>
+    <section class="grid">
+      <!-- Case 6 -->
+      <article class="card" data-topic="treatment">
+        <span class="pill">Addiction</span>
+        <h3>Kratom Addiction and Withdrawal</h3>
+        <p>37F dependent on kratom extract; severe opioid-like withdrawal; clonidine/hydroxyzine effective.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2061%20A%20Case%20Report%20of%20Kratom%20Addiction%20and%20Withdrawal.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 21 -->
+      <article class="card" data-topic="treatment">
+        <span class="pill">MOUD (Inpatient)</span>
+        <h3>The Complexities of Kratom — Hospital Case with Successful Buprenorphine</h3>
+        <p>72M developed in-hospital kratom withdrawal; controlled with buprenorphine-naloxone 8/2 mg daily; interaction cautions noted.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2021%20The%20Complexities%20of%20Kratom.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- DRUG INTERACTIONS & OTHER -->
+    <h2 id="interactions" class="section-title section-anchor">Drug Interactions &amp; Other</h2>
+    <section class="grid">
+      <!-- Case 20 (hepatic + withdrawal) -->
+      <article class="card" data-topic="interactions">
+        <span class="pill">Naltrexone</span>
+        <h3>Transaminitis; Naltrexone Triggered Opioid-Like Withdrawal</h3>
+        <p>38M chronic kratom user with marked transaminitis; experienced classic precipitated withdrawal after IM naltrexone. Consider test dosing.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2038%20Kratom-induced%20transaminitis%20with%20subsequent%20precipitated%20opioid%20withdrawal%20following%20naltrexone%20.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 29 -->
+      <article class="card" data-topic="interactions">
+        <span class="pill">CYP2D6</span>
+        <h3>Adverse Drug Interaction: Kratom + Amitriptyline</h3>
+        <p>37M on amitriptyline developed anticholinergic effects and mild transaminitis while using kratom; improved after stopping kratom; CYP2D6 inhibition suspected.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2029%20Adverse%20Drug%20Interaction%20Between%20Kratom%20and%20Amitriptyline%20With%20Gastrointestinal%20and%20Mild%20Hepatic%20Effects.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 25 -->
+      <article class="card" data-topic="interactions">
+        <span class="pill">Serotonin Syndrome</span>
+        <h3>Serotonin Syndrome After Paxlovid in Patient Using Buspirone, Quetiapine &amp; Kratom</h3>
+        <p>Early-40s F developed SS two days after starting Paxlovid while on buspirone, quetiapine, and daily kratom; improved with lorazepam. Highlights ritonavir CYP3A inhibition.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2025%20Serotonin%20Syndrome%20Precipitated%20by%20Paxlovid%20Initiation.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Case 26B -->
+      <article class="card" data-topic="interactions">
+        <span class="pill">Precipitated Withdrawal</span>
+        <h3>Severe Withdrawal After Naltrexone in Undisclosed Kratom User</h3>
+        <p>56M started oral naltrexone 50 mg; acute agitation/hallucinations; required dexmedetomidine and IV benzodiazepines. Screen for kratom prior to antagonists.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2026%20Precipitated%20withdrawal%20with%20kratom.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Electrolytes -->
+      <article class="card" data-topic="interactions">
+        <span class="pill">Electrolytes</span>
+        <h3>Hyperkalemia Induced by Kratom</h3>
+        <p>61M persistent K⁺ &gt; 5.5 mmol/L; normalized after stopping kratom. First reported kratom-induced hyperkalemia.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2032%20A%20Case%20of%20Hyperkalemia%20Induced%20by%20Kratom%20(Mitragyna%20speciosa).pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <article class="card" data-topic="interactions">
+        <span class="pill">Electrolytes</span>
+        <h3>Life-Threatening Hyponatremia from Chronic Kratom Use</h3>
+        <p>62M presented with Na⁺ 103 mEq/L; controlled saline correction + cessation; mechanism likely ADH/κ-receptor effects.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2032%20Life-Threatening%20Hyponatremia%20Secondary%20to%20Chronic%20Kratom%20Use.pdf">Open PDF</a>
+        </div>
+      </article>
+
+      <!-- Adulteration (optionally keep under interactions) -->
+      <article class="card" data-topic="interactions">
+        <span class="pill">Adulteration</span>
+        <h3>Kratom Adulterated with Phenylethylamine — Intracerebral Hemorrhage</h3>
+        <p>54M switched products, developed large ICH; product contained ~15% PEA — not listed on label. Illustrates risk of adulterants.</p>
+        <div class="btn-row">
+          <a class="btn" href="/Case%20report%2014%20Kratom%20Adulterated%20with%20Phenylethylamine%20and%20Associated%20Intracerebral%20Hemorrhage%20Linking%20Toxicologists%20and%20Public%20Health%20Officials%20to%20Identify%20Dangerous%20Adulterants.pdf">Open PDF</a>
+        </div>
+      </article>
+    </section>
+
+        <!-- Footer actions -->
+    <div class="btn-row" style="margin-top:18px">
+      <a class="btn" href="../index.html" aria-label="Go to MAHA Home">← Home</a>
+      <a class="btn" href="evidence.html" aria-label="Back to Evidence & Data">↩︎ Evidence &amp; Data</a>
+    </div>
+
+    <section class="note" aria-label="Disclaimer" style="margin-top:18px">
+      <strong>Disclaimer:</strong> Case reports describe individual patients and cannot establish prevalence, safety, or causation.
+      They are provided for parent education and public-health awareness.
     </section>
   </main>
 </body>
 </html>
+    
+    
