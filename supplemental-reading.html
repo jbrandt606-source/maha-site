@@ -70,40 +70,64 @@
 <main class="wrap">
 
   <h1>Supplemental Reading</h1>
-  <p class="lede">Quick, plain-English investigations from <strong>Mothers Against Herbal Abuse (MAHA)</strong>. Each story exposes how gas-station highs and unregulated “supplements” evade the law and endanger families.</p>
+<p class="lede">
+  Quick, plain-English investigations from <strong>Mothers Against Herbal Abuse (MAHA)</strong>.
+  Each story exposes how gas-station highs and unregulated “supplements” evade the law and endanger families.
+</p>
 
-  <section>
-    <h2>Week 1 • Hidden Highs Launch</h2>
-    <div class="cards">
+<!-- Week Tabs -->
+<div class="sr-tabs" style="margin:18px 0 6px;display:flex;flex-wrap:wrap;gap:8px;">
+  <button class="sr-tab active" data-week="week1" style="flex:0 0 auto;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.10);color:#e8ecf8;font-size:.9rem;cursor:pointer;">Week 1</button>
+  <button class="sr-tab" data-week="week2" style="flex:0 0 auto;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:transparent;color:#a9b4d4;font-size:.9rem;cursor:pointer;">Week 2</button>
+  <button class="sr-tab" data-week="week3" style="flex:0 0 auto;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:transparent;color:#a9b4d4;font-size:.9rem;cursor:pointer;">Week 3</button>
+  <button class="sr-tab" data-week="week4" style="flex:0 0 auto;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:transparent;color:#a9b4d4;font-size:.9rem;cursor:pointer;">Week 4</button>
+  <button class="sr-tab" data-week="week5" style="flex:0 0 auto;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:transparent;color:#a9b4d4;font-size:.9rem;cursor:pointer;">Week 5</button>
+</div>
 
-      <article class="card">
-        <div class="badge">Policy</div>
-        <h3><a href="/supplemental/week1/how-the-hell-is-this-legal.html">How the Hell Is This Legal?</a></h3>
-        <p>The 30-year-old loophole letting opioids and brain drugs pose as “dietary supplements.” Inside DSHEA’s failure and FDA’s powerless oversight.</p>
-        <p><a href="/supplemental/week1/how-the-hell-is-this-legal.html">Read more →</a></p>
-      </article>
+<!-- Optional small style tweak (can move to CSS file if you like) -->
+<style>
+  .sr-week { display:none; margin-top:1rem; }
+  .sr-week.active { display:block; }
+  .sr-tab.active {
+    background:rgba(255,255,255,.10) !important;
+    color:#e8ecf8 !important;
+    border-color:rgba(255,255,255,.35) !important;
+  }
+</style>
 
-      <article class="card">
-        <div class="badge">Phenibut</div>
-        <div class="badge">Gas Station Xanax</div>
-        <h3><a href="/supplemental/week1/russian-roulette-gas-station-xanax.html">Russian Roulette: The Gas Station Xanax</a></h3>
-        <p>How Soviet-era pharmaceuticals like phenibut and bemitil slipped into U.S. vape shops disguised as stress-relief supplements.</p>
-        <p><a href="/supplemental/week1/russian-roulette-gas-station-xanax.html">Read more →</a></p>
-      </article>
+<!-- Week 1 -->
+<section id="week1" class="sr-week active">
+  <h2>Week 1 • Hidden Highs Launch</h2>
+  <div class="cards">
 
-      <article class="card">
-        <div class="badge">Kratom</div>
-        <div class="badge">Public Health</div>
-        <h3><a href="/supplemental/week1/eat-pray-poo.html">Eat Pray Poo</a></h3>
-        <p>The kratom Salmonella outbreak nobody wants to talk about. When “tested for fecal bacteria” becomes a marketing slogan, something’s gone wrong.</p>
-        <p><a href="/supplemental/week1/eat-pray-poo.html">Read more →</a></p>
-      </article>
+    <article class="card">
+      <div class="badge">Policy</div>
+      <h3><a href="/supplemental/week1/how-the-hell-is-this-legal.html">How the Hell Is This Legal?</a></h3>
+      <p>The 30-year-old loophole letting opioids and brain drugs pose as “dietary supplements.” Inside DSHEA’s failure and FDA’s powerless oversight.</p>
+      <p><a href="/supplemental/week1/how-the-hell-is-this-legal.html">Read more →</a></p>
+    </article>
 
-    </div>
-  </section>
+    <article class="card">
+      <div class="badge">Phenibut</div>
+      <div class="badge">Gas Station Xanax</div>
+      <h3><a href="/supplemental/week1/russian-roulette-gas-station-xanax.html">Russian Roulette: The Gas Station Xanax</a></h3>
+      <p>How Soviet-era pharmaceuticals like phenibut and bemitil slipped into U.S. vape shops disguised as stress-relief supplements.</p>
+      <p><a href="/supplemental/week1/russian-roulette-gas-station-xanax.html">Read more →</a></p>
+    </article>
 
+    <article class="card">
+      <div class="badge">Kratom</div>
+      <div class="badge">Public Health</div>
+      <h3><a href="/supplemental/week1/eat-pray-poo.html">Eat Pray Poo</a></h3>
+      <p>The kratom Salmonella outbreak nobody wants to talk about. When “tested for fecal bacteria” becomes a marketing slogan, something’s gone wrong.</p>
+      <p><a href="/supplemental/week1/eat-pray-poo.html">Read more →</a></p>
+    </article>
 
-<section style="margin-top:2rem">
+  </div>
+</section>
+
+<!-- Week 2 -->
+<section id="week2" class="sr-week">
   <h2>Week 2 • State Action and Synthetic Scams</h2>
   <div class="cards">
 
@@ -142,7 +166,8 @@
   </div>
 </section>
 
-  <section style="margin-top:2rem">
+<!-- Week 3 -->
+<section id="week3" class="sr-week">
   <h2>Week 3 • Concentrates, Culture, and Retail Reality</h2>
   <div class="cards">
 
@@ -170,18 +195,19 @@
       <p><a href="/supplemental/week3/georgia-kratom.html">Read more →</a></p>
     </article>
 
-  <article class="card">
-  <div class="badge">Parent Action</div>
-  <div class="badge">Advocacy</div>
-  <h3><a href="/supplemental/week3/emailtips.html">How Parents Can Write Emails Lawmakers Can’t Ignore</a></h3>
-  <p>Learn how to write short, powerful emails that move legislators to act. Based on the persuasion tactics of FDR, LBJ, and Ted Kennedy, this guide shows parents how to turn heart and credibility into real policy change.</p>
-  <p><a href="/supplemental/week3/emailtips.html">Read more →</a></p>
-</article>
+    <article class="card">
+      <div class="badge">Parent Action</div>
+      <div class="badge">Advocacy</div>
+      <h3><a href="/supplemental/week3/emailtips.html">How Parents Can Write Emails Lawmakers Can’t Ignore</a></h3>
+      <p>Learn how to write short, powerful emails that move legislators to act. Based on the persuasion tactics of FDR, LBJ, and Ted Kennedy, this guide shows parents how to turn heart and credibility into real policy change.</p>
+      <p><a href="/supplemental/week3/emailtips.html">Read more →</a></p>
+    </article>
 
   </div>
 </section>
 
-  <section style="margin-top:2rem">
+<!-- Week 4 -->
+<section id="week4" class="sr-week">
   <h2>Week 4 • Recalls, Regulation, and the Next Generation of “Wellness”</h2>
   <div class="cards">
 
@@ -209,7 +235,11 @@
       <p><a href="/supplemental/week4/policy-5-45-1.html">Read more →</a></p>
     </article>
 
-<section style="margin-top:2rem">
+  </div>
+</section>
+
+<!-- Week 5 -->
+<section id="week5" class="sr-week">
   <h2>Week 5 • Congressional Spin, Gas-Station Stimulants, and FD&amp;C Violations</h2>
   <div class="cards">
 
@@ -237,9 +267,35 @@
       <p><a href="/supplemental/week5/fdc-violations.html">Read more →</a></p>
     </article>
 
-    
   </div>
 </section>
+
+<!-- Tabs Script -->
+<script>
+  (function(){
+    const tabs = document.querySelectorAll('.sr-tab');
+    const weeks = document.querySelectorAll('.sr-week');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-week');
+
+        // toggle tab active state
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // toggle week visibility
+        weeks.forEach(w => {
+          if (w.id === target) {
+            w.classList.add('active');
+          } else {
+            w.classList.remove('active');
+          }
+        });
+      });
+    });
+  })();
+</script>
 
   
   <section style="margin-top:2rem">
