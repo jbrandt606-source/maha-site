@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    // MAHA property
+    gtag('config', 'G-MQKC65VZVY', {
+      'linker': { 'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org'] }
+    });
 
-  // MAHA property
-  gtag('config', 'G-MQKC65VZVY', {
-    'linker': { 'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org'] }
-  });
+    // Gas Station Heroin property
+    gtag('config', 'G-P31PD1SSTD');
+  </script>
 
-  // Gas Station Heroin property
-  gtag('config', 'G-P31PD1SSTD');
-</script>
-  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -62,19 +61,28 @@
 
   <!-- Layout helpers matching your Kratom page -->
   <style>
-    .k-facts { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:14px; }
-    .k-fact { display:flex; align-items:flex-start; gap:10px; padding:14px;
-      background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); border-radius:14px; }
-    .k-fact p{ margin:0; word-break:normal; overflow-wrap:break-word; hyphens:auto; }
-    @media (max-width:760px){ .k-facts{ grid-template-columns:1fr !important; } }
-    figure img{ width:100%; height:auto; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.25); background:#121826; }
-    figcaption{ font-size:13px; color:var(--muted); margin-top:6px; }
-    .k-actions{ margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
-    .btn{ display:inline-block; padding:.6rem .9rem; border-radius:999px; border:1px solid rgba(255,255,255,.2); }
-    .btn-primary{ background:#66aaff; color:#061123; border-color:transparent; font-weight:600; }
-    .k-title{ margin:0 0 10px; }
-    .k-sub{ color:var(--muted); margin:0 auto 14px; max-width:68ch; }
-    .back-link{ display:inline-block; margin-top:10px; }
+    .k-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+    .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;}
+    .k-fact p{margin:0;word-break:normal;overflow-wrap:break-word;hyphens:auto;}
+    @media (max-width:760px){.k-facts{grid-template-columns:1fr!important;}}
+    figure img{width:100%;height:auto;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.25);background:#121826;}
+    figcaption{font-size:13px;color:var(--muted);margin-top:6px;}
+    .k-actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.2);text-decoration:none;}
+    .btn-primary{background:#66aaff;color:#061123;border-color:transparent;font-weight:600;}
+    .k-title{margin:0 0 10px;}
+    .k-sub{color:var(--muted);margin:0 auto 14px;max-width:68ch;}
+    .back-link{display:inline-block;margin-top:10px;}
+    .k-card{margin-top:26px;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);}
+    .refs-title{margin-top:0;margin-bottom:10px;}
+    .refs ol{padding-left:20px;margin:0;}
+    .refs li{margin-bottom:6px;}
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:40px;}
+    .gallery figure{margin:0;padding:0;background:rgba(255,255,255,.02);border-radius:10px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.25);}
+    .gallery img{width:100%;height:auto;display:block;border-radius:10px 10px 0 0;background:#121826;}
+    .gallery figcaption{font-size:13px;color:var(--muted,#a9b4d4);line-height:1.4;padding:8px 10px 10px;}
+    @media (max-width:600px){.gallery{gap:16px;margin-bottom:36px;}}
   </style>
 
   <!-- JSON-LD: MedicalWebPage + BreadcrumbList -->
@@ -107,11 +115,10 @@
   </script>
 </head>
 <body>
-
- <!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P36GDQ7D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+
   <div class="container">
     <header>
       <div class="logo">
@@ -125,7 +132,7 @@
     <section class="hero">
       <h1 class="k-title">7-Hydroxymitragynine (7-OH): What Parents Should Know</h1>
       <p class="k-sub">
-        7-OH is the **active opioid-like compound** formed from mitragynine in many kratom products. It binds the same μ-opioid
+        <strong>7-OH is the active opioid-like compound</strong> formed from mitragynine in many kratom products. It binds the same μ-opioid
         receptors targeted by prescription opioids. That means opioid-type effects — including dependence and withdrawal — are possible.
       </p>
 
@@ -145,21 +152,21 @@
       </div>
 
       <div class="k-actions">
-        <a class="btn btn-primary" href="https://www.fda.gov/news-events/public-health-focus/fda-and-kratom" target="_blank" rel="noopener">FDA: Kratom & Safety</a>
+        <a class="btn btn-primary" href="https://www.fda.gov/news-events/public-health-focus/fda-and-kratom" target="_blank" rel="noopener">FDA: Kratom &amp; Safety</a>
         <a class="btn" href="kratom.html">Related: Kratom Overview</a>
         <a class="btn" href="index.html#info">Back to Information Center</a>
       </div>
     </section>
 
     <!-- PARENT PLAYBOOK -->
-    <section class="k-card">
+    <section class="k-card" id="parent-playbook">
       <h2 style="margin:0 0 8px">Parent Playbook</h2>
       <div class="k-facts">
         <div class="k-fact">
-          <p><b>What it looks like.</b> 7-OH is usually sold by name; it’s inside kratom powders, capsules, shots, and gummies labeled as “energy,” “focus,” or “relaxation.”</p>
+          <p><b>What it looks like.</b> 7-OH is not usually sold by name; it’s inside kratom powders, capsules, shots, and gummies labeled as “energy,” “focus,” or “relaxation.”</p>
         </div>
         <div class="k-fact">
-          <p><b>Warning signs.</b> Pinpoint pupils, nausea, constipation, sedation, or **withdrawal** (anxiety, sweating, tremor, sleeplessness) when stopping heavy use.<sup>6–8</sup></p>
+          <p><b>Warning signs.</b> Pinpoint pupils, nausea, constipation, sedation, or <strong>withdrawal</strong> (anxiety, sweating, tremor, sleeplessness) when stopping heavy use.<sup>6–8</sup></p>
         </div>
         <div class="k-fact">
           <p><b>If someone is in trouble.</b> For extreme sleepiness, slowed breathing, or unresponsiveness, call <b>911</b>. For guidance, call <b>Poison Control: 1-800-222-1222</b>.</p>
@@ -170,90 +177,44 @@
       </div>
     </section>
 
-   <!-- IMAGE CARD -->
-<section class="k-card">
-  <h2 style="margin:0 0 8px">Examples of 7-OH–Containing Kratom Products</h2>
-  <p class="muted" style="margin-bottom:12px;">
-    The following photos show how 7-hydroxymitragynine (7-OH) appears in kratom-containing tablets and liquid shots
-    marketed as “natural energy,” “relaxation,” or “focus.” These products are often unregulated and sold beside candy,
-    vapes, or energy drinks — creating a false sense of safety for young buyers.
-  </p>
-
-  <div class="gallery">
-    <figure>
-      <img src="7oh-kratom-metabolite-parent-guide-maha.jpg?v=1"
-           alt="Bottled kratom tablets marketed as natural energy supplements containing 7-hydroxymitragynine (7-OH)">
-      <figcaption>Example of kratom tablets promoted as “energy boosters.” Contains the active metabolite 7-OH.</figcaption>
-    </figure>
-
-    <figure>
-      <img src="7oh-opioid-receptor-risk-explainer.jpg?v=1"
-           alt="Blister packs of kratom capsules showing 7-hydroxymitragynine on the label">
-      <figcaption>Tablet products labeled as herbal or nootropic supplements that generate 7-OH inside the body.</figcaption>
-    </figure>
-
-    <figure>
-      <img src="7oh-in-kratom-packaging-warning-maha.jpg?v=1"
-           alt="Colorful kratom capsule bottles and display boxes highlighting 7-hydroxymitragynine content">
-      <figcaption>Brightly branded tablet card sold in convenience stores, often next to candy at the check out.</figcaption>
-    </figure>
-
-    <figure>
-      <img src="7oh-facts-for-parents-infographic.jpg?v=1"
-           alt="Single-serving liquid kratom shot containing 7-hydroxymitragynine (7-OH)">
-      <figcaption>Liquid “energy” or “chill” shots with concentrated kratom alkaloids including 7-OH.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<style>
-/* --- Gallery spacing & presentation --- */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
-  margin-bottom: 40px; /* space after image grid */
-}
-
-.gallery figure {
-  margin: 0;
-  padding: 0;
-  background: rgba(255,255,255,.02);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,.25);
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px 10px 0 0;
-  background: #121826;
-}
-
-.gallery figcaption {
-  font-size: 13px;
-  color: var(--muted, #a9b4d4);
-  line-height: 1.4;
-  padding: 8px 10px 10px;
-}
-
-/* Space before next k-card (Myths vs Facts) */
-.gallery + .k-card {
-  margin-top: 40px !important;
-}
-
-/* Mobile tweaks */
-@media (max-width: 600px) {
-  .gallery {
-    gap: 16px;
-    margin-bottom: 36px;
-  }
-}
-</style>
-    <!-- MYTHS VS FACTS -->
+    <!-- IMAGE CARD -->
     <section class="k-card">
+      <h2 style="margin:0 0 8px">Examples of 7-OH–Containing Kratom Products</h2>
+      <p class="muted" style="margin-bottom:12px;">
+        These photos show how 7-hydroxymitragynine (7-OH) appears in kratom tablets, capsules, and liquid shots
+        marketed as “natural energy,” “relaxation,” or “focus.” They are often sold beside candy, vapes, or energy drinks —
+        creating a false sense of safety for young buyers.
+      </p>
+
+      <div class="gallery">
+        <figure>
+          <img src="7oh-kratom-metabolite-parent-guide-maha.jpg?v=1"
+               alt="Bottled kratom tablets marketed as natural energy supplements containing 7-hydroxymitragynine (7-OH)">
+          <figcaption>Example of kratom tablets promoted as “energy boosters.” These products can generate the active metabolite 7-OH.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="7oh-opioid-receptor-risk-explainer.jpg?v=1"
+               alt="Blister packs of kratom capsules showing 7-hydroxymitragynine on the label">
+          <figcaption>Tablet products labeled as herbal or nootropic supplements that generate 7-OH inside the body.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="7oh-in-kratom-packaging-warning-maha.jpg?v=1"
+               alt="Colorful kratom capsule bottles and display boxes highlighting 7-hydroxymitragynine content">
+          <figcaption>Brightly branded tablet cards sold in convenience stores, often placed next to candy at checkout.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="7oh-facts-for-parents-infographic.jpg?v=1"
+               alt="Single-serving liquid kratom shot containing 7-hydroxymitragynine (7-OH)">
+          <figcaption>Liquid “energy” or “chill” shots with concentrated kratom alkaloids, including 7-OH.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MYTHS VS FACTS -->
+    <section class="k-card" id="myths-facts">
       <h2 style="margin:0 0 8px">Myths vs. Facts</h2>
       <div class="k-facts">
         <div class="k-fact">
@@ -262,7 +223,7 @@
         </div>
         <div class="k-fact">
           <p><b>Myth:</b> “It’s a safe way to manage withdrawal.”<br>
-             <b>Fact:</b> Case reports show kratom can **cause** dependence and opioid-like withdrawal; no FDA-approved uses exist.<sup>6–8,10</sup></p>
+             <b>Fact:</b> Case reports show kratom can <strong>cause</strong> dependence and opioid-like withdrawal; no FDA-approved uses exist.<sup>6–8,10</sup></p>
         </div>
         <div class="k-fact">
           <p><b>Myth:</b> “If it’s sold in stores, it’s regulated like medicine.”<br>
@@ -277,8 +238,8 @@
       <div class="refs">
         <ol>
           <li>Kruegel AC, et&nbsp;al. 7-Hydroxymitragynine is an active metabolite of mitragynine. <i>ACS Cent Sci.</i> 2019;5(6):992–1001. <a href="https://pubs.acs.org/doi/10.1021/acscentsci.9b00141" target="_blank" rel="noopener">link</a></li>
-          <li>Huestis MA, et&nbsp;al. Human mitragynine & 7-OH pharmacokinetics after kratom. <i>Molecules.</i> 2024;29(5):984. <a href="https://www.mdpi.com/1420-3049/29/5/984" target="_blank" rel="noopener">link</a></li>
-          <li>Hill R, et&nbsp;al. Respiratory effects & metabolism to 7-OH. <i>Br J Pharmacol.</i> 2022;179(14):3875–3885. <a href="https://doi.org/10.1111/bph.15832" target="_blank" rel="noopener">link</a></li>
+          <li>Huestis MA, et&nbsp;al. Human mitragynine &amp; 7-OH pharmacokinetics after kratom. <i>Molecules.</i> 2024;29(5):984. <a href="https://www.mdpi.com/1420-3049/29/5/984" target="_blank" rel="noopener">link</a></li>
+          <li>Hill R, et&nbsp;al. Respiratory effects &amp; metabolism to 7-OH. <i>Br J Pharmacol.</i> 2022;179(14):3875–3885. <a href="https://doi.org/10.1111/bph.15832" target="_blank" rel="noopener">link</a></li>
           <li>Matsumoto K, et&nbsp;al. Antinociceptive effect of 7-OH in mice. <i>Life Sci.</i> 2004;74(17):2143–2155. <a href="https://pubmed.ncbi.nlm.nih.gov/14969718/" target="_blank" rel="noopener">link</a></li>
           <li>Matsumoto K, et&nbsp;al. μ-receptor involvement in 7-OH effects. <i>Eur J Pharmacol.</i> 2006;549(1–3):63–70. <a href="https://doi.org/10.1016/j.ejphar.2006.08.013" target="_blank" rel="noopener">link</a></li>
           <li>Olsen EOM, et&nbsp;al. Kratom detected in overdose deaths — 27 states. <i>MMWR.</i> 2019;68(14):326–327. <a href="https://www.cdc.gov/mmwr/volumes/68/wr/mm6814a2.htm" target="_blank" rel="noopener">link</a></li>
@@ -291,7 +252,7 @@
       <a class="back-link" href="index.html#info">← Back to Information Center</a>
     </section>
 
-    <footer style="margin-top:18px; color:var(--muted);">
+    <footer style="margin-top:18px;color:var(--muted);">
       © <span id="year"></span> MothersAgainstHerbalAbuse.org
     </footer>
   </div>
