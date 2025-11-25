@@ -2,26 +2,57 @@
 <html lang="en">
 <head>
 
-<!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  // MAHA property
-  gtag('config', 'G-MQKC65VZVY', {
-    'linker': { 'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org'] }
-  });
+    // MAHA property
+    gtag('config', 'G-MQKC65VZVY', {
+      'linker': { 'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org'] }
+    });
 
-  // Gas Station Heroin property
-  gtag('config', 'G-P31PD1SSTD');
-</script>
+    // Gas Station Heroin property
+    gtag('config', 'G-P31PD1SSTD');
+  </script>
   
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tianeptine • MAHA</title>
+
+  <!-- Canonical + robots -->
+  <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/tianeptine.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+  <!-- SEO title & description tuned for parent education -->
+  <title>Tianeptine (“Gas-Station Heroin”): What Parents Should Know • MAHA</title>
+  <meta name="description" content="Parent-friendly guide to tianeptine (“gas-station heroin”). Learn how products like ZaZa and Neptune’s Fix act like very strong pain medicine, the risks of addiction and withdrawal, what they look like in stores, and what parents can do." />
+  <meta name="keywords" content="tianeptine, gas station heroin, ZaZa, Neptune's Fix, Pegasus, gas-station drugs, teen safety, parent guide, Mothers Against Herbal Abuse" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Mothers Against Herbal Abuse (MAHA)" />
+  <meta property="og:url" content="https://www.mothersagainstherbalabuse.org/tianeptine.html" />
+  <meta property="og:title" content="Tianeptine (“Gas-Station Heroin”): What Parents Should Know • MAHA" />
+  <meta property="og:description" content="Tianeptine products like ZaZa and Neptune’s Fix can affect the brain like very strong pain medicines. See what they look like, what to watch for, and how to protect your family." />
+  <meta property="og:image" content="https://www.mothersagainstherbalabuse.org/fda-tianeptine-neptunes-fix-supplement-display.jpg?v=1" />
+  <meta property="og:image:secure_url" content="https://www.mothersagainstherbalabuse.org/fda-tianeptine-neptunes-fix-supplement-display.jpg?v=1" />
+  <meta property="og:image:alt" content="Neptune’s Fix and other tianeptine products displayed like supplements and energy shots" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tianeptine (“Gas-Station Heroin”): What Parents Should Know • MAHA" />
+  <meta name="twitter:description" content="Learn how tianeptine products like ZaZa and Neptune’s Fix are sold, how they act on the brain, and what parents can do to keep kids safe." />
+  <meta name="twitter:image" content="https://www.mothersagainstherbalabuse.org/fda-tianeptine-neptunes-fix-supplement-display.jpg?v=1" />
+  <meta name="twitter:image:alt" content="Neptune’s Fix tianeptine products displayed in a store" />
+
+  <!-- Optional freshness signal -->
+  <meta property="article:modified_time" content="2025-10-21T00:00:00Z" />
 
   <!-- Fonts & base stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,19 +60,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=24">
 
-  <!-- Page-local tweaks -->
+  <!-- Page-local tweaks (mirrors 7-OH / kratom style) -->
   <style>
-    .k-facts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
-    .k-fact { display: flex; align-items: flex-start; gap: 10px; padding: 14px;
-      background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); border-radius:14px; }
-    .k-fact p { margin:0; word-break: normal; overflow-wrap: break-word; hyphens:auto; }
-    @media (max-width: 760px){ .k-facts { grid-template-columns: 1fr !important; } }
+    .k-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+    .k-fact{display:flex;align-items:flex-start;gap:10px;padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;}
+    .k-fact p{margin:0;word-break:normal;overflow-wrap:break-word;hyphens:auto;}
+    @media(max-width:760px){.k-facts{grid-template-columns:1fr!important;}}
 
-    /* Gallery */
-    figure { margin: 12px 0; }
-    figure img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,.25); background:#121826; }
-    figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 12px; margin-top: 12px; }
+    figure{margin:12px 0;}
+    figure img{width:100%;height:auto;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.25);background:#121826;}
+    figcaption{font-size:13px;color:var(--muted);margin-top:6px;}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px;}
+
+    .k-title{margin:0 0 6px;}
+    .k-sub{color:var(--muted);margin:0 auto 12px;max-width:70ch;}
+    .hero-meta{font-size:.8rem;color:var(--muted);margin-bottom:10px;}
+    .hero-list{margin:0 0 10px 18px;padding:0;font-size:.95rem;color:var(--muted);}
+    .hero-list li{margin-bottom:4px;}
+
+    .k-actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.2);text-decoration:none;}
+    .btn-primary{background:#66aaff;color:#061123;border-color:transparent;font-weight:600;}
+
+    .k-card{margin-top:26px;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);}
+    .refs-title{margin-top:0;margin-bottom:10px;}
+    .refs ol{padding-left:20px;margin:0;}
+    .refs li{margin-bottom:6px;}
   </style>
 </head>
 <body>
@@ -56,108 +100,345 @@
 
     <!-- HERO -->
     <section class="hero">
-      <h1 class="k-title">Tianeptine: What Parents Should Know</h1>
-      <p class="k-sub">Sold under names like “ZaZa,” “Neptune’s Fix,” and “Pegasus,” tianeptine is an opioid-like drug posing as a supplement. It can cause addiction, withdrawal, and overdose.</p>
+      <h1 class="k-title">Tianeptine (“Gas-Station Heroin”): What Parents Should Know</h1>
+      <div class="hero-meta">3-minute read • For parents, caregivers, and community leaders</div>
+      <p class="k-sub">
+        Tianeptine is being sold in gas stations and vape shops under names like <strong>ZaZa</strong>, 
+        <strong>Neptune’s Fix</strong>, and <strong>Pegasus</strong>. The bottles look like energy shots or supplements,
+        but inside is a chemical that can affect the brain like very strong pain medicine — with real risks of addiction,
+        withdrawal, and overdose.
+      </p>
 
-      <div class="k-facts">
-        <div class="k-fact"><p><b>Acts at opioid receptors.</b> Tianeptine behaves as a μ-opioid receptor agonist—the same target as oxycodone and heroin—explaining its addictive properties.<sup>1–2</sup></p></div>
-        <div class="k-fact"><p><b>Poisonings and ER visits rising.</b> CDC and state alerts report severe cases involving coma, seizures, and respiratory failure, often reversed with naloxone.<sup>3,6</sup></p></div>
-        <div class="k-fact"><p><b>Dependence and withdrawal mirror opioids.</b> Chronic users experience anxiety, tremors, sweating, insomnia, and GI distress; cases improve with medical detox or buprenorphine therapy.<sup>6–7</sup></p></div>
-        <div class="k-fact"><p><b>Not an FDA-approved drug in the U.S.</b> FDA warns that tianeptine is being sold illegally as a supplement and has no recognized safe use.<sup>8</sup></p></div>
-      </div>
+      <ul class="hero-list">
+        <li>What tianeptine is and how it affects the brain.</li>
+        <li>What products like ZaZa and Neptune’s Fix look like on shelves.</li>
+        <li>Warning signs to watch for and how to respond.</li>
+      </ul>
 
       <div class="k-actions">
-        <a class="btn btn-primary" href="https://www.fda.gov/consumers/health-fraud-scams/tianeptine" target="_blank" rel="noopener">
-          View FDA Public Health Warning
+        <a class="btn btn-primary" href="#parent-playbook">Skip to Parent Playbook</a>
+        <a class="btn" href="MAHA_Tianeptine_Trifold.pdf" target="_blank" rel="noopener">
+          Download Parent Pamphlet (PDF)
         </a>
-        <a class="btn" href="index.html#info">Back to Information Center</a>
+        <a class="btn" href="https://www.fda.gov/consumers/health-fraud-scams/tianeptine" target="_blank" rel="noopener">
+          FDA Tianeptine Warning
+        </a>
       </div>
     </section>
 
-    <!-- PARENT PLAYBOOK -->
+    <!-- WHY TIANEPTINE MATTERS -->
     <section class="k-card">
-      <h2 style="margin:0 0 8px">Parent Playbook</h2>
+      <h2 style="margin:0 0 8px">Why Tianeptine Matters for Families</h2>
       <div class="k-facts">
-        <div class="k-fact"><p><b>What to watch for.</b> Small boxes or blister packs labeled <i>ZaZa</i>, <i>Neptune’s Fix</i>, or <i>Pegasus</i>. Symptoms include sedation, slowed breathing, pinpoint pupils, confusion, and withdrawal agitation.<sup>3–5</sup></p></div>
-        <div class="k-fact"><p><b>Where it’s sold.</b> Gas stations, smoke shops, and online “nootropic” stores. Labels claim “mood booster” or “natural energy,” but ingredients are unregulated.</p></div>
-        <div class="k-fact"><p><b>If someone collapses or turns blue:</b> Call <b>911</b> and administer <b>naloxone (Narcan)</b> if available. For guidance, contact <b>Poison Control: 1-800-222-1222</b>.</p></div>
-        <div class="k-fact"><p><b>How to talk about it.</b> “Tianeptine acts like an opioid, even though it’s marketed as a supplement. I’m worried about safety — let’s learn what doctors and the FDA say together.”</p></div>
+        <div class="k-fact">
+          <p>
+            <b>Acts on the same brain targets as opioids.</b>
+            Research shows tianeptine activates the same receptors in the brain that drugs like oxycodone do. That helps explain why people can quickly
+            develop cravings, tolerance, and withdrawal symptoms.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Sold like an energy shot.</b>
+            The bottles and blister packs are small, colorful, and marketed as “mood boosters” or “focus enhancers” — often stocked near energy drinks 
+            and vapes, not behind a pharmacy counter.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Linked to ER visits and poisonings.</b>
+            States across the U.S. have reported people arriving in the emergency room with severe drowsiness, confusion, seizures, and breathing problems after using tianeptine products.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Not approved as a medicine in the U.S.</b>
+            The FDA warns that tianeptine is being sold illegally as a supplement. It is <em>not</em> an approved antidepressant here, and it has no recognized safe use in over-the-counter products.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- IMAGE GALLERY (your uploaded files) -->
+    <!-- PARENT PLAYBOOK (start) -->
+    <section class="k-card" id="parent-playbook">
+      <h2 style="margin:0 0 8px">Parent Playbook</h2>
+      <p class="k-sub" style="margin-bottom:12px;">
+        You may not have heard of tianeptine, but your teen has probably seen it on shelves or online. Here’s how to recognize it
+        and what to watch for at home.
+      </p>
+
+      <div class="k-facts">
+        <div class="k-fact">
+          <p>
+            <b>What it looks like.</b>
+            Small bottles, blister cards, or capsules labeled <em>ZaZa</em>, <em>Neptune’s Fix</em>, <em>Pegasus</em>, 
+            <em>Tianna Red/White</em>, or “tianeptine.” Branding may say “mood,” “relax,” “boost,” or “nootropic.”
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Where it’s sold.</b>
+            Gas stations, smoke shops, head shops, some mini-marts, and online “wellness” or “brain booster” sites. 
+            It’s often shelved near vapes, CBD, and energy shots — not in the pharmacy aisle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+               <!-- PARENT PLAYBOOK (continued) -->
+    <section class="k-card">
+      <div class="k-facts">
+        <div class="k-fact">
+          <p>
+            <b>Warning signs at home.</b>
+            Sudden sleepiness or “nodding off,” very small pupils, slurred speech, sweating, shaking,
+            stomach cramps, or irritability when the product wears off. Some teens describe feeling
+            “normal” only after taking another dose.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>If someone is in trouble.</b>
+            If you have trouble waking them up, notice slowed or shallow breathing, blue lips or fingertips,
+            or they seem confused and hard to rouse, call <b>911</b> immediately. Tianeptine overdoses often respond to
+            <b>Naloxone (Narcan)</b> because it acts on the same brain receptors as other opioids.
+            For non-emergency questions, call <b>Poison Control: 1-800-222-1222</b>.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>How to talk about it.</b>
+            “I know this is sold in gas stations like it’s no big deal, but it can affect your brain like
+            really strong pain medicine. I’m not mad — I just want you safe. If you ever see this or feel
+            tempted to try it, I want you to feel safe telling me.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- IMAGE GALLERY (FDA tianeptine images you provided) -->
     <section class="k-card">
       <h2 style="margin:0 0 8px">Images: FDA Warnings & Product Examples</h2>
-      <p class="muted" style="margin-bottom:12px;">Images courtesy of the U.S. Food and Drug Administration (FDA), Public Domain.</p>
+      <p class="muted" style="margin-bottom:12px;">
+        These images come directly from FDA public health warnings. They show how tianeptine is packaged and sold in U.S. stores —
+        often next to snacks, supplements, and energy shots, where teens can easily mistake it for something harmless.
+      </p>
 
       <div class="gallery">
-  <figure>
-    <img src="fda-tianeptine-zaza-product-warning.jpg?v=1"
-         alt="FDA photo of ZaZa tianeptine capsules and bottles featured in public health warnings">
-    <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
-  </figure>
 
-  <figure>
-    <img src="fda-tianeptine-neptunes-fix-supplement-display.jpg?v=1"
-         alt="FDA image showing Neptune’s Fix tianeptine supplement products sold in stores">
-    <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="fda-tianeptine-gas-station-products.jpg?v=1"
-         alt="FDA photograph of gas-station tianeptine products packaged as supplements">
-    <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="fda-tianeptine-product-warnings-labels.jpg?v=1"
-         alt="FDA tianeptine product images highlighting warning labels and supplement claims">
-    <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
-  </figure>
-</div>
-
-        <!-- Optional 5th image if you want it -->
-        <!--
         <figure>
-          <img src="IMG_2155.jpeg?v=1" alt="Tianeptine products (FDA)">
+          <img src="fda-tianeptine-zaza-product-warning.jpg?v=1"
+               alt="FDA photo of ZaZa tianeptine capsules and bottles featured in public health warnings">
           <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
         </figure>
-        -->
+
+        <figure>
+          <img src="fda-tianeptine-neptunes-fix-supplement-display.jpg?v=1"
+               alt="FDA image showing Neptune’s Fix tianeptine supplement products sold in stores">
+          <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fda-tianeptine-gas-station-products.jpg?v=1"
+               alt="FDA photograph of gas-station tianeptine products packaged as supplements">
+          <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fda-tianeptine-product-warnings-labels.jpg?v=1"
+               alt="FDA tianeptine product images highlighting warning labels and supplement claims">
+          <figcaption>Photo: U.S. Food and Drug Administration (FDA), Public Domain.</figcaption>
+        </figure>
+
       </div>
     </section>
 
-    <!-- MYTHS VS FACTS -->
+
+    <!-- HOW TIANEPTINE AFFECTS THE BODY -->
     <section class="k-card">
-      <h2 style="margin:0 0 8px">Myths vs. Facts</h2>
+      <h2 style="margin:0 0 8px">How Tianeptine Affects the Brain & Body</h2>
       <div class="k-facts">
-        <div class="k-fact"><p><b>Myth:</b> “It’s an antidepressant, so it’s safe.”<br><b>Fact:</b> U.S. researchers confirmed tianeptine acts as an opioid—not a typical antidepressant—and causes withdrawal like morphine.<sup>1–2</sup></p></div>
-        <div class="k-fact"><p><b>Myth:</b> “It’s natural or herbal.”<br><b>Fact:</b> Tianeptine is a synthetic lab-made drug. It is not derived from herbs or any plant source.<sup>5</sup></p></div>
+        <div class="k-fact">
+          <p>
+            <b>Short-term effects.</b>
+            Euphoria, feeling “high,” confusion, slowed reaction time, dizziness, nausea, and
+            heavy drowsiness. Some people appear drunk or “out of it” after taking tianeptine.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Long-term effects.</b>
+            Cravings, needing more to get the same effect, mood swings, anxiety, stomach pain,
+            and trouble sleeping without it. Many people struggle to stop on their own once they’ve been using regularly.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Withdrawal symptoms.</b>
+            Sweating, shaking, stomach cramps, vomiting, diarrhea, chills, restlessness, and panic —
+            often indistinguishable from withdrawal from other opioid drugs. Some teens report feeling “dope sick”
+            when they try to stop.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>High-risk situations.</b>
+            Teens and young adults looking for a “legal high,” extra energy, mood boosts, or help sleeping;
+            kids already struggling with anxiety, depression, or substance use; and anyone mixing tianeptine with
+            alcohol, benzodiazepines, or other sedating drugs.
+          </p>
+        </div>
       </div>
     </section>
+
+
+    <!-- DOWNLOADABLE HANDOUT -->
+    <section class="k-card">
+      <h2 style="margin:0 0 12px">Download the Parent Handout</h2>
+      <p class="k-sub" style="margin-bottom:12px;">
+        Share this one-page trifold with schools, coaches, pediatricians, and other parents in your community.
+        It includes key warning signs, real product photos, and emergency steps on one printable sheet.
+      </p>
+
+      <a class="btn btn-primary"
+         href="MAHA_Tianeptine_Trifold.pdf"
+         target="_blank" rel="noopener">
+        Download: Tianeptine Parent Pamphlet (PDF)
+      </a>
+    </section>
+
+        <!-- MYTHS VS FACTS -->
+    <section class="k-card">
+      <h2 style="margin:0 0 8px">Myths vs. Facts About Tianeptine</h2>
+      <div class="k-facts">
+        <div class="k-fact">
+          <p>
+            <b>Myth:</b> “It’s an antidepressant, so it must be safe.”<br>
+            <b>Fact:</b> In the U.S., tianeptine is <em>not</em> an approved antidepressant. Research shows it acts on the same
+            brain receptors as opioid pain medicines, explaining why people can become dependent and experience withdrawal.<sup>1–2</sup>
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Myth:</b> “If it’s sold in a store, it can’t be that dangerous.”<br>
+            <b>Fact:</b> Cigarettes, alcohol, and many risky products are also sold in stores. Tianeptine is marketed as a “mood booster”
+            or “supplement,” but the FDA warns these products are being sold illegally and have been linked to overdoses and deaths.<sup>8</sup>
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Myth:</b> “It’s just a legal way to relax.”<br>
+            <b>Fact:</b> Many people who start tianeptine to “take the edge off” end up chasing withdrawal relief, not relaxation.
+            Some require medical detox or medications like buprenorphine to safely stop using it.<sup>6–7</sup>
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>Myth:</b> “My kid would tell me if they were using something this strong.”<br>
+            <b>Fact:</b> Shame, fear, and confusion often keep teens quiet. Most parents of teens who used tianeptine say
+            they were shocked when they learned what was hidden in a backpack, car, or bedroom drawer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHAT PARENTS CAN DO NEXT -->
+    <section class="k-card">
+      <h2 style="margin:0 0 8px">What Parents Can Do Next</h2>
+      <div class="k-facts">
+        <div class="k-fact">
+          <p>
+            <b>1. Look around your community.</b><br>
+            The next time you stop for gas, take 30 seconds to scan the counter area. Do you see ZaZa, Neptune’s Fix,
+            or other “mood” or “focus” shots? Snap a photo so you’ll recognize them later.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>2. Check at home and in the car.</b><br>
+            Quietly look through backpacks, glove compartments, center consoles, bathroom drawers, and trash bins.
+            You’re looking for small bottles, blister packs, or capsules with names like ZaZa, Neptune’s Fix, Pegasus, or “tianeptine.”
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>3. Share what you’ve learned.</b><br>
+            Send the <a href="MAHA_Tianeptine_Trifold.pdf" target="_blank" rel="noopener">parent pamphlet</a> to one other adult —
+            a coach, school nurse, counselor, or another parent. Most have no idea these products are being sold in local stores.
+          </p>
+        </div>
+        <div class="k-fact">
+          <p>
+            <b>4. Keep the door open.</b><br>
+            Let your child know: “If you ever see this stuff or get curious about it, I want you to feel safe telling me.
+            We’ll figure it out together. You will never be in trouble for asking questions.”
+          </p>
+        </div>
+      </div>
+    </section>
+
 
     <!-- REFERENCES -->
     <section class="k-card">
       <h3 class="refs-title">References (Verified)</h3>
       <div class="refs">
         <ol>
-          <li>Gassaway MM et al. The atypical antidepressant tianeptine is a μ-opioid receptor agonist. <i>Transl Psychiatry.</i> 2014;4:e411. <a href="https://pubmed.ncbi.nlm.nih.gov/25026323/" target="_blank" rel="noopener">PubMed</a></li>
-          <li>Samuels BA et al. The Behavioral Effects of the Antidepressant Tianeptine Require the Mu-Opioid Receptor. <i>Neuropsychopharmacology.</i> 2017;42(12):2377–2387. <a href="https://pubmed.ncbi.nlm.nih.gov/28303899/" target="_blank" rel="noopener">PubMed</a></li>
-          <li>New Jersey Department of Health. Health Alert: Tianeptine-containing products (Neptune’s Fix cluster). 2023. <a href="https://www.nj.gov/health/populationhealth/documents/health_alert_tianeptine.pdf" target="_blank" rel="noopener">NJ DOH PDF</a></li>
-          <li>Frontiers in Psychiatry. Chronic tianeptine induces tolerance in analgesia and behavioral effects. <i>Front Psychiatry.</i> 2023. <a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1186397/full" target="_blank" rel="noopener">Frontiers</a></li>
-          <li>Nishio Y et al. Classics in Chemical Neuroscience: Tianeptine. <i>ACS Chem Neurosci.</i> 2024. <a href="https://pubs.acs.org/doi/10.1021/acschemneuro.4c00519" target="_blank" rel="noopener">ACS</a></li>
-          <li>Ball M et al. Tianeptine Withdrawal: A Cause for Public Health Concern in Mississippi. <i>J Miss State Med Assoc.</i> 2023. <a href="https://jmsma.scholasticahq.com/article/38582-tianeptine-withdrawal-a-cause-for-public-health-concern-in-mississippi" target="_blank" rel="noopener">JMSMA</a></li>
-          <li>Trowbridge P, Walley AY. Buprenorphine for tianeptine withdrawal. <i>Addict Sci Clin Pract.</i> 2022;17:45. <a href="https://pubmed.ncbi.nlm.nih.gov/30550394/" target="_blank" rel="noopener">BMC</a></li>
-          <li>FDA. Health Fraud Scams: Tianeptine (“Gas-Station Heroin”). 2025. <a href="https://www.fda.gov/consumers/health-fraud-scams/tianeptine" target="_blank" rel="noopener">FDA.gov</a></li>
+          <li>
+            Gassaway MM, et&nbsp;al. The atypical antidepressant tianeptine is a μ-opioid receptor agonist.
+            <i>Transl Psychiatry.</i> 2014;4:e411.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/25026323/" target="_blank" rel="noopener">PubMed</a>
+          </li>
+          <li>
+            Samuels BA, et&nbsp;al. The behavioral effects of the antidepressant tianeptine require the mu-opioid receptor.
+            <i>Neuropsychopharmacology.</i> 2017;42(12):2377–2387.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/28303899/" target="_blank" rel="noopener">PubMed</a>
+          </li>
+          <li>
+            New Jersey Department of Health. Health Alert: Tianeptine-containing products (Neptune’s Fix cluster). 2023.
+            <a href="https://www.nj.gov/health/populationhealth/documents/health_alert_tianeptine.pdf" target="_blank" rel="noopener">NJ DOH PDF</a>
+          </li>
+          <li>
+            Frontiers in Psychiatry. Chronic tianeptine induces tolerance in analgesia and behavioral effects.
+            <i>Front Psychiatry.</i> 2023.
+            <a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1186397/full" target="_blank" rel="noopener">Frontiers</a>
+          </li>
+          <li>
+            Nishio Y, et&nbsp;al. Classics in Chemical Neuroscience: Tianeptine.
+            <i>ACS Chem Neurosci.</i> 2024.
+            <a href="https://pubs.acs.org/doi/10.1021/acschemneuro.4c00519" target="_blank" rel="noopener">ACS</a>
+          </li>
+          <li>
+            Ball M, et&nbsp;al. Tianeptine withdrawal: a cause for public health concern in Mississippi.
+            <i>J Miss State Med Assoc.</i> 2023.
+            <a href="https://jmsma.scholasticahq.com/article/38582-tianeptine-withdrawal-a-cause-for-public-health-concern-in-mississippi" target="_blank" rel="noopener">JMSMA</a>
+          </li>
+          <li>
+            Trowbridge P, Walley AY. Buprenorphine for tianeptine withdrawal.
+            <i>Addict Sci Clin Pract.</i> 2022;17:45.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/30550394/" target="_blank" rel="noopener">BMC</a>
+          </li>
+          <li>
+            U.S. Food and Drug Administration (FDA). Health Fraud Scams: Tianeptine (“Gas Station Heroin”). 2025.
+            <a href="https://www.fda.gov/consumers/health-fraud-scams/tianeptine" target="_blank" rel="noopener">FDA.gov</a>
+          </li>
         </ol>
       </div>
       <a class="back-link" href="index.html#info">← Back to Information Center</a>
     </section>
 
-    <footer style="margin-top:18px; color:var(--muted);">
+    <footer style="margin-top:18px;color:var(--muted);">
       © <span id="year"></span> MothersAgainstHerbalAbuse.org
     </footer>
   </div>
 
+  <script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
   <script src="main.js?v=24"></script>
 </body>
 </html>
+
+    
