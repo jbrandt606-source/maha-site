@@ -802,3 +802,20 @@ img{ display:block; } /* avoid inline-image line-height gaps */
 /* optional: remove figure defaults that can sneak in top space */
 figure{ margin-block-start: 0; }
 img.hero-img{ display:block; } /* avoid inline image line-gap */
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-logo {
+  height: 28px;       /* PERFECT small size for header */
+  width: 28px;
+  object-fit: contain;
+  border-radius: 6px;  /* optional: remove if you want sharp corners */
+}
