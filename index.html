@@ -2,17 +2,18 @@
 <html lang="en">
 <head> 
   <!-- BEGIN GAP FIX (replace previous HOTFIX) -->
-  <style>
-    /* no page chrome gap */
-    .hero {
-  padding-top: 24px;   /* clean space above MAHA title */
+<style>
+/* Mobile space */
+.hero {
+  padding-top: 24px !important;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    padding-top: 32px; /* slightly more space on desktop */
-  }
-}
+/* Desktop space — guaranteed */
+@media (min-width: 1024px) {
+  body .hero {
+    padding-top: 64px !important;
+  
+
 
     .hero-logo {
   width: 22px !important;
