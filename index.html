@@ -2,95 +2,113 @@
 <html lang="en">
 <head>
   <style>
-    /* ========= HERO BASE (DESKTOP BEHAVIOR STAYS THE SAME) ========= */
+  /* ========= HERO BASE (DESKTOP BEHAVIOR) ========= */
+  .hero{
+    display: flow-root;                 /* stops margin-collapsing */
+    text-align: center;
+    max-width: 980px;
+    margin: 0 auto clamp(14px, 3svh, 28px);      /* bottom-only space */
+    padding: 0 16px clamp(12px, 2.5svh, 20px);   /* no top padding on desktop */
+  }
+
+  .hero .eyebrow{ 
+    margin: 0 0 6px 0; 
+  }
+
+  .hero h1{
+    font-size: clamp(28px, 6.2vw, 44px);
+    line-height: 1.18;
+    letter-spacing: -.02em;
+    margin: 0 auto 10px;               /* no top margin */
+    max-width: 18ch;
+  }
+
+  .hero p{
+    font-size: clamp(15px, 2.7vw, 18px);
+    line-height: 1.55;
+    color: var(--muted,#a9b4d4);
+    margin: 0 auto 14px;               /* no top margin */
+    max-width: 48ch;
+  }
+
+  /* inline title row with small bear icon */
+  .hero-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  /* small MAHA bear icon (desktop + mobile) */
+  .hero-logo{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    border-radius: 6px;   /* optional */
+    display: inline-block;
+  }
+
+  /* hide any large version of this bear PNG – only show the small icon */
+  img[src$="8E42E4CE-0845-4674-B671-ABDD19A8A0D8.png"]:not(.hero-logo){
+    display: none !important;
+  }
+
+  /* ensure the next block after hero never adds its own top gap */
+  .hero + *{ 
+    margin-top: 0 !important; 
+  }
+
+  /* DESKTOP media inside hero: keep only bottom space */
+  @media (min-width:1024px){
+    .hero-media{
+      max-width: 950px !important;
+      margin: 0 auto clamp(16px, 2.5vh, 28px) !important; /* no top margin */
+      border-radius: 16px !important;
+      overflow: hidden !important;
+      box-shadow: 0 10px 40px rgba(0,0,0,.4) !important;
+    }
+    .hero-img{
+      width: 100% !important;
+      height: auto !important;
+      object-fit: contain !important;
+      object-position: center !important;
+      display: block !important;
+    }
+
+    /* desktop select styling (unchanged) */
+    #stateSelect{
+      background: rgba(255,255,255,.08) !important;
+      color: #e8ecf8 !important;
+      border: 1px solid rgba(255,255,255,.18) !important;
+      color-scheme: dark !important;
+    }
+    #stateSelect option{
+      color: #e8ecf8 !important;
+      background: #0b1020 !important;
+    }
+  }
+
+  /* ========= MOBILE OVERRIDES ========= */
+
+  /* add top space on phones */
+  @media (max-width: 767px){
     .hero{
-      display: flow-root;                 /* stops margin-collapsing */
-      text-align: center;
-      max-width: 980px;
-      margin: 0 auto clamp(14px, 3svh, 28px); /* bottom-only space */
-      padding: 0 16px clamp(12px, 2.5svh, 20px); /* no top padding on desktop */
+      padding-top: 24px;               /* space at very top on mobile */
     }
+  }
 
-    .hero .eyebrow{ 
-      margin: 0 0 6px 0; 
-    }
-
-    .hero h1{
-      font-size: clamp(28px, 6.2vw, 44px);
-      line-height: 1.18;
-      letter-spacing: -.02em;
-      margin: 0 auto 10px;               /* no top margin */
-      max-width: 18ch;
-    }
-
-    .hero p{
-      font-size: clamp(15px, 2.7vw, 18px);
-      line-height: 1.55;
-      color: var(--muted,#a9b4d4);
-      margin: 0 auto 14px;               /* no top margin */
-      max-width: 48ch;
-    }
-
-    /* small MAHA bear icon (default size, works on desktop too) */
-    .hero-logo{
-      width: 22px;
-      height: 22px;
-      object-fit: contain;
-      border-radius: 6px;   /* optional */
-    }
-
-    /* ensure the next block after hero never adds its own top gap */
-    .hero + *{ 
+  /* MOBILE: be strict about no extra top padding on outer container */
+  @media (max-width:600px){
+    .container{ 
+      padding-top: 0 !important; 
       margin-top: 0 !important; 
     }
-
-    /* DESKTOP media inside hero: keep only bottom space */
-    @media (min-width:1024px){
-      .hero-media{
-        max-width: 950px !important;
-        margin: 0 auto clamp(16px, 2.5vh, 28px) !important; /* no top margin */
-        border-radius: 16px !important;
-        overflow: hidden !important;
-        box-shadow: 0 10px 40px rgba(0,0,0,.4) !important;
-      }
-      .hero-img{
-        width: 100% !important;
-        height: auto !important;
-        object-fit: contain !important;
-        object-position: center !important;
-        display: block !important;
-      }
-
-      /* desktop select styling (unchanged) */
-      #stateSelect{
-        background: rgba(255,255,255,.08) !important;
-        color: #e8ecf8 !important;
-        border: 1px solid rgba(255,255,255,.18) !important;
-        color-scheme: dark !important;
-      }
-      #stateSelect option{
-        color: #e8ecf8 !important;
-        background: #0b1020 !important;
-      }
-    }
-
-    /* ========= MOBILE OVERRIDES ========= */
-
-    /* add top space and keep logo small on phones */
-    @media (max-width: 767px){
-      .hero{
-        padding-top: 24px;               /* space at very top on mobile */
-      }
-    }
-
-    /* MOBILE: be strict about no extra top padding on outer container */
-    @media (max-width:600px){
-      .container{ 
-        padding-top: 0 !important; 
-        margin-top: 0 !important; 
-      }
-    }
-  </style>
+  }
+</style>
  <!-- Google tag (gtag.js) for MAHA and GasStationHeroin -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
