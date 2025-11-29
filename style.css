@@ -16,9 +16,8 @@
 
 /* ---- Base ---- */
 *{ box-sizing:border-box; }
-html,body{ height:100%; }
+html,body{ height:100%; margin:0; padding:0; }
 body{
-  margin:0;
   background:radial-gradient(1200px 600px at 70% -10%, rgba(102,194,255,.15), transparent 60%), var(--bg);
   color:var(--text);
   font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
@@ -39,6 +38,7 @@ header{
   justify-content:space-between;
   gap:16px;
   flex-wrap:wrap;
+  margin-bottom:48px; /* breathing room under header on desktop */
 }
 .logo{ display:flex; gap:12px; align-items:center; }
 .logo-badge{ width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,var(--brand),#ff8d70); }
@@ -55,10 +55,42 @@ header{
   text-decoration:none;
   transition:transform .08s ease, box-shadow .08s ease, background .15s ease;
 }
-.nav .contact-cta:hover{ background:#7ad0ff; text-decoration:none; box-shadow:0 8px 22px rgba(102,194,255,.38); transform:translateY(-1px); }
+.nav .contact-cta:hover{
+  background:#7ad0ff;
+  text-decoration:none;
+  box-shadow:0 8px 22px rgba(102,194,255,.38);
+  transform:translateY(-1px);
+}
 .nav .contact-cta:active{ transform:translateY(0); }
-@media (min-width:640px){ .brand{ white-space:nowrap; } }
-@media (max-width:520px){ .nav{ width:100%; display:flex; justify-content:flex-end; } }
+
+@media (min-width:640px){
+  .brand{ white-space:nowrap; }
+}
+@media (max-width:520px){
+  .nav{ width:100%; display:flex; justify-content:flex-end; }
+}
+
+/* Mobile header alignment */
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom:60px; /* a bit more space below header on phones */
+  }
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /* ---- Cards / Boxes ---- */
 .card, .k-card{
@@ -107,203 +139,30 @@ header{
 .cta-links a:hover{ text-decoration:underline; }
 .cta-links span{ color:var(--muted); font-weight:400; }
 
-/* =========================================================
-   HERO (mobile-first)  — keeps original mobile look
-   ========================================================= */
-.hero{ padding:0 16px; text-align:center; }
-.hero h1{ margin:0 auto 12px; max-width:22ch; }
-.hero p{ margin:0 auto 16px; max-width:46ch; color:var(--muted); }
-
-/* Image wrapper */
-.hero-media{
-  width:92%;
-  max-width:900px;
-  margin:16px auto;
-  border-radius:12px;
-  overflow:hidden;                /* keeps rounded corners */
-  box-shadow:0 2px 8px rgba(0,0,0,.4);
+/* ---- Footer ---- */
+footer{
+  margin:60px 0 36px 0;
+  color:var(--muted);
+  font-size:14px;
   text-align:center;
 }
-.hero-img{
-  display:block;
-  width:100%;
-  height:auto;                    /* natural on phones */
-}
-
-/* Small phones: prevent the image from taking over */
-@media (max-width:480px){
-  .hero-img{
-    max-height:260px;             /* adjust 240–300 as desired */
-    object-fit:cover;
-    object-position:center;
-  }
-}
-
-/* =========================================================
-   Desktop-only refinements (leave mobile untouched)
-   ========================================================= */
-@media (min-width:1024px){
-  /* center hero text block */
-  .hero{ max-width:980px; margin:0 auto; }
-
-  /* show entire image (no cropping), tasteful size */
-  .hero-media{
-    max-width:950px;
-    margin:24px auto 32px;
-    border-radius:16px;
-    box-shadow:0 10px 40px rgba(0,0,0,.4);
-  }
-  .hero-img{
-    width:100%;
-    height:auto;                  /* no forced height, no crop */
-    object-fit:contain;
-    object-position:center;
-    border-radius:16px;
-  }
-
-  /* Desktop dropdown contrast for state selector */
-  #stateSelect{
-    background:rgba(255,255,255,.08);
-    color:var(--text);
-    border:1px solid rgba(255,255,255,.18);
-    color-scheme:dark;            /* hint to use dark native popup */
-  }
-  #stateSelect option{
-    color:#e8ecf8;
-    background:#0b1020;
-  }
-}
-
-/* Ultra-wide screens: modest widening */
-@media (min-width:1440px){
-  .hero{ max-width:1100px; }
-  .hero-media{ max-width:1100px; }
-}
-
-/* ---- Topic page polish (shared styles) ---- */
-.hero.page{
-  border-radius:18px;
-  padding:28px;
-  margin-top:20px;
-  background:
-    radial-gradient(800px 400px at 80% -10%, rgba(102,194,255,.18), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-  border:1px solid rgba(255,255,255,.10);
-  box-shadow:0 10px 30px rgba(0,0,0,.25);
-}
-.k-title{ font-size:clamp(28px,4.5vw,44px); line-height:1.12; margin:0 0 8px; }
-.k-sub{ color:var(--muted); font-size:clamp(14px,2.4vw,18px); margin:0; }
-
-/* Cards of facts within topic pages */
-.k-facts{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
-.k-fact{
-  display:block; padding:16px;
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:14px; line-height:1.55;
-  overflow-wrap:break-word; hyphens:auto;
-}
-.k-card{ background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:24px; margin-bottom:28px; }
-.k-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
-.btn{ display:inline-flex; align-items:center; gap:8px; padding:12px 14px; border-radius:12px; font-weight:600; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.05); color:var(--text); text-decoration:none; }
-.btn:hover{ transform:translateY(-1px); transition:.15s transform; }
-.btn-primary{ background:var(--accent); border-color:transparent; color:#0b1020; }
-
-.refs-title{ margin:0 0 6px; }
-.refs{ font-size:15px; color:var(--muted); line-height:1.55; }
-.refs ol{ margin:8px 0 0 18px; padding:0; }
-.back-link{ display:inline-block; margin-top:10px; color:var(--accent); }
-
-/* ---- Footer ---- */
-footer{ margin:60px 0 36px 0; color:var(--muted); font-size:14px; text-align:center; }
 
 /* ---- Extras ---- */
 select{ color-scheme:dark; } /* helps native selects on dark UI */
 
-/* ==== MOBILE FIX: Header alignment (logo + Contact Us button) ==== */
-@media (max-width: 640px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    text-align: center;
-  }
+/* =========================================================
+   HERO — CLEAN VERSION WITH PROPER TOP PADDING
+   ========================================================= */
 
-  .logo {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav .contact-cta {
-    width: auto;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 14px;
-    background: var(--accent);
-    color: #0b1020;
-    font-weight: 700;
-    box-shadow: 0 6px 18px rgba(102, 194, 255, .3);
-  }
-
-  /* Remove stray decorative dots if they appear */
-  header span,
-  header::before,
-  header::after {
-    display: none !important;
-  }
-}
-/* === Add breathing room below the logo/header === */
-header {
-  margin-bottom: 48px; /* default spacing for desktop */
+/* Mobile-first hero */
+.hero{
+  text-align:center;
+  margin:0 auto;
+  max-width:980px;
+  padding:32px 16px 24px;  /* top space on mobile, plus side & bottom */
 }
 
-/* Mobile-only: slightly more space under the logo */
-@media (max-width: 768px) {
-  header {
-    margin-bottom: 60px;
-  }
-}
-
-.hero {
-  text-align: center;
-  padding: clamp(60px, 10vw, 140px) 16px;
-  background: radial-gradient(1200px 600px at 50% -10%, rgba(255,255,255,.05), transparent);
-}
-
-.hero .intro {
-  font-size: clamp(13px, 2vw, 15px);
-  color: var(--muted, #a9b4d4);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.hero .main-title {
-  font-size: clamp(34px, 8vw, 72px);
-  font-weight: 800;
-  color: var(--text, #e8ecf8);
-  margin: 0;
-  line-height: 1.05;
-}
-
-/* === HERO NEW COPY STYLES === */
-
-/* Mobile-first */
-.hero {
-  text-align: center;
-  padding: 0 16px;
-  margin: 0 auto;
-  max-width: 980px;
-}
-
+/* Core hero text styles (your newer copy style) */
 .hero-kicker{
   color: var(--muted);
   font-weight: 700;
@@ -318,7 +177,6 @@ header {
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.12;
-  /* scales nicely across phones/tablets/desktops */
   font-size: clamp(32px, 7vw, 52px);
 }
 
@@ -345,9 +203,13 @@ header {
   display: block;
 }
 
-/* Desktop tweaks — no cropping, nicely centered */
+/* Desktop tweaks — more top padding, centered hero, no cropping */
 @media (min-width: 1024px){
-  .hero { max-width: 980px; }
+  .hero{
+    max-width: 980px;
+    padding-top: 56px;   /* REAL top space on desktop */
+    padding-bottom: 32px;
+  }
   .hero-media{
     max-width: 950px;
     margin: 24px auto 32px;
@@ -361,6 +223,83 @@ header {
     object-position: center;
   }
 }
+
+/* Ultra-wide screens: modest widening */
+@media (min-width:1440px){
+  .hero{ max-width:1100px; }
+  .hero-media{ max-width:1100px; }
+}
+
+/* ---- Topic page polish (shared styles) ---- */
+.hero.page{
+  border-radius:18px;
+  padding:28px;
+  margin-top:20px;
+  background:
+    radial-gradient(800px 400px at 80% -10%, rgba(102,194,255,.18), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+.k-title{ font-size:clamp(28px,4.5vw,44px); line-height:1.12; margin:0 0 8px; }
+.k-sub{ color:var(--muted); font-size:clamp(14px,2.4vw,18px); margin:0; }
+
+/* Cards of facts within topic pages */
+.k-facts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:14px;
+}
+.k-fact{
+  display:block; padding:16px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px; line-height:1.55;
+  overflow-wrap:break-word; hyphens:auto;
+}
+.k-card{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;
+  padding:24px;
+  margin-bottom:28px;
+}
+.k-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:12px 14px;
+  border-radius:12px;
+  font-weight:600;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.05);
+  color:var(--text);
+  text-decoration:none;
+}
+.btn:hover{
+  transform:translateY(-1px);
+  transition:.15s transform;
+}
+.btn-primary{
+  background:var(--accent);
+  border-color:transparent;
+  color:#0b1020;
+}
+
+.refs-title{ margin:0 0 6px; }
+.refs{ font-size:15px; color:var(--muted); line-height:1.55; }
+.refs ol{ margin:8px 0 0 18px; padding:0; }
+.back-link{ display:inline-block; margin-top:10px; color:var(--accent); }
+
+/* =========================================================
+   FAQ + POST NAV
+   ========================================================= */
 
 .post-nav {
   display: flex;
@@ -380,243 +319,37 @@ header {
   text-decoration: none;
   transition: background 0.2s ease;
 }
+.btn-nav:hover { background: rgba(255,255,255,0.18); }
 
-.btn-nav:hover {
-  background: rgba(255,255,255,0.18);
-}
-
-/* 1) Let the FAQ section grow and be scrollable */
+/* FAQ section */
 #faq, .faq {
-  height: auto !important;          /* kill any fixed height like 100vh */
+  height: auto !important;
   max-height: none !important;
-  overflow: visible !important;     /* stop clipping */
+  overflow: visible !important;
   padding-bottom: 24px;
 }
-
-/* 2) Make sure parent sections don't clip children */
 section, .section {
-  overflow: visible;                 /* if you used overflow:hidden for effects */
+  overflow: visible;
 }
-
-/* 3) If you have a sticky header/footer, give mobile some breathing room */
 @media (max-width: 600px) {
   #faq, .faq {
-    padding: 16px 16px 72px;        /* extra bottom padding so last item isn’t hidden */
-    line-height: 1.5;               /* improve wrapping on small screens */
+    padding: 16px 16px 72px;
+    line-height: 1.5;
   }
 }
-
-/* 4) List formatting that wraps nicely on narrow screens */
 .faq ul { margin: 0; padding-left: 1.1rem; }
 .faq li {
   list-style: disc;
   margin: 8px 0;
-  white-space: normal;              /* prevent single-line bullets */
-  overflow-wrap: anywhere;          /* break long words/URLs if present */
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
-
-/* 5) If the FAQ is inside a 100vh hero, switch to min-height on mobile */
-@media (max-width: 600px) {
-  .hero, .hero-section {
-    height: auto;
-    min-height: 60vh;               /* optional: keep some height but allow growth */
-  }
-}
-
-/* 6) Z-index insurance if a sticky footer covers the last lines */
-.sticky-footer, .mobile-cta {
-  z-index: 1000;
-}
+.sticky-footer, .mobile-cta { z-index: 1000; }
 #faq, .faq { position: relative; z-index: 1; }
 
-/* 1) Replace fixed viewport height on mobile */
-.hero, .hero-section {
-  height: auto;                /* stop forcing 100vh */
-  min-height: 72svh;           /* modern vh that respects Safari UI */
-  padding-top: clamp(16px, 4vh, 40px);
-  padding-bottom: clamp(16px, 4vh, 40px);
-}
-
-/* 2) If you have a sticky header, reserve its space */
-:root { --header-h: 56px; }    /* adjust if your header is taller */
-@media (max-width: 600px) {
-  .has-sticky .hero, .has-sticky .hero-section {
-    padding-top: calc(16px + var(--header-h));
-  }
-}
-
-/* 3) Kill accidental clipping that can hide the top text */
-header, .hero, .hero-section, .hero .wrap {
-  overflow: visible !important;
-}
-
-/* 4) Stop huge top gaps from margin-collapsing */
-.hero h1, .hero h2, .hero p {
-  margin-top: 0;
-}
-
-/* 5) Tighten the headline block on small screens */
-@media (max-width: 600px) {
-  .hero h1 { font-size: clamp(22px, 6vw, 32px); line-height: 1.15; }
-  .hero p  { font-size: clamp(14px, 3.8vw, 18px); max-width: 36ch; }
-}
-
-/* 6) If you use a gradient "cover" layer, ensure it's not oversized */
-.hero::before,
-.hero .gradient,
-.hero .cover {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  /* REMOVE any extra top offset like: top:-80px; height:120% */
-}
-
-/* --- HERO TOP-GAP HOTFIXES --- */
-
-/* 0) Basic reset that often fixes phantom gaps */
-html, body { margin:0; padding:0; }
-
-/* 1) Stop 100vh bugs on mobile and account for the iOS safe area */
-.hero, .hero-section {
-  height: auto !important;           /* kill any fixed height */
-  min-height: 68svh;                  /* modern viewport unit, respects iOS UI */
-  padding-top: calc(20px + env(safe-area-inset-top));
-  padding-bottom: 20px;
-  position: relative;                 /* prevents margin-collapsing with first child */
-  overflow: visible !important;
-}
-
-/* 2) Prevent margin-collapsing from the first heading/paragraph */
-.hero > * { margin-top: 0 !important; }
-.hero h1, .hero h2, .hero p { margin-block-start: 0 !important; }
-
-/* 3) If you have any gradient overlay, make sure it doesn't extend above */
-.hero::before, .hero .gradient, .hero .cover {
-  position: absolute; inset: 0;       /* remove any top:-Xpx or height:120% */
-  pointer-events: none;
-}
-
-/* 4) If you use a sticky header, reserve its space on mobile */
-:root { --header-h: 56px; }           /* adjust to your header height */
-@media (max-width: 640px) {
-  body.has-sticky .hero,
-  body.has-sticky .hero-section {
-    padding-top: calc(20px + var(--header-h) + env(safe-area-inset-top));
-  }
-}
-
-/* 5) Tighten typography so it doesn't push the hero taller than needed */
-@media (max-width: 640px) {
-  .hero h1 { font-size: clamp(22px, 6vw, 32px); line-height: 1.15; }
-  .hero p  { font-size: clamp(14px, 3.8vw, 18px); max-width: 36ch; }
-}
-
-
-/* ===== MOBILE HERO HOTFIX (paste at end of CSS) ===== */
-
-/* 0) Baseline reset */
-html, body { margin:0; padding:0; }
-
-/* 1) Kill 100vh issues and margin-collapsing */
-.hero, .hero-section {
-  position: relative;
-  height: auto !important;         /* stop forcing 100vh */
-  min-height: 68svh;               /* safe viewport on iOS */
-  padding-top: calc(20px + env(safe-area-inset-top));
-  padding-bottom: 20px;
-  overflow: visible !important;
-}
-.hero > * { margin-top: 0 !important; }  /* stop first-child margin collapsing */
-.hero h1, .hero h2, .hero p { margin-block-start: 0 !important; }
-
-/* 2) Tame gradient/cover overlays that can create tall gaps */
-.hero::before,
-.hero .gradient,
-.hero .cover {
-  position: absolute;
-  inset: 0;                        /* remove top:-X; height:120%; etc. */
-  pointer-events: none;
-}
-
-/* 3) Account for sticky header on small screens (adjust --header-h) */
-:root { --header-h: 56px; }
-@media (max-width: 640px) {
-  body.has-sticky .hero,
-  body.has-sticky .hero-section {
-    padding-top: calc(20px + var(--header-h) + env(safe-area-inset-top));
-  }
-}
-
-/* 4) Make sure parents don't clip */
-header, .page, .section, .wrap { overflow: visible !important; }
-
-/* 5) Tighten mobile type so it doesn't force tall blocks */
-@media (max-width: 640px) {
-  .hero h1 { font-size: clamp(22px, 6vw, 32px); line-height: 1.15; }
-  .hero p  { font-size: clamp(14px, 3.8vw, 18px); max-width: 36ch; }
-}
-
-/* 6) Images in the hero should not add phantom space */
-.hero img { display:block; width:100%; height:auto; }
-
-/* FIX: remove the forced tall hero on mobile */
-@media (max-width: 600px){
-  .hero, .hero-section{
-    height:auto !important;
-    min-height:unset !important;     /* kill the 60vh */
-    padding-top:12px !important;
-    padding-bottom:12px !important;
-  }
-
-  /* stop first-child margin from creating a gap */
-  .hero > *{ margin-top:0 !important; }
-  .hero .eyebrow,
-  .hero h1,
-  .hero p{ margin-top:0 !important; }
-}
-
-/* safety: no parent adds space above */
-.container, header, .section{ padding-top:0 !important; margin-top:0 !important; }
-
-/* if you have a gradient layer on the hero, keep it within bounds */
-.hero::before, .hero .gradient, .hero .cover{
-  position:absolute; inset:0; pointer-events:none;
-}
-
-/* --- HERO GAP FIX --- */
-.hero{
-  display: flow-root;
-  padding-bottom: 8px !important;
-  margin-bottom: 0 !important;
-  position: relative;
-}
-.hero h1,
-.hero p{ margin-top: 0 !important; }
-
-.hero + *,
-.hero + section,
-.hero + div,
-.hero + .wrap,
-.hero + .hero-media,
-.hero + figure,
-.hero + img{
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-.hero::before,
-.hero::after{
-  content: none !important;
-  display: none !important;
-  height: 0 !important;
-}
-@media (max-width: 640px){
-  .hero{ padding-bottom: 6px !important; }
-}
-
-/* ──────────────────────────────────────────────
-   Evidence & Data Section Styling (Homepage)
-   Matches Conversation, Letter, and About cards
-   ────────────────────────────────────────────── */
+/* =========================================================
+   HOME "CARD" BLOCKS (Evidence & Data, etc.)
+   ========================================================= */
 
 .home-card {
   background: rgba(255,255,255,0.04);
@@ -641,7 +374,6 @@ header, .page, .section, .wrap { overflow: visible !important; }
   margin-bottom: 18px;
 }
 
-/* Shared blue button style (for Conversation, Evidence & Data, About, etc.) */
 .home-btn {
   display: inline-block;
   background: #7aa2ff;
@@ -653,169 +385,5 @@ header, .page, .section, .wrap { overflow: visible !important; }
   text-decoration: none;
   transition: background 0.2s ease;
 }
-
 .home-btn:hover,
-.home-btn:focus {
-  background: #9bc1ff;
-}
-
-/* --- Hero gap: keep bottom only, remove ALL top gap after it --- */
-
-/* Safety: no page chrome gap */
-html, body { margin:0; padding:0; }
-
-/* Make the hero immune to margin-collapsing and keep only bottom space */
-.hero{
-  display: flow-root;                          /* breaks margin collapse */
-  margin: 0 auto clamp(14px, 3svh, 28px);      /* bottom-only gap */
-  padding: 0 16px clamp(12px, 2.5svh, 20px);   /* no top padding */
-  max-width: 980px;
-}
-
-/* Zero top margins inside hero (headings/eyebrow/lead) */
-.hero :is(h1,h2,h3,p,.eyebrow){ margin-top:0; }
-
-/* 🔨 The hammer: remove ANY top gap on the very next block */
-.hero + *{
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  border-top: 0 !important;
-}
-
-/* If that next block is one of these common wrappers, be explicit */
-.hero + :is(section,.k-card,.card,figure,.hero-media){ 
-  margin-top:0 !important; 
-  padding-top:0 !important; 
-}
-
-/* If the next block starts with an image/figure, kill its top gap too */
-.hero + * :is(figure:first-child, img:first-child){
-  margin-top:0 !important;
-  display:block;            /* removes line-height/inline gaps on img */
-}
-
-/* Some themes give figures default margins—override globally but gently */
-figure{ margin-block-start:0; }
-
-/* Mobile wrappers sometimes inject padding—strip it */
-@media (max-width: 600px){
-  .container{ padding-top:0 !important; margin-top:0 !important; }
-}
-
-/* ==== FINAL HERO GAP KILLER (desktop + mobile) ==== */
-
-/* 1) Strip any forced height/space on the hero */
-.hero{
-  margin-top:0 !important;
-  padding-top:0 !important;
-  min-height:auto !important;   /* kill tall hero */
-  height:auto !important;       /* override fixed heights */
-  display:block;                /* undo flex/grid centering gaps */
-  gap:0 !important;             /* if grid/flex had gap */
-  margin-bottom: clamp(16px, 2.5vh, 28px) !important; /* bottom-only space */
-}
-
-/* 2) Some themes add pseudo-element spacers */
-.hero::before,
-.hero::after{
-  content:none !important;
-  display:none !important;
-  margin:0 !important;
-  padding:0 !important;
-  height:0 !important;
-}
-
-/* 3) Headings/paragraphs often add their own top margin */
-.hero :is(h1,h2,h3,p,.eyebrow,.lead){ margin-top:0 !important; }
-
-/* 4) If a spacer/wave/section-gap follows the hero, vaporize it */
-.hero + :is(.spacer,.space,.section-gap,.pad-top,.wave,.divider){
-  display:none !important;
-  margin:0 !important;
-  padding:0 !important;
-  height:0 !important;
-  border:0 !important;
-}
-
-/* 5) Force the next real block to start flush */
-.hero + *{
-  margin-top:0 !important;
-  padding-top:0 !important;
-  border-top-width:0 !important;
-}
-
-/* 6) If that next block's first child is an image/figure/card, zero its top margin */
-.hero + * > :first-child{
-  margin-top:0 !important;
-  padding-top:0 !important;
-}
-
-/* 7) Common wrappers/images that sneak margins back in */
-figure, .k-card, .card, .hero-media, .k-card > figure:first-child, .card > img:first-child{
-  margin-top:0 !important;
-  padding-top:0 !important;
-}
-img{ display:block; } /* avoid inline-image line-height gaps */
-
-/* === HERO GAP OVERRIDE (bottom-only space) === */
-
-/* Keep only a small space under the hero */
-:root { --hero-bottom-gap: clamp(12px, 2.2vh, 24px); }
-
-.container > .hero{
-  /* kill tall heroes */
-  min-height: auto !important;
-  height: auto !important;
-
-  /* remove any top padding; keep only a bottom margin */
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin: 0 auto var(--hero-bottom-gap) !important;
-
-  /* stop margin collapsing tricks */
-  display: block !important;
-  overflow: visible !important;
-}
-
-/* many themes pad the inner wrapper — zero it */
-.container > .hero > .wrap{
-  padding: 0 !important;
-  margin: 0 !important;
-  min-height: auto !important;
-  height: auto !important;
-}
-
-/* headings/lead inside hero: no top margin */
-.container > .hero :is(.eyebrow,h1,p){ margin-top: 0 !important; }
-
-/* the next block (your image wrapper) should start flush */
-.hero + .hero-media{
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* belt-and-suspenders: if the first child inside hero-media had a top margin */
-.hero + .hero-media > :first-child{
-  margin-top: 0 !important;
-}
-
-/* optional: remove figure defaults that can sneak in top space */
-figure{ margin-block-start: 0; }
-img.hero-img{ display:block; } /* avoid inline image line-gap */
-
-.hero-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.hero-logo {
-  height: 28px;       /* PERFECT small size for header */
-  width: 28px;
-  object-fit: contain;
-  border-radius: 6px;  /* optional: remove if you want sharp corners */
-}
+.home-btn:focus { background: #9bc1ff; }
