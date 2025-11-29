@@ -2,28 +2,14 @@
 <html lang="en">
 <head>
   <style>
-
-  /* Mobile: add top padding */
-  @media (max-width: 767px){
-    .hero {
-      padding-top: 32px !important;
-    }
-  }
-
-  /* Desktop & tablets: add top padding */
-  @media (min-width: 768px){
-    .hero {
-      padding-top: 56px !important;
-    }
-
-    
-  /* ========= HERO BASE (DESKTOP BEHAVIOR) ========= */
+  /* ========= HERO BASE (ALL DEVICES) ========= */
   .hero{
     display: flow-root;                 /* stops margin-collapsing */
     text-align: center;
     max-width: 980px;
-    margin: 0 auto clamp(14px, 3svh, 28px);      /* bottom-only space */
-    padding: 0 16px clamp(12px, 2.5svh, 20px);   /* no top padding on desktop */
+    margin: 0 auto clamp(14px, 3svh, 28px);      
+    padding: 48px 16px clamp(12px, 2.5svh, 20px); 
+    /* ↑ 48px top padding on desktop/tablet by default */
   }
 
   .hero .eyebrow{ 
@@ -34,7 +20,7 @@
     font-size: clamp(28px, 6.2vw, 44px);
     line-height: 1.18;
     letter-spacing: -.02em;
-    margin: 0 auto 10px;               /* no top margin */
+    margin: 0 auto 10px;               
     max-width: 18ch;
   }
 
@@ -42,11 +28,11 @@
     font-size: clamp(15px, 2.7vw, 18px);
     line-height: 1.55;
     color: var(--muted,#a9b4d4);
-    margin: 0 auto 14px;               /* no top margin */
+    margin: 0 auto 14px;               
     max-width: 48ch;
   }
 
-  /* inline title row with small bear icon */
+  /* inline title row (for when you re-add the logo or just text) */
   .hero-title{
     display: flex;
     align-items: center;
@@ -58,7 +44,6 @@
     font-weight: 600;
   }
 
-  /* small MAHA bear icon (desktop + mobile) */
   .hero-logo{
     width: 22px;
     height: 22px;
@@ -72,11 +57,11 @@
     margin-top: 0 !important; 
   }
 
-  /* DESKTOP media inside hero: keep only bottom space */
+  /* ========= DESKTOP (1024px+) – MEDIA INSIDE HERO ========= */
   @media (min-width:1024px){
     .hero-media{
       max-width: 950px !important;
-      margin: 0 auto clamp(16px, 2.5vh, 28px) !important; /* no top margin */
+      margin: 0 auto clamp(16px, 2.5vh, 28px) !important;
       border-radius: 16px !important;
       overflow: hidden !important;
       box-shadow: 0 10px 40px rgba(0,0,0,.4) !important;
@@ -104,10 +89,10 @@
 
   /* ========= MOBILE OVERRIDES ========= */
 
-  /* add top space on phones */
+  /* add slightly less top space on smaller phones */
   @media (max-width: 767px){
     .hero{
-      padding-top: 24px;               /* space at very top on mobile */
+      padding-top: 32px !important;   /* mobile top padding */
     }
   }
 
