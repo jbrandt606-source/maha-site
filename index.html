@@ -4,7 +4,15 @@
   <!-- BEGIN GAP FIX (replace previous HOTFIX) -->
   <style>
     /* no page chrome gap */
-    html, body { margin:0; padding:0; }
+    .hero {
+  padding-top: 24px;   /* clean space above MAHA title */
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 32px; /* slightly more space on desktop */
+  }
+}
 
     .hero-logo {
   width: 22px !important;
