@@ -28,21 +28,6 @@
   <meta name="twitter:description" content="What Florida medical examiners report when mitragynine appears in post-mortem toxicology." />
   <meta name="twitter:image" content="https://www.mothersagainstherbalabuse.org/assets/images/maha-thumb.jpg" />
 
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BlogPosting",
-    "headline":"Florida Medical Examiners Commission: Mitragynine in Post-Mortem Toxicology (2020–2024)",
-    "description":"Legislature-facing summary of Florida MEC drug reports showing mitragynine detections and causal determinations in post-mortem toxicology.",
-    "author":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)"},
-    "publisher":{"@type":"Organization","name":"Mothers Against Herbal Abuse (MAHA)"},
-    "mainEntityOfPage":"https://www.mothersagainstherbalabuse.org/supplemental/week10/florida-mec-mitragynine.html",
-    "datePublished":"2026-01-01",
-    "dateModified":"2026-01-01"
-  }
-  </script>
-
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
@@ -60,6 +45,60 @@
   <script defer data-domain="mothersagainstherbalabuse.org" src="https://plausible.io/js/script.js"></script>
 
   <link rel="stylesheet" href="/style.css?v=1" />
+
+  <!-- TABLE FIX STYLES -->
+  <style>
+    .mec-table-wrap {
+      overflow-x: auto;
+      margin: 1.2rem 0 0.6rem;
+    }
+
+    .mec-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .mec-table thead th {
+      background: rgba(255,255,255,0.08);
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+      padding: 0.7rem 0.6rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .mec-table tbody td {
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      padding: 0.65rem 0.6rem;
+    }
+
+    .mec-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.03);
+    }
+
+    .mec-table td:nth-child(1) {
+      font-weight: 600;
+    }
+
+    .mec-table td:nth-child(5),
+    .mec-table td:nth-child(6) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mec-footnote {
+      font-size: 0.9rem;
+      color: #a9b4d4;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .mec-table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -68,6 +107,7 @@
 <section id="florida-mec-mitragynine" class="mec-section">
 
   <h2>Florida Medical Examiners Commission (MEC): Mitragynine in Post-Mortem Toxicology</h2>
+
   <p class="mec-subtitle">
     Statewide counts summarized from Florida MEC annual and interim drug reports (2020–2024).
     “Occurrences” reflect toxicology detections in deceased persons and are not equivalent to deaths.
@@ -76,20 +116,12 @@
   <div class="mec-callout">
     <strong>Primary source reports (Florida MEC):</strong>
     <ul>
-      <li><a href="/Florida%202020-Annual-Drug-Report-FINAL.pdf" target="_blank" rel="noopener">Florida 2020 Annual Drug Report</a></li>
+      <li><a href="/Florida%202020-Annual-Drug-Report-FINAL-UPDATED.pdf" target="_blank" rel="noopener">Florida 2020 Annual Drug Report (UPDATED)</a></li>
       <li><a href="/Florida%202021-Annual-Drug-Report-FINAL.pdf" target="_blank" rel="noopener">Florida 2021 Annual Drug Report</a></li>
       <li><a href="/Florida%202022-Annual-Drug-Report-FINAL.pdf" target="_blank" rel="noopener">Florida 2022 Annual Drug Report</a></li>
       <li><a href="/Florida%202023-Annual-Drug-Report-FINAL.pdf" target="_blank" rel="noopener">Florida 2023 Annual Drug Report</a></li>
       <li><a href="/2024-Interim-Drug-Report-FINAL.pdf" target="_blank" rel="noopener">Florida 2024 Interim Drug Report</a></li>
     </ul>
-
-    <p style="margin-top:0.75rem;">
-      <strong>Interactive dashboard:</strong>
-      <a href="https://app.powerbigov.us/view?r=eyJrIjoiN2IwZjJiYjItZWIwYi00NWJlLTg0YjktNTM1YjAwYzNjYmZlIiwidCI6IjZmM2E4MGIzLTY2Y2EtNDE0MC04ODg2LWRjNjBiMDM3ZGEwNiJ9"
-         target="_blank" rel="noopener">
-        Drugs Identified in Deceased Persons (Power BI)
-      </a>
-    </p>
   </div>
 
   <h3>Statewide Mitragynine Counts (2020–2024)</h3>
