@@ -136,6 +136,49 @@
 }
 </script>
   
+  <style>
+    .lawmakers-callout {
+      margin: 2.5rem 0 3rem;
+    }
+
+    .lawmakers-callout .wrap {
+      background: rgba(255, 255, 255, 0.06);
+      border-left: 4px solid #4da3ff;
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+    }
+
+    .lawmakers-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #dbeaff;
+      text-decoration: none;
+    }
+
+    .lawmakers-link .icon {
+      font-size: 1.2rem;
+    }
+
+    .lawmakers-link .arrow {
+      margin-left: auto;
+      font-weight: 700;
+    }
+
+    .lawmakers-link:hover {
+      text-decoration: underline;
+    }
+
+    .lawmakers-subtext {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #b9c6d8;
+      max-width: 60ch;
+    }
+  </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -157,11 +200,13 @@
   </div>
 </section>
 
-  <!-- LAWMAKER BRIEFING CALLOUT -->
+ <!-- LAWMAKER BRIEFING CALLOUT -->
 <section class="lawmakers-callout">
   <div class="wrap">
     <a href="/kratom-for-lawmakers.html" class="lawmakers-link">
-      🔎 NEW: Kratom Briefing for Lawmakers & Regulators →
+      <span class="icon">🔎</span>
+      <span class="label">Kratom Briefing for Lawmakers & Regulators</span>
+      <span class="arrow">→</span>
     </a>
     <p class="lawmakers-subtext">
       Consolidated evidence, adverse-event data, poison-control trends, FDA enforcement gaps,
