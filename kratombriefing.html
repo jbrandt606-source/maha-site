@@ -55,6 +55,15 @@
     .hero-meta{font-size:.85rem;color:var(--muted);margin-bottom:10px;}
     .btn{display:inline-block;padding:.6rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.2);text-decoration:none;}
     .btn-primary{background:#66aaff;color:#061123;border:none;font-weight:600;}
+
+    /* MOBILE IMAGE FIX — prevents vertical blowout on iOS */
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 340px;        /* KEY FIX */
+  object-fit: cover;
+  display: block;
+}
   </style>
 
 </head>
