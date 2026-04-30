@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag -->
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
 <script>
@@ -12,306 +12,145 @@ gtag('config','G-MQKC65VZVY',{'linker':{'domains':['mothersagainstherbalabuse.or
 gtag('config','G-P31PD1SSTD');
 </script>
 
+<!-- Plausible -->
 <script defer data-domain="mothersagainstherbalabuse.org" src="https://plausible.io/js/script.js"></script>
 
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<title>Another Kratom NDI Stumbles — And This One Is Hard to Defend • MAHA Week 11</title>
-
-<meta name="description" content="MAHA Week 11 analysis of a kratom New Dietary Ingredient filing from TNT Manufacturing d/b/a MitWellness, examining the 75% mitragynine extract, FDA documentation gaps, pharmacology, dependence, withdrawal, adverse events, and traditional-use mismatch." />
-
-<meta name="keywords" content="kratom NDI, MitWellness NDI, TNT Manufacturing kratom, Todd Underwood kratom, 75% mitragynine extract, FDA kratom NDI, kratom withdrawal, kratom dependence, MAHA Week 11" />
-
-<meta name="author" content="Mothers Against Herbal Abuse (MAHA)" />
-<meta name="theme-color" content="#0b1020" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Another Kratom NDI Fails — The Evidence Does Not Carry the Argument • MAHA</title>
+<meta name="description" content="MAHA analysis of the TNT Manufacturing / MitWellness kratom NDI filing. FDA found identity, safety, and manufacturing gaps. The 75% mitragynine extract cannot be legally sold — federal law prohibits introduction into interstate commerce." />
+<meta name="keywords" content="kratom NDI, MitWellness, TNT Manufacturing, Todd Underwood, 75% mitragynine, FDA kratom, NDIfail2, interstate commerce prohibited, MAHA" />
 <link rel="canonical" href="https://www.mothersagainstherbalabuse.org/supplemental/week11/NDI/kratom-second-ndi-mitwellness.html" />
-
-<link rel="stylesheet" href="/style.css?v=1" />
-
 <style>
-.wrap{max-width:780px;margin:0 auto;padding:20px}
-h1{font-size:1.9rem;margin-bottom:.35rem}
-h2{margin-top:1.45rem}
-p,li{line-height:1.65}
-a{color:#9cc9ff;text-decoration:underline}
-.meta{color:#a9b4d4;font-size:.9rem;margin-bottom:1rem}
-.pill{border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:2px 8px;font-size:.8rem;margin-right:6px}
-.callout{margin:20px 0;padding:18px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.03)}
-blockquote{border-left:3px solid rgba(255,255,255,.25);margin:16px 0;padding:8px 16px;background:rgba(255,255,255,.03)}
-hr{border:0;border-top:1px solid rgba(255,255,255,.12);margin:22px 0}
-.btn{display:inline-block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#e8ecf8;padding:10px 14px;border-radius:10px;text-decoration:none}
-.btn:hover{background:rgba(255,255,255,.18)}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#0b0f1a;color:#e5e9f0;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Inter', sans-serif;line-height:1.55;padding:2rem 1rem;}
+.container{max-width:880px;margin:0 auto;background:#11161f;border-radius:2rem;overflow:hidden;box-shadow:0 20px 30px -12px rgba(0,0,0,0.5);border:1px solid #232a36;}
+.content{padding:2rem 2rem 2.5rem;}
+h1{font-size:2.2rem;font-weight:800;letter-spacing:-0.02em;background:linear-gradient(135deg,#fff,#9bb5e0);background-clip:text;-webkit-background-clip:text;color:transparent;margin-bottom:0.75rem;}
+.meta{font-size:0.85rem;color:#8e9ab0;margin-bottom:1.8rem;border-bottom:1px solid #232a36;padding-bottom:0.75rem;}
+.tag{display:inline-block;background:#1e2a3a;padding:0.2rem 0.6rem;border-radius:20px;margin-right:0.6rem;}
+h2{font-size:1.6rem;font-weight:600;margin:1.8rem 0 1rem 0;letter-spacing:-0.01em;border-left:3px solid #e06c75;padding-left:0.9rem;}
+h3{font-weight:600;font-size:1.2rem;margin:1.4rem 0 0.6rem;color:#cbd5ff;}
+p{margin-bottom:1rem;color:#dee4fc;}
+.callout{background:#10161f;border-left:4px solid #e06c75;padding:1rem 1.4rem;border-radius:0.9rem;margin:1.6rem 0;}
+.highlight-box{background:#1d2a36;border:1px solid #e06c75;padding:1rem 1.3rem;border-radius:1rem;margin:1.8rem 0;text-align:center;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,0.3);}
+.highlight-box strong{color:#ffb5a0;font-size:1.05rem;}
+.pdf-row{display:flex;flex-wrap:wrap;gap:1rem;margin:1.5rem 0;justify-content:center;}
+.pdf-card{background:#0f131c;border:1px solid #2c3545;border-radius:1rem;padding:0.75rem 1.2rem;text-decoration:none;color:#cbd5ff;display:inline-flex;align-items:center;gap:0.6rem;transition:0.15s;}
+.pdf-card:hover{background:#1a2332;border-color:#e06c75;color:white;}
+hr{margin:2rem 0;border:0;height:1px;background:#232a36;}
+blockquote{margin:1rem 0 1.2rem 1rem;padding-left:1rem;border-left:2px solid #5f7f9e;color:#bcc8f0;}
+.footer-links{display:flex;flex-wrap:wrap;gap:0.8rem;justify-content:center;margin-top:2rem;}
+.btn{background:#1f2a3f;padding:0.5rem 1.1rem;border-radius:2rem;color:#dce5ff;text-decoration:none;border:1px solid #2f3a50;}
+.btn:hover{background:#2e3c54;}
+@media (max-width:600px){.content{padding:1.3rem;}h1{font-size:1.7rem;}}
 </style>
 </head>
-
 <body>
-<main class="wrap">
-
+<div class="container">
+<div class="content">
 <div class="meta">
-  <span class="pill">Week 11</span>
-  <span class="pill">FDA &amp; NDI</span>
-  <span class="pill">Kratom Extracts</span>
+<span class="tag">📄 NDI analysis</span>
+<span class="tag">⚖️ FDA letter</span>
+<span class="tag">🧪 75% extract</span>
+</div>
+<h1>Another Kratom NDI Fails—The Evidence Does Not Carry the Argument</h1>
+<p>There are submissions that invite debate. And then there are submissions where the record speaks plainly enough on its own.<br>
+The latest kratom New Dietary Ingredient (NDI) filing from <strong>TNT Manufacturing (d/b/a MitWellness)</strong>, led by President <strong>Todd Underwood</strong>, belongs to the latter.</p>
+
+<!-- PDF links (exactly as requested: "include links to the pdf files above in the picture" -->
+<div class="pdf-row">
+<a class="pdf-card" href="SecondNDI.pdf" target="_blank" rel="noopener">
+📄 <strong>SecondNDI.pdf</strong> — Full NDI Submission (MitWellness)
+</a>
+<a class="pdf-card" href="NDIfail2.pdf" target="_blank" rel="noopener">
+📄 <strong>NDIfail2.pdf</strong> — FDA Response Letter
+</a>
 </div>
 
-<h1>Another Kratom NDI Stumbles — And This One Is Hard to Defend</h1>
+<h2>🧪 A Defined Extract, Not a Traditional Product</h2>
+<p>The ingredient is not vaguely described. It is specific:</p>
+<blockquote>“Mitragyna speciosa leaf extract standardized to 75 ± 3.5% mitragynine”</blockquote>
+<p>That is a standardized, high-concentration extract. Yet much of the safety narrative relies on traditional use—tea and raw leaf—where exposure is lower, less concentrated, and far less controlled.<br>
+That difference is acknowledged. It is not resolved.</p>
 
-<p>
-Some submissions raise questions.
-</p>
+<h2>📋 The Submission Was Not Complete</h2>
+<p>FDA first identified a basic issue: the record itself. Required references were missing, some citations were provided only as abstracts, and FDA had to request full supporting materials to complete the submission. That is not a disagreement over interpretation — it is a question of whether the evidence was fully presented at all.</p>
 
-<p>
-Others answer them before you even have to ask.
-</p>
+<h2>⛔ The Core Problem: The Evidence Doesn’t Match the Product</h2>
+<p>In its final response, FDA does not hedge. It states that:</p>
+<ul>
+<li>Identity of the ingredient could not be established</li>
+<li>Safety could not be established</li>
+<li>The submission lacked adequate manufacturing detail, analytical verification, and linkage between studied materials and the actual product</li>
+</ul>
+<p>Most notably, FDA explains:<br>
+<em>“It is unclear how the product being marketed is qualitatively and quantitatively similar to the materials cited as evidence of safety.”</em><br>
+That is not a minor gap. That is the argument.</p>
 
-<p>
-The latest kratom New Dietary Ingredient filing from <strong>TNT Manufacturing, d/b/a MitWellness</strong>, led by President <strong>Todd Underwood</strong>, does the latter.
-</p>
+<h2>⚠️ The Conditions of Use Tell Their Own Story</h2>
+<p>Even the proposed labeling reflects the tension:</p>
+<ul>
+<li>Use limited to no more than 28 days</li>
+<li>Maximum 150 mg mitragynine per day</li>
+<li>Excludes pregnant or nursing individuals, and those with preexisting conditions</li>
+<li>Requires caution with CNS-active substances and CYP3A4-metabolized drugs</li>
+<li>Advises consultation with a healthcare professional</li>
+</ul>
+<p>This is not presented as casual, general use. It is use with constraints, exclusions, and warnings.</p>
 
-<div class="callout">
-  <h2 style="margin-top:0;">Primary Source Document</h2>
-  <p>
-    The filing discussed below is available here for independent review.
-  </p>
-  <p>
-    <a class="btn" href="/supplemental/week11/NDI/SecondNDI.pdf" target="_blank" rel="noopener">
-      Open MitWellness / TNT Manufacturing NDI Filing PDF →
-    </a>
-  </p>
+<h2>🔬 The Pharmacology Is Not Disputed</h2>
+<p>The submission itself describes:</p>
+<ul>
+<li>Activity at the µ-opioid receptor</li>
+<li>Effects across dopamine, serotonin, and adrenergic systems</li>
+<li>Metabolism through major drug-interaction pathways (CYP3A4, etc.)</li>
+</ul>
+<p>It also acknowledges tolerance, dependence, and withdrawal symptoms resembling opioids. These are not criticisms — they are statements from the submission itself.</p>
+
+<h2>📊 The Safety Record Is Not Empty</h2>
+<p>The filing includes case reports involving liver injury, neurologic effects, respiratory complications, renal injury, and death. It appropriately notes limitations — polysubstance use, incomplete data, uncertain causation. But the pattern of reported outcomes remains part of the evidence being presented.</p>
+
+<h2>💥 Where the Argument Fails</h2>
+<p>Taken piece by piece, each issue might be debated. Taken together, the problem is harder to avoid:</p>
+<ul>
+<li>A highly concentrated extract supported by lower-dose traditional use</li>
+<li>A submission FDA had to ask to complete</li>
+<li>A failure to establish what the ingredient is, how it was made, and how it relates to the cited evidence</li>
+<li>A pharmacologic profile consistent with a systemically active compound</li>
+</ul>
+<p>At some point, the difficulty is no longer technical. It is structural.</p>
+
+<h2>📜 The FDA’s Conclusion — In Plain Terms</h2>
+<p>FDA’s final determination is not ambiguous:</p>
+<ul>
+<li>The submission does not provide an adequate basis to conclude safety</li>
+<li>A product containing this ingredient may be considered adulterated</li>
+<li><strong>And critically: introduction of such a product into interstate commerce is prohibited under federal law</strong></li>
+</ul>
+
+<!-- BOLD HIGHLIGHTED SECTION from FDA letter (direct quote, bolded) -->
+<div class="highlight-box">
+🔥 <strong>“Introduction of such a product into interstate commerce is prohibited under federal law.”</strong> 🔥<br>
+<span style="font-size:0.9rem; font-weight:normal;">— FDA letter to Todd Underwood / TNT Manufacturing (NDIfail2.pdf)</span>
 </div>
 
-<hr>
-<h2>It’s Not Raw Leaf. It’s a 75% Extract.</h2>
+<p>That is not a suggestion. It is a statutory bar. Any attempt to sell this 75% mitragynine extract across state lines would violate the Federal Food, Drug, and Cosmetic Act.</p>
 
-<p>
-The ingredient is clearly defined as:
-</p>
-
-<blockquote>
-“Mitragyna speciosa leaf extract standardized to 75 ± 3.5% mitragynine.”
-</blockquote>
-
-<p>
-That is a highly concentrated, standardized extract.
-</p>
-
-<p>
-At the same time, the safety argument leans heavily on traditional use, including tea and chewed leaf, where exposure is far lower and far less controlled.
-</p>
-
-<p>
-That contrast is not subtle.
-</p>
-
-<p>
-It is presented, then largely left unresolved.
-</p>
+<h2>📉 Bottom Line</h2>
+<p>This is not a case where the evidence was weighed and found unpersuasive. It is a case where the evidence did not carry the argument it was asked to support. A 75% mitragynine extract was presented with a safety case built on something else — and FDA found that gap too large to bridge.</p>
+<blockquote style="background:#10161f; padding:0.8rem 1rem; border-left-color:#e06c75;">That is not a close call. It is a failed one.</blockquote>
 
 <hr>
 
-<h2>FDA Had to Ask for the Basics</h2>
-
-<p>
-Before getting into the science, FDA flagged the submission for missing required materials.
-</p>
-
-<ul>
-  <li>Full-text studies were not included</li>
-  <li>Abstract-only citations were relied upon</li>
-  <li>Additional documentation was requested to complete the record</li>
-</ul>
-
-<p>
-In other words:
-</p>
-
-<blockquote>
-The submission did not initially include all of the evidence it relied on.
-</blockquote>
-
-<p>
-That is not a disagreement over conclusions.
-</p>
-
-<p>
-That is a gap in the submission itself.
-</p>
-
-<div class="callout">
-<strong>For a safety submission, this matters.</strong><br><br>
-FDA was not simply debating interpretation. It was asking for the record to be completed.
+<div class="footer-links">
+<a href="/index.html" class="btn">← MAHA Home</a>
+<a href="/supplemental-reading.html" class="btn">Supplemental Reading</a>
 </div>
-
-<hr>
-<h2>The Pharmacology Section Says More Than It Should</h2>
-
-<p>
-The document describes mitragynine as:
-</p>
-
-<ul>
-  <li>A partial µ-opioid receptor agonist</li>
-  <li>Active at serotonin, dopamine, and adrenergic receptors</li>
-  <li>Metabolized by major CYP drug pathways</li>
-</ul>
-
-<p>
-It also advises users to consult healthcare professionals due to interaction risks.
-</p>
-
-<p>
-That is all straightforward.
-</p>
-
-<p>
-But it creates a problem the document does not solve:
-</p>
-
-<blockquote>
-The more clearly the pharmacology is described, the harder it becomes to treat the ingredient as routine.
-</blockquote>
-
-<hr>
-
-<h2>The “Traditional Use” Bridge Never Quite Connects</h2>
-
-<p>
-The submission presents two very different exposure stories.
-</p>
-
-<ul>
-  <li><strong>Traditional use:</strong> lower-dose preparations, roughly 50–150 mg per day</li>
-  <li><strong>Proposed ingredient:</strong> a 75% standardized mitragynine extract</li>
-</ul>
-
-<p>
-It acknowledges differences in formulation and pharmacokinetics.
-</p>
-
-<p>
-But instead of resolving those differences, it moves past them.
-</p>
-
-<p>
-That is where the argument starts to feel incomplete.
-</p>
-
-<hr>
-
-<h2>The Adverse Events Section Is Extensive — Then Qualified</h2>
-
-<p>
-The filing includes a wide range of case reports.
-</p>
-
-<ul>
-  <li>Liver injury</li>
-  <li>Neurologic effects</li>
-  <li>Respiratory complications</li>
-  <li>Renal injury</li>
-  <li>Death</li>
-</ul>
-
-<p>
-It also emphasizes limitations.
-</p>
-
-<ul>
-  <li>Polysubstance use</li>
-  <li>Incomplete data</li>
-  <li>Uncertain causation</li>
-</ul>
-
-<p>
-All fair.
-</p>
-
-<p>
-But listing that many serious outcomes and then stepping back from them leaves a noticeable tension in the document.
-</p>
-
-<hr>
-<h2>Even Dependence Is Acknowledged</h2>
-
-<p>
-The submission states that:
-</p>
-
-<ul>
-  <li>Chronic use can lead to tolerance and dependence</li>
-  <li>Withdrawal symptoms may resemble those of opioids</li>
-</ul>
-
-<p>
-That is not implied.
-</p>
-
-<p>
-It is written directly into the filing.
-</p>
-
-<div class="callout">
-<strong>This is where the “safe botanical” pitch runs into its own paperwork.</strong><br><br>
-The submission itself acknowledges dependence and opioid-like withdrawal concerns.
+<div style="font-size:0.7rem; text-align:center; margin-top:2rem; color:#6c7a96;">
+Reference files: SecondNDI.pdf (NDI submission) and NDIfail2.pdf (FDA objection letter). Full context from IMG_6823.
 </div>
-
-<hr>
-
-<h2>What Makes This Awkward</h2>
-
-<p>
-None of these points require creative interpretation.
-</p>
-
-<p>
-They are all in the document.
-</p>
-
-<p>
-That makes the overall presentation difficult to reconcile:
-</p>
-
-<ul>
-  <li>A highly concentrated extract supported by lower-dose traditional use</li>
-  <li>A submission FDA had to ask to complete</li>
-  <li>A pharmacology section that reads like a drug profile</li>
-  <li>Safety signals that are presented but not fully resolved</li>
-</ul>
-
-<p>
-It is not one issue.
-</p>
-
-<p>
-It is how all of them sit next to each other.
-</p>
-
-<hr>
-
-<h2>Bottom Line</h2>
-
-<p>
-This submission does not collapse under a single flaw.
-</p>
-
-<p>
-It struggles because the central argument never quite comes together.
-</p>
-
-<blockquote>
-A standardized, pharmacologically active extract is evaluated using a framework built for something less concentrated and less defined.
-</blockquote>
-
-<p>
-And that gap shows up repeatedly.
-</p>
-
-<div class="post-nav" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:30px 0 10px">
-  <a href="/index.html" class="btn">← Back to Home</a>
-  <a href="/supplemental-reading.html" class="btn">← Back to Supplemental Reading</a>
 </div>
-
-</main>
+</div>
 </body>
 </html>
