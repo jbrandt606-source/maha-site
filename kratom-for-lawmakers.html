@@ -18,14 +18,11 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    // MAHA property
     gtag('config', 'G-MQKC65VZVY', {
       'linker': {
         'domains': ['mothersagainstherbalabuse.org','gasstationheroin.org']
       }
     });
-
-    // GasStationHeroin property
     gtag('config', 'G-P31PD1SSTD');
   </script>
 
@@ -34,18 +31,21 @@
     src="https://plausible.io/js/script.js"></script>
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       line-height: 1.6;
       color: #1f2937;
       background: #ffffff;
-      margin: 0;
-      padding: 0;
     }
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem;
+      padding: 2rem 1.5rem;
     }
     h1, h2, h3 {
       color: #111827;
@@ -56,8 +56,8 @@
       margin-bottom: 1rem;
     }
     h2 {
-      font-size: 1.4rem;
-      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
       border-bottom: 1px solid #e5e7eb;
       padding-bottom: 0.4rem;
     }
@@ -84,519 +84,345 @@
       margin: 1.5rem 0;
       font-size: 0.95rem;
     }
-
-    .story-item {
-  margin-bottom: 0.6rem;
-  line-height: 1.6;
-}
-
-.new-pill {
-  display: inline-block;
-  margin-right: 6px;
-  padding: 2px 7px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 999px;
-  color: #0b1020;
-  background: #9cc9ff;
-  vertical-align: middle;
-}
-
-.policy-alert {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  margin: 22px 0 28px;
-  padding: 18px 20px;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-left: 6px solid #2563eb; /* deep signal blue */
-  border-radius: 12px;
-  background: #f8fafc; /* very light slate */
-}
-
-.policy-alert-badge {
-  background: #2563eb; /* same blue as left border */
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 0.75rem;
-  padding: 6px 12px;
-  border-radius: 999px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  margin-top: 4px;
-}
-
-.policy-alert-content h2 {
-  margin: 0 0 6px 0;
-  font-size: 1.25rem;
-  color: #0f172a; /* slate-900 */
-}
-
-.policy-alert-content h2 a {
-  color: #0f172a;
-  text-decoration: none;
-}
-
-.policy-alert-content h2 a:hover {
-  text-decoration: underline;
-}
-
-.policy-alert-content p {
-  margin: 0;
-  color: #334155; /* slate-700 */
-  line-height: 1.55;
-}1.55;
-}
+    .policy-alert {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin: 22px 0 28px;
+      padding: 18px 20px;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      background: #f8fafc;
+    }
+    .policy-alert-badge {
+      background: #2563eb;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.75rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      margin-top: 4px;
+    }
+    .policy-alert-content h2 {
+      margin: 0 0 6px 0;
+      font-size: 1.25rem;
+      color: #0f172a;
+    }
+    .policy-alert-content p {
+      margin: 0 0 0.25rem;
+      color: #334155;
+    }
+    .pdf-inline {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .pdf-inline a {
+      background: #eef2ff;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      display: inline-block;
+      margin-right: 0.6rem;
+    }
+    .highlight-box {
+      background: #1d2a36;
+      border-left: 4px solid #e06c75;
+      padding: 1rem 1.3rem;
+      margin: 1.2rem 0;
+      border-radius: 0.8rem;
+      color: #f0f4fa;
+    }
+    .highlight-box strong {
+      color: #ffb5a0;
+    }
     .frequently-accessed {
-  margin: 2.5rem 0 3rem;
-}
-
-.fa-header {
-  margin-bottom: 1rem;
-}
-
-.fa-badge {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #1f3a5f;
-  background: #eef3f8;
-  padding: 0.4rem 0.7rem;
-  border-radius: 6px;
-}
-
-.fa-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f9fbfd;
-  border-left: 4px solid #2b6cb0;
-  padding: 1.2rem 1.3rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.fa-content h3 {
-  margin: 0 0 0.2rem;
-  font-size: 1.05rem;
-}
-
-.fa-subtitle {
-  margin: 0.1rem 0;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #4a5568;
-}
-
-.fa-meta {
-  margin: 0.3rem 0 0;
-  font-size: 0.85rem;
-  color: #6b7280;
-}
-
-.fa-button {
-  white-space: nowrap;
-  background: #2b6cb0;
-  color: #ffffff;
-  padding: 0.55rem 0.9rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  text-decoration: none;
-}
-
-.fa-button:hover {
-  background: #1f4f8a;
-}
-
-.fa-divider {
-  height: 1px;
-  background: #e5e7eb;
-  margin: 1.2rem 0;
-}
+      margin: 2rem 0 2rem;
+    }
+    .fa-header {
+      margin-bottom: 1rem;
+    }
+    .fa-badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1f3a5f;
+      background: #eef3f8;
+      padding: 0.4rem 0.7rem;
+      border-radius: 6px;
+    }
+    .fa-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f9fbfd;
+      border-left: 4px solid #2b6cb0;
+      padding: 1.2rem 1.3rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .fa-content h3 {
+      margin: 0 0 0.2rem;
+      font-size: 1.05rem;
+    }
+    .fa-subtitle {
+      margin: 0.1rem 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #4a5568;
+    }
+    .fa-meta {
+      margin: 0.3rem 0 0;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    .fa-button {
+      white-space: nowrap;
+      background: #2b6cb0;
+      color: #ffffff;
+      padding: 0.55rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    .fa-button:hover {
+      background: #1f4f8a;
+    }
+    .fa-divider {
+      height: 1px;
+      background: #e5e7eb;
+      margin: 1.2rem 0;
+    }
+    hr {
+      margin: 1.5rem 0;
+      border: 0;
+      border-top: 1px solid #e5e7eb;
+    }
   </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Kratom Briefing for Lawmakers",
-  "description": "A consolidated, evidence-based briefing on kratom for lawmakers and regulators, including pharmacology, adverse events, poison control data, FDA regulatory failures, and policy analyses curated by Mothers Against Herbal Abuse (MAHA).",
-  "url": "https://www.mothersagainstherbalabuse.org/kratom-for-lawmakers.html",
-  "inLanguage": "en-US",
-  "audience": {
-    "@type": "GovernmentAudience",
-    "audienceType": [
-      "Legislators",
-      "Legislative Staff",
-      "Regulators",
-      "Policy Analysts",
-      "Public Health Officials"
-    ]
-  },
-  "about": [
-    {
-      "@type": "Drug",
-      "name": "Kratom",
-      "alternateName": "Mitragyna speciosa",
-      "drugClass": "Opioid-like alkaloid-containing botanical",
-      "legalStatus": "Subject to federal and state regulatory review",
-      "description": "A botanical product containing psychoactive alkaloids, including mitragynine and 7-hydroxymitragynine, associated with adverse events, poison control reports, and regulatory enforcement actions."
-    },
-    {
-      "@type": "MedicalEntity",
-      "name": "7-Hydroxymitragynine",
-      "code": {
-        "@type": "MedicalCode",
-        "codingSystem": "MeSH",
-        "codeValue": "Not FDA approved"
-      }
-    }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "Mothers Against Herbal Abuse",
-    "alternateName": "MAHA",
-    "url": "https://www.mothersagainstherbalabuse.org",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.mothersagainstherbalabuse.org/images/maha-logo.png"
-    }
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Mothers Against Herbal Abuse",
-    "url": "https://www.mothersagainstherbalabuse.org"
-  },
-  "mainEntity": {
-    "@type": "GovernmentService",
-    "name": "Legislative Research on Kratom",
-    "serviceType": "Policy Analysis and Regulatory Review",
-    "areaServed": {
-      "@type": "Country",
-      "name": "United States"
-    }
-  },
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Mothers Against Herbal Abuse",
-    "url": "https://www.mothersagainstherbalabuse.org"
-  }
-}
-</script>
-  
 </head>
 
 <body>
 <main>
-<div class="policy-alert" style="border-left:6px solid #16a34a;background:#f0fdf4;">
-  <span class="policy-alert-badge" style="background:#16a34a;">New</span>
-  <div class="policy-alert-content">
-    <h2 style="margin:0;">
-      <a href="/supplemental/week11/kratom-regulation-cost.html">
-        New Analysis: The $40 Million Illusion — How Kratom “Regulation” Actually Works
-      </a>
-    </h2>
-    <p>
-      Newly released breakdown of North Carolina’s fiscal analysis showing projected costs,
-      enforcement limitations, and the structural realities behind kratom regulatory frameworks.
-    </p>
-  </div>
-</div>
-<section class="frequently-accessed">
 
-  <div class="fa-header">
-    <span class="fa-badge">Frequently Accessed</span>
-  </div>
-
-  <div class="fa-card">
-  <div class="fa-content">
-    <h3>FDA and Kratom — Official Agency Statement</h3>
-    <p class="fa-subtitle">
-      U.S. Food & Drug Administration public health summary on kratom regulation and safety
-    </p>
-    <p class="fa-meta">
-      FDA determination that kratom is not lawfully marketed as a drug, dietary supplement, or food additive in the United States.
-    </p>
-  </div>
-  <a class="fa-button" href="/FDA%20and%20Kratom%20%7C%20FDA%20highlighted.pdf" target="_blank" rel="noopener">
-    Download PDF
-  </a>
-</div>
-
-  <div class="fa-divider"></div>
-
-  <div class="fa-card">
-    <div class="fa-content">
-      <h3>FDA NDI Review & Denial — Dried Kratom Leaf</h3>
-      <p class="fa-subtitle">
-        Johnson Foods, LLC (2023)
+  <!-- ========================================================= -->
+  <!-- 1. NDI FAIL STORY (MOST RECENT)                           -->
+  <!-- ========================================================= -->
+  <div class="policy-alert" style="border-left:6px solid #b91c1c; background:#fef2f2;">
+    <span class="policy-alert-badge" style="background:#b91c1c;">📄 NDI FAIL</span>
+    <div class="policy-alert-content">
+      <h2>
+        <a href="/supplemental/week11/NDI/kratom-second-ndi-mitwellness.html">
+          Another Kratom NDI Fails — The Evidence Does Not Carry the Argument
+        </a>
+      </h2>
+      <p>
+        TNT Manufacturing (d/b/a MitWellness) submitted a 75% mitragynine extract as a New Dietary Ingredient.
+        FDA found identity, safety, and manufacturing gaps. The conclusion: introduction into interstate commerce is <strong>prohibited under federal law</strong>.
       </p>
-      <p class="fa-meta">
-        U.S. Food & Drug Administration determination regarding identity, safety, and adulteration.
-      </p>
+      <div class="highlight-box" style="background:#1d2a36; margin:0.8rem 0 0.4rem;">
+        🔥 <strong>“Introduction of such a product into interstate commerce is prohibited under federal law.”</strong> 🔥<br>
+        <span style="font-size:0.85rem;">— FDA letter to Todd Underwood / TNT Manufacturing (NDIfail2.pdf)</span>
+      </div>
+      <div class="pdf-inline">
+        📄 <a href="/supplemental/week11/NDI/SecondNDI.pdf" target="_blank">View full NDI submission (SecondNDI.pdf)</a>
+        📄 <a href="/supplemental/week11/NDI/NDIfail2.pdf" target="_blank">View FDA response letter (NDIfail2.pdf)</a>
+      </div>
     </div>
-    <a class="fa-button" href="/Johnsonfooddenial.pdf" target="_blank" rel="noopener">
-      Download PDF
-    </a>
   </div>
 
-  <div class="fa-card">
-  <div class="fa-content">
-    <h3>Kratom Vendor Terms of Service Admit Opioid-Like Risks</h3>
-    <p class="fa-subtitle">
-      Vendor Policy Disclosure Analysis
-    </p>
-    <p class="fa-meta">
-      Review of Happy Hippo Herbals Terms of Service language acknowledging opioid receptor activity, dependence risk, withdrawal symptoms, and consumer assumption of risk.
-    </p>
+  <!-- ========================================================= -->
+  <!-- 2. AUTOMATIC EMAIL GENERATOR STORY                        -->
+  <!-- ========================================================= -->
+  <div class="policy-alert" style="border-left:6px solid #d97706; background:#fffbeb;">
+    <span class="policy-alert-badge" style="background:#d97706;">🤖 EMAIL MACHINE</span>
+    <div class="policy-alert-content">
+      <h2>
+        <a href="/supplemental/week11/email_generator/kratom-advocacy-email-generator.html">
+          Inside the Kratom Advocacy Machine: One Click, Identical Letters
+        </a>
+      </h2>
+      <p>
+        The Global Kratom Coalition’s “Advocacy Buddy” generates complete, persuasive letters from minimal input — including the placeholder “Xx”. The tool standardizes language, assigns identity labels, and delivers identical messages to legislators, creating the illusion of grassroots testimony.
+      </p>
+      <div class="note" style="margin:0.8rem 0; background:#fef7e0;">
+        <strong>Key finding:</strong> MAHA entered nothing but “Xx” in every field. The system still produced a fully formed advocacy letter with personal narrative, regulatory proposals, and a call to action. This is not amplification — it is creation.
+      </div>
+      <div class="pdf-inline">
+        📄 <a href="/supplemental/week11/email_generator/GKC%20letter.pdf" target="_blank">View generated letter (GKC letter.pdf)</a>
+        🔗 <a href="https://globalkratomcoalition.org/advocacy-buddy" target="_blank" rel="noopener">Try the Advocacy Buddy yourself →</a>
+      </div>
+    </div>
   </div>
-  <a class="fa-button" href="/supplemental/week10/kratom-vendor-terms-of-service-risks.html">
-    Read Analysis
-  </a>
-</div>
 
-</section>
+  <!-- ========================================================= -->
+  <!-- 3. KRATOM SHOTS / ALCOHOL / KANSAS TESTING STORY          -->
+  <!-- ========================================================= -->
+  <div class="policy-alert" style="border-left:6px solid #7c3aed; background:#f5f3ff;">
+    <span class="policy-alert-badge" style="background:#7c3aed;">🧪 LAB ANALYSIS</span>
+    <div class="policy-alert-content">
+      <h2>
+        <a href="/supplemental/week11/kratom-shots-alcohol-kansas-testing.html">
+          Kratom Shots, Alcohol Content, and Kansas Lab Testing
+        </a>
+      </h2>
+      <p>
+        Independent laboratory testing of popular kratom shot products revealed undeclared alcohol content, significant label inaccuracies, and marketing that obscures actual ingredients. The findings raise questions about product safety, consumer deception, and the gap between KCPA labeling requirements and real-world compliance.
+      </p>
+      <div class="note" style="margin:0.8rem 0; background:#ede9fe;">
+        <strong>Key finding:</strong> Several kratom shots contained ethanol levels comparable to full-strength alcoholic beverages — without any mention on the label. This combination of opioid-like alkaloids and alcohol presents risks not addressed by most regulatory frameworks.
+      </div>
+      <div class="pdf-inline">
+        🔗 <a href="/supplemental/week11/kratom-shots-alcohol-kansas-testing.html" target="_blank">Read full analysis →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- FREQUENTLY ACCESSED (unchanged)                           -->
+  <!-- ========================================================= -->
+  <section class="frequently-accessed">
+    <div class="fa-header">
+      <span class="fa-badge">Frequently Accessed</span>
+    </div>
+    <div class="fa-card">
+      <div class="fa-content">
+        <h3>FDA and Kratom — Official Agency Statement</h3>
+        <p class="fa-subtitle">U.S. Food & Drug Administration public health summary on kratom</p>
+        <p class="fa-meta">FDA determination that kratom is not lawfully marketed as a drug, dietary supplement, or food additive.</p>
+      </div>
+      <a class="fa-button" href="/FDA%20and%20Kratom%20%7C%20FDA%20highlighted.pdf" target="_blank">Download PDF</a>
+    </div>
+    <div class="fa-divider"></div>
+    <div class="fa-card">
+      <div class="fa-content">
+        <h3>FDA NDI Review & Denial — Dried Kratom Leaf</h3>
+        <p class="fa-subtitle">Johnson Foods, LLC (2023)</p>
+        <p class="fa-meta">FDA determination regarding identity, safety, and adulteration.</p>
+      </div>
+      <a class="fa-button" href="/Johnsonfooddenial.pdf" target="_blank">Download PDF</a>
+    </div>
+    <div class="fa-card">
+      <div class="fa-content">
+        <h3>Kratom Vendor Terms of Service Admit Opioid-Like Risks</h3>
+        <p class="fa-subtitle">Vendor Policy Disclosure Analysis</p>
+        <p class="fa-meta">Happy Hippo Herbals Terms: opioid receptor activity, dependence, withdrawal.</p>
+      </div>
+      <a class="fa-button" href="/supplemental/week10/kratom-vendor-terms-of-service-risks.html">Read Analysis</a>
+    </div>
+  </section>
 
   <h1>Kratom: Consolidated Briefing for Lawmakers</h1>
+  <p>This page provides a centralized, source-based briefing on kratom for legislators, regulators, and policy staff. It consolidates MAHA’s surveillance data, scientific literature, regulatory analysis, and legislative case studies into a single reference point.</p>
+  <div class="note"><strong>Why this matters:</strong> Kratom policy debates often rely on selective summaries and industry framing. This page presents primary documentation and enforcement context in one place to support informed public-health decision-making.</div>
 
-<p>
-This page provides a centralized, source-based briefing on kratom for legislators,
-regulators, and policy staff. It consolidates MAHA’s surveillance data,
-scientific literature, regulatory analysis, and legislative case studies
-into a single reference point.
-</p>
+  <!-- ========================================================= -->
+  <!-- SECTION I – CORE HARM DATA                                -->
+  <!-- ========================================================= -->
+  <h2>I. Surveillance &amp; Harm Data</h2>
+  <h3>FDA Adverse Event Reporting</h3>
+  <ul>
+    <li><a href="/literature/adverseeventskratom.html">FDA Adverse Events – Kratom (Part I)</a></li>
+    <li><a href="/literature/adverseeventskratom2.html">FDA Adverse Events – Kratom (Part II)</a></li>
+  </ul>
+  <h3>Poison Control &amp; Mortality Data</h3>
+  <ul>
+    <li><a href="/literature/poisoncontrolkratom.html">Poison Control Reports – Kratom</a></li>
+    <li><a href="/literature/cdc_sudors_kratom.html">CDC SUDORS Mortality Data – Kratom</a></li>
+  </ul>
+  <h3>Medical Examiner Data</h3>
+  <ul>
+    <li><a href="/literature/florida-mec-mitragynine-postmortem-toxicology.html">Florida Medical Examiners Commission: Mitragynine in Post-Mortem Toxicology (2020–2024)</a></li>
+  </ul>
 
-<div class="note">
-<strong>Why this matters:</strong><br>
-Kratom policy debates often rely on selective summaries and industry framing.
-This page presents primary documentation and enforcement context in one place
-to support informed public-health decision-making.
-</div>
+  <!-- ========================================================= -->
+  <!-- SECTION II – CORE SCIENCE                                 -->
+  <!-- ========================================================= -->
+  <h2>II. Core Alkaloid &amp; Scientific Information</h2>
+  <ul>
+    <li><a href="/kratombriefing.html">Kratom Overview</a></li>
+    <li><a href="/7OHbriefing.html">7-Hydroxymitragynine (7-OH)</a></li>
+    <li><a href="/literature/kratom.html">Kratom Literature Index</a></li>
+    <li><a href="/literature/case-reports.html">Published Case Reports</a></li>
+  </ul>
 
-<!-- ========================================================= -->
-<!-- SECTION I – CORE HARM DATA (KEEP AT TOP) -->
-<!-- ========================================================= -->
+  <!-- ========================================================= -->
+  <!-- SECTION III – CURRENT CLAIMS & INDUSTRY DOCUMENTS         -->
+  <!-- ========================================================= -->
+  <h2>III. Current Regulatory Claims &amp; Industry Submissions</h2>
 
-<h2>I. Surveillance & Harm Data</h2>
-
-<h3>FDA Adverse Event Reporting</h3>
-<ul>
-  <li><a href="/literature/adverseeventskratom.html">FDA Adverse Events – Kratom (Part I)</a></li>
-  <li><a href="/literature/adverseeventskratom2.html">FDA Adverse Events – Kratom (Part II)</a></li>
-</ul>
-
-<h3>Poison Control & Mortality Data</h3>
-<ul>
-  <li><a href="/literature/poisoncontrolkratom.html">Poison Control Reports – Kratom</a></li>
-  <li><a href="/literature/cdc_sudors_kratom.html">CDC SUDORS Mortality Data – Kratom</a></li>
-</ul>
-
-<h3>Medical Examiner Data</h3>
-<ul>
-  <li>
-    <a href="/literature/florida-mec-mitragynine-postmortem-toxicology.html">
-      Florida Medical Examiners Commission: Mitragynine in Post-Mortem Toxicology (2020–2024)
-    </a>
-  </li>
-</ul>
-
-<!-- ========================================================= -->
-<!-- SECTION II – CORE SCIENCE -->
-<!-- ========================================================= -->
-
-<h2>II. Core Alkaloid & Scientific Information</h2>
-
-<ul>
-  <li><a href="/kratombriefing.html">Kratom Overview</a></li>
-  <li><a href="/7OHbriefing.html">7-Hydroxymitragynine (7-OH)</a></li>
-  <li><a href="/literature/kratom.html">Kratom Literature Index</a></li>
-  <li><a href="/literature/case-reports.html">Published Case Reports</a></li>
-</ul>
-
-<!-- ========================================================= -->
-<!-- SECTION III – CURRENT CLAIMS & INDUSTRY DOCUMENTS -->
-<!-- ========================================================= -->
-
-<h2>III. Current Regulatory Claims & Industry Submissions</h2>
-
-<div class="policy-alert">
-  <span class="policy-alert-badge">NEW</span>
-  <div class="policy-alert-content">
-    <h2>
-      <a href="/supplemental/week10/fda-human-kratom-study-schedule-i.html">
-        FDA Human Kratom Study: Why the Results Strengthen the Case for Schedule I
-      </a>
-    </h2>
-    <p>
-      MAHA analysis of the Phase I human dose study showing opioid-like effects,
-      statistically significant drug liking, and measurable exposure to 7-hydroxymitragynine.
-    </p>
+  <div class="policy-alert">
+    <span class="policy-alert-badge">HUMAN DATA</span>
+    <div class="policy-alert-content">
+      <h2><a href="/supplemental/week10/fda-human-kratom-study-schedule-i.html">FDA Human Kratom Study: Why the Results Strengthen the Case for Schedule I</a></h2>
+      <p>MAHA analysis of the Phase I human dose study showing opioid-like effects, statistically significant drug liking, and measurable exposure to 7‑hydroxymitragynine.</p>
+    </div>
   </div>
-</div>
 
-<div class="policy-alert">
-  <span class="policy-alert-badge">NEW</span>
-  <div class="policy-alert-content">
-    <h2>
-      <a href="/supplemental/week10/pinney-eight-factor-delay-tactic.html">
-        Pinney Associates “Eight-Factor Analysis”
-      </a>
-    </h2>
-    <p>
-      Review of the industry-funded report submitted to regulators, highlighting
-      buried admissions about metabolism and opioid potency.
-    </p>
+  <div class="policy-alert">
+    <span class="policy-alert-badge">INDUSTRY REPORT</span>
+    <div class="policy-alert-content">
+      <h2><a href="/supplemental/week10/pinney-eight-factor-delay-tactic.html">Pinney Associates “Eight-Factor Analysis”</a></h2>
+      <p>Review of the industry-funded report submitted to regulators, highlighting buried admissions about metabolism and opioid potency.</p>
+    </div>
   </div>
-</div>
 
-<div class="policy-alert">
-  <span class="policy-alert-badge">Context</span>
-  <div class="policy-alert-content">
-    <h2>
-      <a href="/supplemental/week10/henningfield-then-and-now.html">
-        2004 Opioid Testimony & Today’s Kratom Debate
-      </a>
-    </h2>
-    <p>
-      Compares early opioid-era risk framing with arguments currently raised in
-      kratom policy discussions.
-    </p>
+  <div class="policy-alert">
+    <span class="policy-alert-badge">MICHIGAN</span>
+    <div class="policy-alert-content">
+      <h2><a href="/supplemental/week10/michigan-hb4969-full-record.html">Michigan HB 4969: What Lawmakers Were Told</a></h2>
+      <p>Structured review of testimony regarding FDA posture, natural leaf claims, and 7‑hydroxymitragynine distinctions.</p>
+    </div>
   </div>
-</div>
 
-<div class="policy-alert">
-  <span class="policy-alert-badge">NEW</span>
-  <div class="policy-alert-content">
-    <h2>
-      <a href="/supplemental/week10/michigan-hb4969-full-record.html">
-        Michigan HB 4969: What Lawmakers Were Told
-      </a>
-    </h2>
-    <p>
-      Structured review of testimony regarding FDA posture, natural leaf claims,
-      and 7-hydroxymitragynine distinctions.
-    </p>
+  <div class="policy-alert">
+    <span class="policy-alert-badge">KANSAS</span>
+    <div class="policy-alert-content">
+      <h2><a href="/supplemental/week10/kansas-kcpa-misled-by-aka.html">How Kansas Was Misled to Pass the KCPA</a></h2>
+      <p>Analysis of exhibits submitted to lawmakers and what the underlying science actually demonstrates.</p>
+    </div>
   </div>
-</div>
 
-<div class="policy-alert">
-  <span class="policy-alert-badge">NEW</span>
-  <div class="policy-alert-content">
-    <h2>
-      <a href="/supplemental/week10/kansas-kcpa-misled-by-aka.html">
-        How Kansas Was Misled to Pass the KCPA
-      </a>
-    </h2>
-    <p>
-      Analysis of exhibits submitted to lawmakers and what the underlying
-      science actually demonstrates.
-    </p>
+  <div class="policy-alert">
+    <span class="policy-alert-badge">2004 CONTEXT</span>
+    <div class="policy-alert-content">
+      <h2><a href="/supplemental/week10/henningfield-then-and-now.html">2004 Opioid Testimony &amp; Today’s Kratom Debate</a></h2>
+      <p>Compares early opioid-era risk framing with arguments currently raised in kratom policy discussions.</p>
+    </div>
   </div>
-</div>
 
-<!-- ========================================================= -->
-<!-- SECTION IV – REGULATORY FAILURES & STATE CASE STUDIES -->
-<!-- ========================================================= -->
+  <!-- ========================================================= -->
+  <!-- SECTION IV – STATE REGULATORY OUTCOMES                    -->
+  <!-- ========================================================= -->
+  <h2>IV. State Regulatory Outcomes &amp; Enforcement Gaps</h2>
+  <ul>
+    <li><a href="/supplemental/week2/california_leading_the_way.html">California: Treating Kratom as an Unapproved Drug</a></li>
+    <li><a href="/supplemental/week5/what-congress-wasnt-told.html">What Congress Wasn’t Told</a></li>
+    <li><a href="/supplemental/week5/fdc-violations.html">FD&amp;C Act Violations Explained</a></li>
+    <li><a href="/supplemental/week8/new-york-kratom-statutory-contradiction.html">New York Statutory Contradiction</a></li>
+    <li><a href="/supplemental/week8/florida-sb994-week8-special.html">Florida SB 994 Enforcement Issues</a></li>
+    <li><a href="/supplemental/week10/wyoming-kratom-bill-fig-leaf.html">Wyoming Kratom Bill: A Fig Leaf, Not Public Health</a></li>
+  </ul>
 
-<h2>IV. State Regulatory Outcomes & Enforcement Gaps</h2>
+  <!-- ========================================================= -->
+  <!-- SECTION V – SCHEDULING & STRUCTURAL ANALYSIS              -->
+  <!-- ========================================================= -->
+  <h2>V. Scheduling, Registries &amp; Structural Analysis</h2>
+  <ul>
+    <li><a href="/supplemental/week10/ohio8factor.html">Ohio Board of Pharmacy – 8-Factor Analysis</a></li>
+    <li><a href="/supplemental/week10/kratom-extraction-scheduling-rationale.html">Extraction &amp; Scheduling Rationale</a></li>
+    <li><a href="/supplemental/week10/kcpa-structural-limitations.html">KCPA Structural Limitations &amp; Public-Health Risk</a></li>
+    <li><a href="/supplemental/week9/nebraska-kratom-registry.html">Nebraska Kratom Registry Review</a></li>
+    <li><a href="/supplemental/week10/ndi-fda-loophole.html">FDA NDI Loophole &amp; Enforcement Discretion</a></li>
+    <li><a href="/huestis-kratom-study-limitations-for-policy.html">Limitations of the Huestis Human Dose Study</a></li>
+  </ul>
 
-<ul>
-  <li>
-    <a href="/supplemental/week2/california_leading_the_way.html">
-      California: Treating Kratom as an Unapproved Drug
-    </a>
-  </li>
+  <h2>VI. Intended Use</h2>
+  <p>This briefing is intended to support legislative research, regulatory review, enforcement hearings, and policy analysis. All materials are provided as primary sources or direct analyses without editorial framing.</p>
 
-  <li>
-    <a href="/supplemental/week5/what-congress-wasnt-told.html">
-      What Congress Wasn’t Told
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week5/fdc-violations.html">
-      FD&C Act Violations Explained
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week8/new-york-kratom-statutory-contradiction.html">
-      New York Statutory Contradiction
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week8/florida-sb994-week8-special.html">
-      Florida SB 994 Enforcement Issues
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week10/wyoming-kratom-bill-fig-leaf.html">
-      Wyoming Kratom Bill: A Fig Leaf, Not Public Health
-    </a>
-  </li>
-</ul>
-
-<!-- ========================================================= -->
-<!-- SECTION V – SCHEDULING & STRUCTURAL ANALYSIS -->
-<!-- ========================================================= -->
-
-<h2>V. Scheduling, Registries & Structural Analysis</h2>
-
-<ul>
-  <li>
-    <a href="/supplemental/week10/ohio8factor.html">
-      Ohio Board of Pharmacy – 8-Factor Analysis
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week10/kratom-extraction-scheduling-rationale.html">
-      Extraction & Scheduling Rationale
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week10/kcpa-structural-limitations.html">
-      KCPA Structural Limitations & Public-Health Risk
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week9/nebraska-kratom-registry.html">
-      Nebraska Kratom Registry Review
-    </a>
-  </li>
-
-  <li>
-    <a href="/supplemental/week10/ndi-fda-loophole.html">
-      FDA NDI Loophole & Enforcement Discretion
-    </a>
-  </li>
-
- 
-
-  <li>
-    <a href="/huestis-kratom-study-limitations-for-policy.html">
-      Limitations of the Huestis Human Dose Study
-    </a>
-  </li>
-</ul>
-
-  <h2>IV. Intended Use</h2>
-  <p>
-    This briefing is intended to support legislative research, regulatory review,
-    enforcement hearings, and policy analysis. All materials are provided as primary
-    sources or direct analyses without editorial framing.
-  </p>
-
-  <p>
-    <strong>Mothers Against Herbal Abuse (MAHA)</strong><br>
-    <a href="https://www.mothersagainstherbalabuse.org">https://www.mothersagainstherbalabuse.org</a>
-  </p>
+  <hr />
+  <p><strong>Mothers Against Herbal Abuse (MAHA)</strong><br />
+  <a href="https://www.mothersagainstherbalabuse.org">https://www.mothersagainstherbalabuse.org</a></p>
 
 </main>
 </body>
