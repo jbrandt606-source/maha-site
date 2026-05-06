@@ -244,10 +244,43 @@
       border-radius: 40px;
       font-size: 0.9rem;
       display: inline-block;
+      text-decoration: none;
     }
     .btn-doc-light {
       background: #eef2ff;
       color: #1e3a5f;
+    }
+    .btn-doc:hover {
+      background: #0f2a44;
+      text-decoration: none;
+    }
+    /* style for story stats grid (reuse lead stats but with different color) */
+    .story-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 1.2rem 0;
+    }
+    .story-stat-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .story-stat-number {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #b45309;
+      line-height: 1.2;
+    }
+    blockquote {
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      border-left: 4px solid #d97706;
+      background: #fffbeb;
+      font-style: italic;
+      color: #2c3e50;
     }
     table {
       width: 100%;
@@ -291,7 +324,7 @@
 <main>
 
   <!-- ========================================================= -->
-  <!-- NEW: LEAD & PREGNANCY REPORT (site from the photo)       -->
+  <!-- EXISTING: LEAD & PREGNANCY REPORT                         -->
   <!-- ========================================================= -->
   <div class="policy-alert" style="border-left:6px solid #b91c1c; background:#fff5f5;">
     <span class="policy-alert-badge" style="background:#b91c1c;">⚠️ LEAD + PREGNANCY</span>
@@ -345,7 +378,7 @@
   </div>
 
   <!-- ========================================================= -->
-  <!-- remaining original content (NDI, email generator, shots) -->
+  <!-- EXISTING: NDI FAIL                                        -->
   <!-- ========================================================= -->
   <div class="policy-alert" style="border-left:6px solid #b91c1c; background:#fef2f2;">
     <span class="policy-alert-badge" style="background:#b91c1c;">📄 NDI FAIL</span>
@@ -370,6 +403,9 @@
     </div>
   </div>
 
+  <!-- ========================================================= -->
+  <!-- EXISTING: EMAIL MACHINE                                   -->
+  <!-- ========================================================= -->
   <div class="policy-alert" style="border-left:6px solid #d97706; background:#fffbeb;">
     <span class="policy-alert-badge" style="background:#d97706;">🤖 EMAIL MACHINE</span>
     <div class="policy-alert-content">
@@ -391,6 +427,9 @@
     </div>
   </div>
 
+  <!-- ========================================================= -->
+  <!-- EXISTING: KRATOM SHOTS + ALCOHOL                          -->
+  <!-- ========================================================= -->
   <div class="policy-alert" style="border-left:6px solid #7c3aed; background:#f5f3ff;">
     <span class="policy-alert-badge" style="background:#7c3aed;">🧪 LAB ANALYSIS</span>
     <div class="policy-alert-content">
@@ -411,7 +450,90 @@
     </div>
   </div>
 
-  <!-- FREQUENTLY ACCESSED (original) -->
+  <!-- ========================================================= -->
+  <!-- NEW: WEEK 11 – KCPA FAILURE STORY (Absolute Shock)        -->
+  <!-- ========================================================= -->
+  <div class="policy-alert" style="border-left:6px solid #2c5282; background:#f0f7ff;">
+    <span class="policy-alert-badge" style="background:#2c5282;">📊 KCPA FAILURE</span>
+    <div class="policy-alert-content">
+      <h2>Absolute Shock to Nobody: Kratom Consumer Protection Acts Failed</h2>
+      <p>Lawmakers have been sold Kratom Consumer Protection Acts (KCPAs) as the “reasonable compromise” — not legalization, not prohibition. Age limits. Labels. A veneer of oversight. But now a national analysis in <em>Addiction</em> lands hard: KCPAs perform statistically no better than having no meaningful regulation at all.</p>
+
+      <blockquote>The KCPA model appears to perform about as well as having no meaningful regulation.</blockquote>
+
+      <p><strong>The study legislators need to read.</strong> Researchers analyzed <strong>8,919 kratom poison center exposures</strong> (2010–2023), grouping states into unrestricted, KCPA, local‑restriction, and ban states. The results were brutal.</p>
+
+      <div class="story-stats-grid">
+        <div class="story-stat-card">
+          <div class="story-stat-number">2.49×</div>
+          <p>Higher exposure rate vs. ban states</p>
+        </div>
+        <div class="story-stat-card">
+          <div class="story-stat-number">3.19×</div>
+          <p>Higher severe outcomes</p>
+        </div>
+        <div class="story-stat-card">
+          <div class="story-stat-number">2.45×</div>
+          <p>Higher hospitalization rate</p>
+        </div>
+        <div class="story-stat-card">
+          <div class="story-stat-number">2.44×</div>
+          <p>Higher healthcare utilization</p>
+        </div>
+      </div>
+
+      <blockquote>“No statistically significant differences were identified between other regulatory categories.”</blockquote>
+      <p>Translation: KCPA states performed the same as unrestricted states. Not what lawmakers were promised.</p>
+
+      <div class="note" style="margin: 1rem 0; background:#e6f0fa;">
+        <strong>Primary Source Document:</strong> The full study is available for independent review.
+        <div style="margin-top: 0.8rem;">
+          <a class="btn-doc" href="/supplemental/week11/Kcpafail.pdf" target="_blank">📄 Open KCPA Failure Study PDF →</a>
+        </div>
+      </div>
+
+      <h3>The Sales Pitch Was Built on Appearance</h3>
+      <p>KCPAs sound impressive: age restrictions, alkaloid percentages, testing requirements. In reality? Products still sold at gas stations, smoke shops, vape stores, and online at industrial scale. A minimum‑wage clerk is not an alkaloid enforcement officer. That’s not regulation — it’s magical thinking.</p>
+
+      <h3>The Study Exposes the Real Problem</h3>
+      <p>The authors note this is observational, not causal. But their conclusion is devastating: regulatory approaches short of an outright ban were <strong>not associated</strong> with lower exposure rates, severe outcomes, or healthcare utilization compared to unrestricted states. The entire argument — “Don’t ban it, regulate it responsibly” — just lost its footing.</p>
+
+      <h3>This Is Regulatory Theater</h3>
+      <p>KCPAs give political cover and market legitimacy while preserving broad commercial access. Industry loves them. Meanwhile, poison center exposures rise, severe outcomes continue, and high‑potency extracts proliferate. A statute can create regulation on paper while failing to reduce harm in practice.</p>
+
+      <div class="highlight-box" style="background:#0f2a3f; margin:1rem 0;">
+        <strong>Lawmakers take note:</strong> Paper regulation is not public health protection.
+      </div>
+
+      <h3>The Modern Kratom Market Is Not a Folk Tea</h3>
+      <p>Today’s market is concentrated extracts, flavored shots, enhanced alkaloids — intoxicants sold beside nicotine vapes. Labels and percentage caps won’t control this in real‑world retail. The fantasy ends here.</p>
+
+      <h3>The Numbers Are Not Small</h3>
+      <ul>
+        <li><strong>34%</strong> of exposures required hospitalization</li>
+        <li><strong>13%</strong> resulted in severe medical outcomes</li>
+        <li><strong>1,353</strong> critical care admissions</li>
+      </ul>
+      <p>That’s measurable healthcare burden, not fringe events.</p>
+
+      <h3>Stop Pretending This Is a Controlled Market</h3>
+      <p>No real‑time alkaloid verification. No roadside testing. No clerk certification. What exists is a rapidly commercializing intoxication market wrapped in “consumer protection” language. This study raises an uncomfortable question: Were KCPAs ever about protecting consumers — or protecting market access?</p>
+
+      <h3>The Political Problem Ahead</h3>
+      <p>Lawmakers who backed KCPAs now face a crisis of evidence. The central promise — harm reduction through regulation — failed. Next time an industry lobbyist pushes another KCPA, ask one question:</p>
+      <blockquote>If these laws work so well, why don’t the outcomes look better?</blockquote>
+
+      <!-- optional back buttons (preserved from original story) -->
+      <div class="button-row" style="margin-top: 1.5rem;">
+        <a href="/index.html" class="btn-doc btn-doc-light" style="background:#eef2ff;">← Back to Home</a>
+        <a href="/supplemental-reading.html" class="btn-doc btn-doc-light" style="background:#eef2ff;">← Back to Supplemental Reading</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- EXISTING: FREQUENTLY ACCESSED (unchanged)                 -->
+  <!-- ========================================================= -->
   <section class="frequently-accessed">
     <div class="fa-header">
       <span class="fa-badge">Frequently Reviewed</span>
@@ -443,6 +565,9 @@
     </div>
   </section>
 
+  <!-- ========================================================= -->
+  <!-- REMAINING ORIGINAL CONTENT (unchanged)                    -->
+  <!-- ========================================================= -->
   <h1>Kratom: Consolidated Briefing for Lawmakers</h1>
   <p>This page provides a centralized, source-based briefing on kratom for legislators, regulators, and policy staff. It consolidates MAHA’s surveillance data, scientific literature, regulatory analysis, and legislative case studies into a single reference point.</p>
   <div class="note"><strong>Why this matters:</strong> Kratom policy debates often rely on selective summaries and industry framing. This page presents primary documentation and enforcement context in one place to support informed public-health decision-making.</div>
